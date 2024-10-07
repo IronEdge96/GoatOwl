@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "goatowl:block/quinque_furnace_test_on"
+    },
+    "facing=east": {
+      "model": "goatowl:block/quinque_furnace_test_on",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "goatowl:block/quinque_furnace_test_on",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "goatowl:block/quinque_furnace_test_on",
+      "y": 270
+    }
+  }
+}

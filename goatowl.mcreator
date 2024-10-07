@@ -1,0 +1,1305 @@
+{
+  "mod_elements": [
+    {
+      "name": "DefaultKaneki",
+      "type": "animatedarmor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "default_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/model/DefaultKanekiModel.java",
+          "src/main/resources/assets/goatowl/models/item/default_kaneki_leggings.json",
+          "src/main/java/net/ironedge/goatowl/item/DefaultKanekiItem.java",
+          "src/main/java/net/ironedge/goatowl/client/renderer/DefaultKanekiArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/default_kaneki_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/default_kaneki_boots.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Default"
+    },
+    {
+      "name": "PrisonerKaneki",
+      "type": "animatedarmor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prisoner_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/PrisonerKanekiItem.java",
+          "src/main/java/net/ironedge/goatowl/client/renderer/PrisonerKanekiArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/prisoner_kaneki_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/prisoner_kaneki_leggings.json",
+          "src/main/java/net/ironedge/goatowl/item/model/PrisonerKanekiModel.java"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Prisoner"
+    },
+    {
+      "name": "CentipedeKaneki",
+      "type": "animatedarmor",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centipede_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/CentipedeKanekiItem.java",
+          "src/main/java/net/ironedge/goatowl/client/renderer/CentipedeKanekiArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/centipede_kaneki_leggings.json",
+          "src/main/java/net/ironedge/goatowl/item/model/CentipedeKanekiModel.java",
+          "src/main/resources/assets/goatowl/models/item/centipede_kaneki_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/centipede_kaneki_boots.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Centipede"
+    },
+    {
+      "name": "AltKaneki",
+      "type": "animatedarmor",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alt_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/model/AltKanekiModel.java",
+          "src/main/java/net/ironedge/goatowl/client/renderer/AltKanekiArmorRenderer.java",
+          "src/main/java/net/ironedge/goatowl/item/AltKanekiItem.java",
+          "src/main/resources/assets/goatowl/models/item/alt_kaneki_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/alt_kaneki_leggings.json",
+          "src/main/resources/assets/goatowl/models/item/alt_kaneki_boots.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Alt"
+    },
+    {
+      "name": "SetupAnimations",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/SetupAnimationsProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/General"
+    },
+    {
+      "name": "RinkakuKeyPressed",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rinkaku_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RinkakuKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku"
+    },
+    {
+      "name": "RinkakuKey",
+      "type": "keybind",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rinkaku_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/network/RinkakuKeyMessage.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku"
+    },
+    {
+      "name": "KakujaKeyPressed",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KakujaKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja"
+    },
+    {
+      "name": "KakujaKey",
+      "type": "keybind",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/network/KakujaKeyMessage.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja"
+    },
+    {
+      "name": "GoatKaneki",
+      "type": "animatedarmor",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/goat_kaneki_boots.json",
+          "src/main/java/net/ironedge/goatowl/item/model/GoatKanekiModel.java",
+          "src/main/resources/assets/goatowl/models/item/goat_kaneki_leggings.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/GoatKanekiArmorRenderer.java",
+          "src/main/java/net/ironedge/goatowl/item/GoatKanekiItem.java",
+          "src/main/resources/assets/goatowl/models/item/goat_kaneki_helmet.json",
+          "src/main/resources/assets/goatowl/models/item/goat_kaneki_chestplate.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Goat"
+    },
+    {
+      "name": "RandomMannerism",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "random_mannerism",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RandomMannerismProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Mannerisms"
+    },
+    {
+      "name": "InnocentsCounter",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "innocents_counter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/InnocentsCounterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "SanityCounter",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_counter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/SanityCounterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "InsaneAdvItem",
+      "type": "item",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insane_adv_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/InsaneAdvItemItem.java",
+          "src/main/resources/assets/goatowl/models/item/insane_adv_item.json"
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "RemoveInsaneAdvItem",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_insane_adv_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RemoveInsaneAdvItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "InsaneAdv",
+      "type": "achievement",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insane_adv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/goatowl/advancements/insane_adv.json"
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "DeclaredInsane",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "declared_insane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/DeclaredInsaneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "InsaneTick",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "insane_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/InsaneTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "MoveCheck",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/MoveCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/General/Systems"
+    },
+    {
+      "name": "Noro",
+      "type": "animatedarmor",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/NoroItem.java",
+          "src/main/resources/assets/goatowl/models/item/noro_chestplate.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/NoroArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/noro_helmet.json",
+          "src/main/resources/assets/goatowl/models/item/noro_boots.json",
+          "src/main/java/net/ironedge/goatowl/item/model/NoroModel.java",
+          "src/main/resources/assets/goatowl/models/item/noro_leggings.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri/Noro"
+    },
+    {
+      "name": "SanityFirstSpawn",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sanity_first_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/SanityFirstSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Sanity"
+    },
+    {
+      "name": "AyatoRe",
+      "type": "animatedarmor",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ayato_re",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/AyatoReItem.java",
+          "src/main/resources/assets/goatowl/models/item/ayato_re_boots.json",
+          "src/main/resources/assets/goatowl/models/item/ayato_re_leggings.json",
+          "src/main/java/net/ironedge/goatowl/item/model/AyatoReModel.java",
+          "src/main/resources/assets/goatowl/models/item/ayato_re_chestplate.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/AyatoReArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/ayato_re_helmet.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri/Ayato"
+    },
+    {
+      "name": "AyatoS1",
+      "type": "animatedarmor",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ayato_s_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/ayato_s_1_boots.json",
+          "src/main/resources/assets/goatowl/models/item/ayato_s_1_chestplate.json",
+          "src/main/java/net/ironedge/goatowl/item/AyatoS1Item.java",
+          "src/main/java/net/ironedge/goatowl/item/model/AyatoS1Model.java",
+          "src/main/java/net/ironedge/goatowl/client/renderer/AyatoS1ArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/ayato_s_1_leggings.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri/Ayato"
+    },
+    {
+      "name": "QuinqueSteelBlock",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quinque_steel_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/quinque_steel_block.json",
+          "src/main/java/net/ironedge/goatowl/block/QuinqueSteelBlockBlock.java",
+          "src/main/resources/assets/goatowl/blockstates/quinque_steel_block.json",
+          "src/main/resources/assets/goatowl/models/block/quinque_steel_block.json",
+          "src/main/resources/data/goatowl/loot_tables/blocks/quinque_steel_block.json"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueSteel"
+    },
+    {
+      "name": "QuinqueSteelItem",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quinque_steel_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/quinque_steel_item.json",
+          "src/main/java/net/ironedge/goatowl/item/QuinqueSteelItemItem.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueSteel"
+    },
+    {
+      "name": "QuinqueFurnaceTestOff",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quinque_furnace_test_off",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/blockstates/quinque_furnace_test_off.json",
+          "src/main/resources/assets/goatowl/models/block/quinque_furnace_test_off.json",
+          "src/main/resources/assets/goatowl/models/item/quinque_furnace_test_off.json",
+          "src/main/resources/data/goatowl/loot_tables/blocks/quinque_furnace_test_off.json",
+          "src/main/java/net/ironedge/goatowl/block/QuinqueFurnaceTestOffBlock.java",
+          "src/main/java/net/ironedge/goatowl/block/entity/QuinqueFurnaceTestOffBlockEntity.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "QuinqueFurnaceTestOn",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quinque_furnace_test_on",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/block/quinque_furnace_test_on.json",
+          "src/main/java/net/ironedge/goatowl/block/entity/QuinqueFurnaceTestOnBlockEntity.java",
+          "src/main/resources/data/goatowl/loot_tables/blocks/quinque_furnace_test_on.json",
+          "src/main/resources/assets/goatowl/models/item/quinque_furnace_test_on.json",
+          "src/main/resources/assets/goatowl/blockstates/quinque_furnace_test_on.json",
+          "src/main/java/net/ironedge/goatowl/block/QuinqueFurnaceTestOnBlock.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "QuinqueFurnaceGUITest",
+      "type": "gui",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quinque_furnace_gui_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/client/gui/QuinqueFurnaceGUITestScreen.java",
+          "src/main/java/net/ironedge/goatowl/world/inventory/QuinqueFurnaceGUITestMenu.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "FurnaceTestAdded",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_test_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/FurnaceTestAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "SmeltingResultCondition",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting_result_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/SmeltingResultConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "FurnaceTestFuel",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_test_fuel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/FurnaceTestFuelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "FurnaceTestSmelt",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_test_smelt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/FurnaceTestSmeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "FurnaceTestUpdateTick",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_test_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/FurnaceTestUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "FurnaceTestOnTickUpdate",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_test_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/FurnaceTestOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueManufacturing/QuinqueSteelFurnace"
+    },
+    {
+      "name": "Hhhhh",
+      "type": "livingentity",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hhhhh",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/hhhhh_spawn_egg.json",
+          "src/main/java/net/ironedge/goatowl/entity/HhhhhEntity.java",
+          "src/main/java/net/ironedge/goatowl/client/renderer/HhhhhRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TestRinkaku",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_rinkaku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/TestRinkakuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku"
+    },
+    {
+      "name": "DefaultKanekiCollar",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "default_kaneki_collar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/DefaultKanekiCollarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Default"
+    },
+    {
+      "name": "TestAmatsu",
+      "type": "animateditem",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_amatsu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/model/TestAmatsuItemModel.java",
+          "src/main/resources/assets/goatowl/models/item/test_amatsu.json",
+          "src/main/java/net/ironedge/goatowl/item/TestAmatsuItem.java",
+          "src/main/java/net/ironedge/goatowl/item/renderer/TestAmatsuItemRenderer.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestAus",
+      "type": "animateditem",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_aus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/renderer/TestAusItemRenderer.java",
+          "src/main/java/net/ironedge/goatowl/item/TestAusItem.java",
+          "src/main/java/net/ironedge/goatowl/item/model/TestAusItemModel.java",
+          "src/main/resources/assets/goatowl/models/item/test_aus.json"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestAyumi",
+      "type": "animateditem",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_ayumi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/model/TestAyumiItemModel.java",
+          "src/main/java/net/ironedge/goatowl/item/renderer/TestAyumiItemRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/test_ayumi.json",
+          "src/main/java/net/ironedge/goatowl/item/TestAyumiItem.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestBokusatsu",
+      "type": "animateditem",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_bokusatsu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/TestBokusatsuItem.java",
+          "src/main/java/net/ironedge/goatowl/item/renderer/TestBokusatsuItemRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/test_bokusatsu.json",
+          "src/main/java/net/ironedge/goatowl/item/model/TestBokusatsuItemModel.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestDemonYamada",
+      "type": "animateditem",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_demon_yamada",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/renderer/TestDemonYamadaItemRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/test_demon_yamada.json",
+          "src/main/java/net/ironedge/goatowl/item/TestDemonYamadaItem.java",
+          "src/main/java/net/ironedge/goatowl/item/model/TestDemonYamadaItemModel.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestJuuzouJason",
+      "type": "animateditem",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_juuzou_jason",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/model/TestJuuzouJasonItemModel.java",
+          "src/main/java/net/ironedge/goatowl/item/renderer/TestJuuzouJasonItemRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/test_juuzou_jason.json",
+          "src/main/java/net/ironedge/goatowl/item/TestJuuzouJasonItem.java"
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestQuinqueIdles",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_quinque_idles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/TestQuinqueIdlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "TestQuinqueHands",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_quinque_hands",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/TestQuinqueHandsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "RinkakuSpawned",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "KakujaSpawned",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "Insane",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "XPos",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "ZPos",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "Moving",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "TailNum",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SegmentNum",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "NewSpawned",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:mod:fuel/coal": [
+      "Items.COAL#0",
+      "Items.COAL#1"
+    ],
+    "ITEMS:mod:quinque/dagger": [],
+    "ITEMS:mod:quinque/spear": [],
+    "ITEMS:mod:fuel/planks": [
+      "Blocks.PLANKS#0",
+      "Blocks.PLANKS#1",
+      "Blocks.PLANKS#2",
+      "Blocks.PLANKS#3",
+      "Blocks.PLANKS#4",
+      "Blocks.PLANKS#5",
+      "Blocks.CRIMSON_PLANKS",
+      "Blocks.WARPED_PLANKS",
+      "Blocks.MANGROVE_PLANKS",
+      "Blocks.CHERRY_PLANKS",
+      "Blocks.BAMBOO_PLANKS"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:QuinqueFurnaceTestOn",
+      "~CUSTOM:QuinqueFurnaceTestOff"
+    ],
+    "ITEMS:mod:fuel": [
+      "TAG:mod:fuel/coal",
+      "TAG:mod:fuel/planks"
+    ],
+    "ITEMS:mod:fuel/lava": [
+      "Items.LAVA_BUCKET"
+    ],
+    "ITEMS:mod:quinque/greatsword": [
+      "CUSTOM:TestAus",
+      "CUSTOM:TestDemonYamada"
+    ],
+    "ITEMS:mod:quinque/sword": [
+      "CUSTOM:TestAyumi"
+    ],
+    "ITEMS:mod:quinque/solo": [
+      "TAG:mod:quinque/greatsword",
+      "TAG:mod:quinque/sword",
+      "TAG:mod:qinique/heavy",
+      "TAG:mod:quinque/spear",
+      "TAG:mod:quinque/special"
+    ],
+    "ITEMS:mod:quinque/special": [
+      "CUSTOM:TestAmatsu"
+    ],
+    "ITEMS:mod:qinique/heavy": [
+      "CUSTOM:TestBokusatsu",
+      "CUSTOM:TestJuuzouJason"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:QuinqueFurnaceTestOn",
+      "~CUSTOM:QuinqueFurnaceTestOff"
+    ],
+    "ITEMS:mod:quinque": [
+      "TAG:mod:quinque/solo",
+      "TAG:mod:quinque/dual"
+    ],
+    "ITEMS:mod:quinque/dual": [
+      "TAG:mod:quinque/dagger"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.goatowl.alt_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.hhhhh_spawn_egg": "Hhhhh Spawn Egg",
+      "item.goatowl.default_kaneki_boots": "Kaneki\u0027s Leggings",
+      "item.goatowl.test_ayumi": "Ayumi Hogi\u0027s Sword",
+      "item.goatowl.centipede_kaneki_boots": "Kaneki\u0027s Leggings",
+      "item.goatowl.centipede_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.ayato_s_1_chestplate": "Ayato\u0027s Jacket",
+      "item.goatowl.test_demon_yamada": "Demon Yamada",
+      "item.goatowl.centipede_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
+      "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
+      "item.goatowl.prisoner_kaneki_boots": "Kaneki\u0027s Leggings",
+      "item.goatowl.test_aus": "Aus",
+      "item.goatowl.alt_kaneki_boots": "Kaneki\u0027s Leggings",
+      "advancements.insane_adv.descr": "Congrats on losing your mind",
+      "item.goatowl.goat_kaneki_leggings": "Kaneki\u0027s Pants",
+      "item.goatowl.prisoner_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.alt_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "item.goatowl.insane_adv_item": "Insane Adv Item",
+      "item.goatowl.ayato_s_1_helmet": "Ayato\u0027s Mask",
+      "block.goatowl.quinque_furnace_test_off": "Quinque Furnace Test",
+      "item.goatowl.noro_boots": "Noro\u0027s Loafers",
+      "item.goatowl.test_amatsu": "Amatsu",
+      "item.goatowl.ayato_re_helmet": "Ayato\u0027s Mask",
+      "item.goatowl.test_bokusatsu": "Bokusatsu No.2",
+      "item.goatowl.ayato_re_leggings": "Ayato\u0027s Pants",
+      "item.goatowl.default_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.goat_kaneki_chestplate": "Kaneki\u0027s Coat",
+      "item.goatowl.goat_kaneki_boots": "Kaneki\u0027s Loafers",
+      "key.goatowl.kakuja_key": "Aadsa",
+      "item.goatowl.ayato_re_boots": "Ayato\u0027s Boots",
+      "item.goatowl.noro_chestplate": "Noro\u0027s Cloak",
+      "item.goatowl.prisoner_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "block.goatowl.quinque_furnace_test_on": "Quinque Furnace Test",
+      "item.goatowl.prisoner_kaneki_helmet": "Kaneki\u0027s Collar",
+      "item.goatowl.default_kaneki_helmet": "Kaneki\u0027s Mask",
+      "item.goatowl.ayato_s_1_leggings": "Ayato\u0027s Pants",
+      "item.goatowl.default_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "item.goatowl.noro_helmet": "Noro\u0027s Mask",
+      "item.goatowl.centipede_kaneki_helmet": "Collar",
+      "advancements.insane_adv.title": "Insane",
+      "item.goatowl.noro_leggings": "Noro\u0027s Pants",
+      "item.goatowl.alt_kaneki_helmet": "Kaneki\u0027s Collar",
+      "item.goatowl.ayato_re_chestplate": "Ayato\u0027s Tank",
+      "item.goatowl.quinque_steel_item": "Quinque Steel Ingot",
+      "entity.goatowl.hhhhh": "Hhhhh",
+      "item.goatowl.test_juuzou_jason": "Juuzou\u0027s Jason",
+      "key.goatowl.rinkaku_key": "Sdfs",
+      "item.goatowl.ayato_s_1_boots": "Ayato\u0027s Boots"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Ghouls",
+        "children": [
+          {
+            "name": "Ukaku",
+            "children": []
+          },
+          {
+            "name": "Kokaku",
+            "children": []
+          },
+          {
+            "name": "Rinkaku",
+            "children": []
+          },
+          {
+            "name": "Bikaku",
+            "children": []
+          },
+          {
+            "name": "Kakuja",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "children": [
+          {
+            "name": "Ghoul",
+            "children": [
+              {
+                "name": "Aogiri",
+                "children": [
+                  {
+                    "name": "Noro",
+                    "children": []
+                  },
+                  {
+                    "name": "Ayato",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Kaneki",
+                "children": [
+                  {
+                    "name": "Default",
+                    "children": []
+                  },
+                  {
+                    "name": "Prisoner",
+                    "children": []
+                  },
+                  {
+                    "name": "Centipede",
+                    "children": []
+                  },
+                  {
+                    "name": "VS Arima",
+                    "children": []
+                  },
+                  {
+                    "name": "Goat",
+                    "children": []
+                  },
+                  {
+                    "name": "Dragon",
+                    "children": []
+                  },
+                  {
+                    "name": "Alt",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "General",
+        "children": [
+          {
+            "name": "Systems",
+            "children": [
+              {
+                "name": "Sanity",
+                "children": []
+              },
+              {
+                "name": "Mannerisms",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CCG",
+        "children": [
+          {
+            "name": "Quinque",
+            "children": [
+              {
+                "name": "QuinqueSteel",
+                "children": []
+              },
+              {
+                "name": "QuinqueManufacturing",
+                "children": [
+                  {
+                    "name": "QuinqueSteelFurnace",
+                    "children": []
+                  },
+                  {
+                    "name": "QuinqueFabricator",
+                    "children": []
+                  },
+                  {
+                    "name": "QuinqueRegistrationTable",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "QuinqueItems",
+                "children": [
+                  {
+                    "name": "TestQuinques",
+                    "children": []
+                  },
+                  {
+                    "name": "Animations",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "goatowl",
+    "modName": "Goat and Owl",
+    "version": "1.0.0",
+    "author": "bigma, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [
+      "kleiders_custom_renderer"
+    ],
+    "dependencies": [
+      "kleiders_custom_renderer"
+    ],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "fusion",
+      "kleidersplayerrenderer",
+      "pehkui",
+      "curios_api",
+      "geckolib",
+      "playeranimator",
+      "particlepresets"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.ironedge.goatowl"
+  },
+  "mcreatorVersion": 202400118518
+}

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.quinqueholdheavy": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"vector": [-109.32998, 34.60155, -109.44918],
+						"easing": "linear"
+					},
+					"position": {
+						"0.0": {
+							"vector": [-0.5, 1.25, 0.5],
+							"easing": "linear"
+						},
+						"1.0": {
+							"vector": [-0.5, 1, 0.5],
+							"easing": "linear"
+						},
+						"2.0": {
+							"vector": [-0.5, 1.25, 0.5],
+							"easing": "linear"
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"vector": [-84.41374, 22.20175, -91.08609],
+						"easing": "linear"
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, -0.75, 0],
+							"easing": "linear"
+						},
+						"1.0": {
+							"vector": [0, -1, 0],
+							"easing": "linear"
+						},
+						"2.0": {
+							"vector": [0, -0.75, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -1,0 +1,102 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.prisoneroutfit.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"LeftArmCircle1": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, "math.sin(query.anim_time * 180) * 25"],
+						"easing": "linear"
+					}
+				},
+				"LeftArmLink1": {
+					"rotation": {
+						"vector": ["-math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"LeftArmLink3": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"LeftLegCircle": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, "math.sin(query.anim_time * 180) * 25"],
+						"easing": "linear"
+					}
+				},
+				"LeftLegLink1": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"LeftLegLink2": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 360) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"LeftLegCircle2": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, "math.sin(query.anim_time * 180) * 25"],
+						"easing": "linear"
+					}
+				},
+				"LeftLegLink3": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"LeftLegLink4": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 360) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"RightLegCircle": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, "math.sin(query.anim_time * 180) * 25"],
+						"easing": "linear"
+					}
+				},
+				"RightLegLink1": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"RightLegLink2": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 360) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"RightArmCircle1": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, "math.sin(query.anim_time * 180) * 25"],
+						"easing": "linear"
+					}
+				},
+				"RightArmLink1": {
+					"rotation": {
+						"vector": ["-math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				},
+				"RightArmLink3": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 180) * 25", 0, 0],
+						"easing": "linear"
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

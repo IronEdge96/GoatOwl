@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "goatowl:blocks/quinque_furnace_test_off",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "goatowl:quinque_furnace_test_off"
+        }
+      ]
+    }
+  ]
+}

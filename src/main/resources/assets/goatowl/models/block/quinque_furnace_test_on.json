@@ -1,0 +1,15 @@
+{
+  "parent": "block/cube_all",
+  "type": "fusion:connecting",
+  "connections": [
+    {
+      "type": "fusion:is_same_block"
+    }
+  ],
+  "loader": "fusion:model",
+  "textures": {
+    "all": "goatowl:block/quinquefurnacetest2",
+    "particle": "goatowl:block/quinquefurnacetest2"
+  },
+  "render_type": "solid"
+}

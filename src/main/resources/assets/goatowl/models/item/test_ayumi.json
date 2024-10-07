@@ -1,0 +1,6 @@
+{
+  "parent": "goatowl:displaysettings/ayumihogi.item",
+  "textures": {
+    "layer0": "goatowl:item/ayumihogi"
+  }
+}

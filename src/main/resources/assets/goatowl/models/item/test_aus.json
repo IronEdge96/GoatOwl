@@ -1,0 +1,6 @@
+{
+  "parent": "goatowl:displaysettings/aus.item",
+  "textures": {
+    "layer0": "goatowl:item/aus"
+  }
+}

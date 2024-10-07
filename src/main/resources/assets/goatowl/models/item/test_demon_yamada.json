@@ -1,0 +1,6 @@
+{
+  "parent": "goatowl:displaysettings/demonyamada.item",
+  "textures": {
+    "layer0": "goatowl:item/demonyamada"
+  }
+}
