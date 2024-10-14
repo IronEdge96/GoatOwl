@@ -72,6 +72,7 @@ public class GoatowlModItems {
 	public static final RegistryObject<Item> TEST_BOKUSATSU = REGISTRY.register("test_bokusatsu", () -> new TestBokusatsuItem());
 	public static final RegistryObject<Item> TEST_DEMON_YAMADA = REGISTRY.register("test_demon_yamada", () -> new TestDemonYamadaItem());
 	public static final RegistryObject<Item> TEST_JUUZOU_JASON = REGISTRY.register("test_juuzou_jason", () -> new TestJuuzouJasonItem());
+	public static final RegistryObject<Item> AAAAAAAAAAAA_SPAWN_EGG = REGISTRY.register("aaaaaaaaaaaa_spawn_egg", () -> new ForgeSpawnEggItem(GoatowlModEntities.AAAAAAAAAAAA, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

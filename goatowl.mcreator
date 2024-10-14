@@ -949,6 +949,91 @@
         ]
       },
       "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "UkakuKey",
+      "type": "keybind",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ukaku_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/network/UkakuKeyMessage.java"
+        ]
+      },
+      "path": "~/Ghouls/Ukaku"
+    },
+    {
+      "name": "TestUkaku",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_ukaku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/TestUkakuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Ukaku"
+    },
+    {
+      "name": "UkakuKeyPressed",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ukaku_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/UkakuKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Ukaku"
+    },
+    {
+      "name": "Aaaaaaaaaaaa",
+      "type": "livingentity",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "aaaaaaaaaaaa",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/aaaaaaaaaaaa_spawn_egg.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/AaaaaaaaaaaaRenderer.java",
+          "src/main/java/net/ironedge/goatowl/entity/AaaaaaaaaaaaEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1005,12 +1090,16 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "UkakuSpawned",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:mod:quinque/spear": [],
-    "ITEMS:mod:quinque/dagger": [],
     "ITEMS:mod:fuel/coal": [
       "Items.COAL#0",
       "Items.COAL#1"
@@ -1079,8 +1168,9 @@
       "item.goatowl.default_kaneki_boots": "Kaneki\u0027s Leggings",
       "item.goatowl.test_ayumi": "Ayumi Hogi\u0027s Sword",
       "item.goatowl.centipede_kaneki_boots": "Kaneki\u0027s Leggings",
-      "item.goatowl.ayato_s_1_chestplate": "Ayato\u0027s Jacket",
+      "item.goatowl.aaaaaaaaaaaa_spawn_egg": "aaaaaaaaaaaaa Spawn Egg",
       "item.goatowl.centipede_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.ayato_s_1_chestplate": "Ayato\u0027s Jacket",
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.centipede_kaneki_leggings": "Kaneki\u0027s Shorts",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
@@ -1097,7 +1187,9 @@
       "block.goatowl.quinque_furnace_test_off": "Quinque Furnace Test",
       "item.goatowl.noro_boots": "Noro\u0027s Loafers",
       "item.goatowl.test_amatsu": "Amatsu",
+      "key.goatowl.ukaku_key": "Sdfs",
       "item.goatowl.ayato_re_helmet": "Ayato\u0027s Mask",
+      "entity.goatowl.aaaaaaaaaaaa": "aaaaaaaaaaaaa",
       "item.goatowl.test_bokusatsu": "Bokusatsu No.2",
       "item.goatowl.ayato_re_leggings": "Ayato\u0027s Pants",
       "item.goatowl.default_kaneki_chestplate": "Kaneki\u0027s Shirt",

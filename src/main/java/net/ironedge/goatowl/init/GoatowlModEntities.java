@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.ironedge.goatowl.entity.HhhhhEntity;
+import net.ironedge.goatowl.entity.AaaaaaaaaaaaEntity;
 import net.ironedge.goatowl.GoatowlMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -24,6 +25,10 @@ public class GoatowlModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, GoatowlMod.MODID);
 	public static final RegistryObject<EntityType<HhhhhEntity>> HHHHH = register("hhhhh",
 			EntityType.Builder.<HhhhhEntity>of(HhhhhEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HhhhhEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AaaaaaaaaaaaEntity>> AAAAAAAAAAAA = register("aaaaaaaaaaaa",
+			EntityType.Builder.<AaaaaaaaaaaaEntity>of(AaaaaaaaaaaaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AaaaaaaaaaaaEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -35,11 +40,13 @@ public class GoatowlModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			HhhhhEntity.init();
+			AaaaaaaaaaaaEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(HHHHH.get(), HhhhhEntity.createAttributes().build());
+		event.put(AAAAAAAAAAAA.get(), AaaaaaaaaaaaEntity.createAttributes().build());
 	}
 }

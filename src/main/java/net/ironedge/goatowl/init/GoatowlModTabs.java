@@ -59,6 +59,7 @@ public class GoatowlModTabs {
 			tabData.accept(GoatowlModItems.TEST_JUUZOU_JASON.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(GoatowlModItems.HHHHH_SPAWN_EGG.get());
+			tabData.accept(GoatowlModItems.AAAAAAAAAAAA_SPAWN_EGG.get());
 		}
 	}
 }

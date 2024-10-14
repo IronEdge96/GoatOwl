@@ -11,12 +11,14 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.ironedge.goatowl.client.model.Modelkanekirinkakutestalt;
 import net.ironedge.goatowl.client.model.Modelkanekioutfitcollar;
+import net.ironedge.goatowl.client.model.Modelayatotestukaku;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class GoatowlModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelkanekioutfitcollar.LAYER_LOCATION, Modelkanekioutfitcollar::createBodyLayer);
+		event.registerLayerDefinition(Modelayatotestukaku.LAYER_LOCATION, Modelayatotestukaku::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakutestalt.LAYER_LOCATION, Modelkanekirinkakutestalt::createBodyLayer);
 	}
 }

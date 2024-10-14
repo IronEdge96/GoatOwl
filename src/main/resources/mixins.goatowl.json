@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "net.ironedge.goatowl.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.goatowl.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}

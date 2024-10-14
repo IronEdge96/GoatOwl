@@ -86,6 +86,7 @@ public class GoatowlModVariables {
 				clone.ZPos = original.ZPos;
 				clone.Moving = original.Moving;
 				clone.SegmentNum = original.SegmentNum;
+				clone.UkakuSpawned = original.UkakuSpawned;
 			}
 			if (!event.getEntity().level().isClientSide()) {
 				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
@@ -135,6 +136,7 @@ public class GoatowlModVariables {
 		public double TailNum = 0;
 		public double SegmentNum = 0;
 		public boolean NewSpawned = false;
+		public boolean UkakuSpawned = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -152,6 +154,7 @@ public class GoatowlModVariables {
 			nbt.putDouble("TailNum", TailNum);
 			nbt.putDouble("SegmentNum", SegmentNum);
 			nbt.putBoolean("NewSpawned", NewSpawned);
+			nbt.putBoolean("UkakuSpawned", UkakuSpawned);
 			return nbt;
 		}
 
@@ -166,6 +169,7 @@ public class GoatowlModVariables {
 			TailNum = nbt.getDouble("TailNum");
 			SegmentNum = nbt.getDouble("SegmentNum");
 			NewSpawned = nbt.getBoolean("NewSpawned");
+			UkakuSpawned = nbt.getBoolean("UkakuSpawned");
 		}
 	}
 
@@ -208,6 +212,7 @@ public class GoatowlModVariables {
 					variables.TailNum = message.data.TailNum;
 					variables.SegmentNum = message.data.SegmentNum;
 					variables.NewSpawned = message.data.NewSpawned;
+					variables.UkakuSpawned = message.data.UkakuSpawned;
 				}
 			});
 			context.setPacketHandled(true);
