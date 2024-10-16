@@ -195,179 +195,6 @@
       "path": "~/Armor/Ghoul/Kaneki/Goat"
     },
     {
-      "name": "RandomMannerism",
-      "type": "procedure",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "random_mannerism",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/RandomMannerismProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Mannerisms"
-    },
-    {
-      "name": "InnocentsCounter",
-      "type": "procedure",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "innocents_counter",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/InnocentsCounterProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
-      "name": "SanityCounter",
-      "type": "procedure",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sanity_counter",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/SanityCounterProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
-      "name": "InsaneAdvItem",
-      "type": "item",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "insane_adv_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/item/InsaneAdvItemItem.java",
-          "src/main/resources/assets/goatowl/models/item/insane_adv_item.json"
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
-      "name": "RemoveInsaneAdvItem",
-      "type": "procedure",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "remove_insane_adv_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/RemoveInsaneAdvItemProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
-      "name": "InsaneAdv",
-      "type": "achievement",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "insane_adv",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/goatowl/advancements/insane_adv.json"
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
-      "name": "DeclaredInsane",
-      "type": "procedure",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "declared_insane",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/DeclaredInsaneProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
-      "name": "InsaneTick",
-      "type": "procedure",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "insane_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/InsaneTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
-    },
-    {
       "name": "MoveCheck",
       "type": "procedure",
       "sortid": 47,
@@ -410,26 +237,6 @@
         ]
       },
       "path": "~/Armor/Ghoul/Aogiri/Noro"
-    },
-    {
-      "name": "SanityFirstSpawn",
-      "type": "procedure",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sanity_first_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/SanityFirstSpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/General/Systems/Sanity"
     },
     {
       "name": "AyatoRe",
@@ -1034,6 +841,92 @@
           "src/main/java/net/ironedge/goatowl/entity/AaaaaaaaaaaaEntity.java"
         ]
       }
+    },
+    {
+      "name": "Dash",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/DashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Core/Abilities"
+    },
+    {
+      "name": "DashKey",
+      "type": "keybind",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/network/DashKeyMessage.java"
+        ]
+      },
+      "path": "~/General/Systems/Core/Abilities"
+    },
+    {
+      "name": "AbilityCooldowns",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_cooldowns",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/AbilityCooldownsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Core/Abilities"
     }
   ],
   "variable_elements": [
@@ -1047,12 +940,6 @@
       "name": "KakujaSpawned",
       "type": "logic",
       "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
-      "name": "Insane",
-      "type": "logic",
-      "scope": "player_persistent",
       "value": "false"
     },
     {
@@ -1074,27 +961,33 @@
       "value": "false"
     },
     {
-      "name": "TailNum",
+      "name": "UkakuSpawned",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "StrengthTest",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "1.0"
     },
     {
-      "name": "SegmentNum",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "NewSpawned",
+      "name": "DashCooldown",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
     },
     {
-      "name": "UkakuSpawned",
+      "name": "AirDashCooldown",
       "type": "logic",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "JustDashed",
+      "type": "logic",
+      "scope": "player_persistent",
       "value": "false"
     }
   ],
@@ -1169,20 +1062,19 @@
       "item.goatowl.test_ayumi": "Ayumi Hogi\u0027s Sword",
       "item.goatowl.centipede_kaneki_boots": "Kaneki\u0027s Leggings",
       "item.goatowl.aaaaaaaaaaaa_spawn_egg": "aaaaaaaaaaaaa Spawn Egg",
-      "item.goatowl.centipede_kaneki_chestplate": "Kaneki\u0027s Shirt",
       "item.goatowl.ayato_s_1_chestplate": "Ayato\u0027s Jacket",
+      "item.goatowl.centipede_kaneki_chestplate": "Kaneki\u0027s Shirt",
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.centipede_kaneki_leggings": "Kaneki\u0027s Shorts",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.prisoner_kaneki_boots": "Kaneki\u0027s Leggings",
       "item.goatowl.test_aus": "Aus",
+      "key.goatowl.dash_key": "Dash",
       "item.goatowl.alt_kaneki_boots": "Kaneki\u0027s Leggings",
-      "advancements.insane_adv.descr": "Congrats on losing your mind",
-      "item.goatowl.goat_kaneki_leggings": "Kaneki\u0027s Pants",
       "item.goatowl.prisoner_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.goat_kaneki_leggings": "Kaneki\u0027s Pants",
       "item.goatowl.alt_kaneki_leggings": "Kaneki\u0027s Shorts",
-      "item.goatowl.insane_adv_item": "Insane Adv Item",
       "item.goatowl.ayato_s_1_helmet": "Ayato\u0027s Mask",
       "block.goatowl.quinque_furnace_test_off": "Quinque Furnace Test",
       "item.goatowl.noro_boots": "Noro\u0027s Loafers",
@@ -1206,7 +1098,6 @@
       "item.goatowl.default_kaneki_leggings": "Kaneki\u0027s Shorts",
       "item.goatowl.noro_helmet": "Noro\u0027s Mask",
       "item.goatowl.centipede_kaneki_helmet": "Collar",
-      "advancements.insane_adv.title": "Insane",
       "item.goatowl.noro_leggings": "Noro\u0027s Pants",
       "item.goatowl.alt_kaneki_helmet": "Kaneki\u0027s Collar",
       "item.goatowl.ayato_re_chestplate": "Ayato\u0027s Tank",
@@ -1314,6 +1205,36 @@
               {
                 "name": "Mannerisms",
                 "children": []
+              },
+              {
+                "name": "Core",
+                "children": [
+                  {
+                    "name": "Abilities",
+                    "children": []
+                  },
+                  {
+                    "name": "Stats",
+                    "children": [
+                      {
+                        "name": "Strength",
+                        "children": []
+                      },
+                      {
+                        "name": "Dexterity",
+                        "children": []
+                      },
+                      {
+                        "name": "Endurance",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Races",
+                    "children": []
+                  }
+                ]
               }
             ]
           }

@@ -76,16 +76,16 @@ public class GoatowlModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.Insane = original.Insane;
-			clone.TailNum = original.TailNum;
-			clone.NewSpawned = original.NewSpawned;
+			clone.StrengthTest = original.StrengthTest;
+			clone.DashCooldown = original.DashCooldown;
+			clone.AirDashCooldown = original.AirDashCooldown;
+			clone.JustDashed = original.JustDashed;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
 				clone.XPos = original.XPos;
 				clone.ZPos = original.ZPos;
 				clone.Moving = original.Moving;
-				clone.SegmentNum = original.SegmentNum;
 				clone.UkakuSpawned = original.UkakuSpawned;
 			}
 			if (!event.getEntity().level().isClientSide()) {
@@ -129,14 +129,14 @@ public class GoatowlModVariables {
 	public static class PlayerVariables {
 		public boolean RinkakuSpawned = false;
 		public boolean KakujaSpawned = false;
-		public boolean Insane = false;
 		public double XPos = 0;
 		public double ZPos = 0;
 		public boolean Moving = false;
-		public double TailNum = 0;
-		public double SegmentNum = 0;
-		public boolean NewSpawned = false;
 		public boolean UkakuSpawned = false;
+		public double StrengthTest = 1.0;
+		public boolean DashCooldown = false;
+		public boolean AirDashCooldown = false;
+		public boolean JustDashed = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -147,14 +147,14 @@ public class GoatowlModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("RinkakuSpawned", RinkakuSpawned);
 			nbt.putBoolean("KakujaSpawned", KakujaSpawned);
-			nbt.putBoolean("Insane", Insane);
 			nbt.putDouble("XPos", XPos);
 			nbt.putDouble("ZPos", ZPos);
 			nbt.putBoolean("Moving", Moving);
-			nbt.putDouble("TailNum", TailNum);
-			nbt.putDouble("SegmentNum", SegmentNum);
-			nbt.putBoolean("NewSpawned", NewSpawned);
 			nbt.putBoolean("UkakuSpawned", UkakuSpawned);
+			nbt.putDouble("StrengthTest", StrengthTest);
+			nbt.putBoolean("DashCooldown", DashCooldown);
+			nbt.putBoolean("AirDashCooldown", AirDashCooldown);
+			nbt.putBoolean("JustDashed", JustDashed);
 			return nbt;
 		}
 
@@ -162,14 +162,14 @@ public class GoatowlModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			RinkakuSpawned = nbt.getBoolean("RinkakuSpawned");
 			KakujaSpawned = nbt.getBoolean("KakujaSpawned");
-			Insane = nbt.getBoolean("Insane");
 			XPos = nbt.getDouble("XPos");
 			ZPos = nbt.getDouble("ZPos");
 			Moving = nbt.getBoolean("Moving");
-			TailNum = nbt.getDouble("TailNum");
-			SegmentNum = nbt.getDouble("SegmentNum");
-			NewSpawned = nbt.getBoolean("NewSpawned");
 			UkakuSpawned = nbt.getBoolean("UkakuSpawned");
+			StrengthTest = nbt.getDouble("StrengthTest");
+			DashCooldown = nbt.getBoolean("DashCooldown");
+			AirDashCooldown = nbt.getBoolean("AirDashCooldown");
+			JustDashed = nbt.getBoolean("JustDashed");
 		}
 	}
 
@@ -205,14 +205,14 @@ public class GoatowlModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.RinkakuSpawned = message.data.RinkakuSpawned;
 					variables.KakujaSpawned = message.data.KakujaSpawned;
-					variables.Insane = message.data.Insane;
 					variables.XPos = message.data.XPos;
 					variables.ZPos = message.data.ZPos;
 					variables.Moving = message.data.Moving;
-					variables.TailNum = message.data.TailNum;
-					variables.SegmentNum = message.data.SegmentNum;
-					variables.NewSpawned = message.data.NewSpawned;
 					variables.UkakuSpawned = message.data.UkakuSpawned;
+					variables.StrengthTest = message.data.StrengthTest;
+					variables.DashCooldown = message.data.DashCooldown;
+					variables.AirDashCooldown = message.data.AirDashCooldown;
+					variables.JustDashed = message.data.JustDashed;
 				}
 			});
 			context.setPacketHandled(true);

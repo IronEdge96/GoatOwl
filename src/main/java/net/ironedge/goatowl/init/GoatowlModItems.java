@@ -23,7 +23,6 @@ import net.ironedge.goatowl.item.TestAmatsuItem;
 import net.ironedge.goatowl.item.QuinqueSteelItemItem;
 import net.ironedge.goatowl.item.PrisonerKanekiItem;
 import net.ironedge.goatowl.item.NoroItem;
-import net.ironedge.goatowl.item.InsaneAdvItemItem;
 import net.ironedge.goatowl.item.GoatKanekiItem;
 import net.ironedge.goatowl.item.DefaultKanekiItem;
 import net.ironedge.goatowl.item.CentipedeKanekiItem;
@@ -49,7 +48,6 @@ public class GoatowlModItems {
 	public static final RegistryObject<GoatKanekiItem> GOAT_KANEKI_CHESTPLATE = REGISTRY.register("goat_kaneki_chestplate", () -> new GoatKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<GoatKanekiItem> GOAT_KANEKI_LEGGINGS = REGISTRY.register("goat_kaneki_leggings", () -> new GoatKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<GoatKanekiItem> GOAT_KANEKI_BOOTS = REGISTRY.register("goat_kaneki_boots", () -> new GoatKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
-	public static final RegistryObject<Item> INSANE_ADV_ITEM = REGISTRY.register("insane_adv_item", () -> new InsaneAdvItemItem());
 	public static final RegistryObject<NoroItem> NORO_HELMET = REGISTRY.register("noro_helmet", () -> new NoroItem(ArmorItem.Type.HELMET, new Item.Properties()));
 	public static final RegistryObject<NoroItem> NORO_CHESTPLATE = REGISTRY.register("noro_chestplate", () -> new NoroItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<NoroItem> NORO_LEGGINGS = REGISTRY.register("noro_leggings", () -> new NoroItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
