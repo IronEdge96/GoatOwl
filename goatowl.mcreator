@@ -38,44 +38,6 @@
       "path": "~/Armor/Ghoul/Kaneki/Prisoner"
     },
     {
-      "name": "CentipedeKaneki",
-      "type": "animatedarmor",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "centipede_kaneki",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/item/CentipedeKanekiItem.java",
-          "src/main/java/net/ironedge/goatowl/client/renderer/CentipedeKanekiArmorRenderer.java",
-          "src/main/resources/assets/goatowl/models/item/centipede_kaneki_leggings.json",
-          "src/main/java/net/ironedge/goatowl/item/model/CentipedeKanekiModel.java",
-          "src/main/resources/assets/goatowl/models/item/centipede_kaneki_chestplate.json",
-          "src/main/resources/assets/goatowl/models/item/centipede_kaneki_boots.json"
-        ]
-      },
-      "path": "~/Armor/Ghoul/Kaneki/Centipede"
-    },
-    {
-      "name": "AltKaneki",
-      "type": "animatedarmor",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alt_kaneki",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/item/model/AltKanekiModel.java",
-          "src/main/java/net/ironedge/goatowl/client/renderer/AltKanekiArmorRenderer.java",
-          "src/main/java/net/ironedge/goatowl/item/AltKanekiItem.java",
-          "src/main/resources/assets/goatowl/models/item/alt_kaneki_chestplate.json",
-          "src/main/resources/assets/goatowl/models/item/alt_kaneki_leggings.json",
-          "src/main/resources/assets/goatowl/models/item/alt_kaneki_boots.json"
-        ]
-      },
-      "path": "~/Armor/Ghoul/Kaneki/Alt"
-    },
-    {
       "name": "SetupAnimations",
       "type": "procedure",
       "sortid": 11,
@@ -927,6 +889,224 @@
         ]
       },
       "path": "~/General/Systems/Core/Abilities"
+    },
+    {
+      "name": "NoroRobes",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noro_robes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/NoroRobesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri/Noro"
+    },
+    {
+      "name": "NoroBlack",
+      "type": "animatedarmor",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noro_black",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/NoroBlackItem.java",
+          "src/main/resources/assets/goatowl/models/item/noro_black_helmet.json",
+          "src/main/resources/assets/goatowl/models/item/noro_black_leggings.json",
+          "src/main/resources/assets/goatowl/models/item/noro_black_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/noro_black_boots.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/NoroBlackArmorRenderer.java",
+          "src/main/java/net/ironedge/goatowl/item/model/NoroBlackModel.java"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri/Noro"
+    },
+    {
+      "name": "NoroRobesBlack",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noro_robes_black",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/NoroRobesBlackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri/Noro"
+    },
+    {
+      "name": "AogiriRobes",
+      "type": "animatedarmor",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aogiri_robes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/item/model/AogiriRobesModel.java",
+          "src/main/java/net/ironedge/goatowl/item/AogiriRobesItem.java",
+          "src/main/resources/assets/goatowl/models/item/aogiri_robes_leggings.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/AogiriRobesArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/aogiri_robes_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/aogiri_robes_boots.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri"
+    },
+    {
+      "name": "AogiriRobesCloak",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aogiri_robes_cloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/AogiriRobesCloakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Aogiri"
+    },
+    {
+      "name": "GoatKanekiCloak",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goat_kaneki_cloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/GoatKanekiCloakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/Goat"
+    },
+    {
+      "name": "BlackReaperKaneki",
+      "type": "animatedarmor",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_reaper_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/client/renderer/BlackReaperKanekiArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/black_reaper_kaneki_leggings.json",
+          "src/main/java/net/ironedge/goatowl/item/model/BlackReaperKanekiModel.java",
+          "src/main/java/net/ironedge/goatowl/item/BlackReaperKanekiItem.java",
+          "src/main/resources/assets/goatowl/models/item/black_reaper_kaneki_boots.json",
+          "src/main/resources/assets/goatowl/models/item/black_reaper_kaneki_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/black_reaper_kaneki_helmet.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/BlackReaper"
+    },
+    {
+      "name": "BlackReaperKanekiCloak",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_reaper_kaneki_cloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/BlackReaperKanekiCloakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/BlackReaper"
+    },
+    {
+      "name": "VsArimaKaneki",
+      "type": "animatedarmor",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vs_arima_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/vs_arima_kaneki_leggings.json",
+          "src/main/java/net/ironedge/goatowl/item/VsArimaKanekiItem.java",
+          "src/main/resources/assets/goatowl/models/item/vs_arima_kaneki_chestplate.json",
+          "src/main/resources/assets/goatowl/models/item/vs_arima_kaneki_boots.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/VsArimaKanekiArmorRenderer.java",
+          "src/main/java/net/ironedge/goatowl/item/model/VsArimaKanekiModel.java"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/VS Arima"
+    },
+    {
+      "name": "VsArimaKanekiExtra",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vs_arima_kaneki_extra",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/VsArimaKanekiExtraProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/VS Arima"
+    },
+    {
+      "name": "ShirtReaperKaneki",
+      "type": "animatedarmor",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shirt_reaper_kaneki",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/goatowl/models/item/shirt_reaper_kaneki_boots.json",
+          "src/main/resources/assets/goatowl/models/item/shirt_reaper_kaneki_leggings.json",
+          "src/main/resources/assets/goatowl/models/item/shirt_reaper_kaneki_helmet.json",
+          "src/main/java/net/ironedge/goatowl/client/renderer/ShirtReaperKanekiArmorRenderer.java",
+          "src/main/java/net/ironedge/goatowl/item/model/ShirtReaperKanekiModel.java",
+          "src/main/java/net/ironedge/goatowl/item/ShirtReaperKanekiItem.java",
+          "src/main/resources/assets/goatowl/models/item/shirt_reaper_kaneki_chestplate.json"
+        ]
+      },
+      "path": "~/Armor/Ghoul/Kaneki/BlackReaper"
     }
   ],
   "variable_elements": [
@@ -1056,50 +1236,62 @@
   },
   "language_map": {
     "en_us": {
-      "item.goatowl.alt_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.vs_arima_kaneki_helmet": "Kaneki\u0027s Mask",
       "item.goatowl.hhhhh_spawn_egg": "Hhhhh Spawn Egg",
       "item.goatowl.default_kaneki_boots": "Kaneki\u0027s Leggings",
+      "item.goatowl.black_reaper_kaneki_chestplate": "Black Reaper\u0027s Coat",
+      "item.goatowl.noro_black_chestplate": "Noro\u0027s Cloak",
+      "item.goatowl.shirt_reaper_kaneki_helmet": "Black Reaper\u0027s Glasses",
       "item.goatowl.test_ayumi": "Ayumi Hogi\u0027s Sword",
-      "item.goatowl.centipede_kaneki_boots": "Kaneki\u0027s Leggings",
       "item.goatowl.aaaaaaaaaaaa_spawn_egg": "aaaaaaaaaaaaa Spawn Egg",
       "item.goatowl.ayato_s_1_chestplate": "Ayato\u0027s Jacket",
-      "item.goatowl.centipede_kaneki_chestplate": "Kaneki\u0027s Shirt",
       "item.goatowl.test_demon_yamada": "Demon Yamada",
-      "item.goatowl.centipede_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "item.goatowl.black_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
+      "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
       "item.goatowl.prisoner_kaneki_boots": "Kaneki\u0027s Leggings",
-      "item.goatowl.test_aus": "Aus",
       "key.goatowl.dash_key": "Dash",
-      "item.goatowl.alt_kaneki_boots": "Kaneki\u0027s Leggings",
-      "item.goatowl.prisoner_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.test_aus": "Aus",
       "item.goatowl.goat_kaneki_leggings": "Kaneki\u0027s Pants",
-      "item.goatowl.alt_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "item.goatowl.prisoner_kaneki_chestplate": "Kaneki\u0027s Shirt",
+      "item.goatowl.aogiri_robes_helmet": "Noro\u0027s Mask",
+      "item.goatowl.vs_arima_kaneki_boots": "Black Reaper\u0027s Leggings",
       "item.goatowl.ayato_s_1_helmet": "Ayato\u0027s Mask",
+      "item.goatowl.vs_arima_kaneki_leggings": "Black Reaper\u0027s Shorts",
+      "item.goatowl.noro_black_helmet": "Noro\u0027s Mask",
+      "item.goatowl.aogiri_robes_leggings": "Aogiri Pants",
+      "item.goatowl.black_reaper_kaneki_helmet": "Black Reaper\u0027s Glasses",
       "block.goatowl.quinque_furnace_test_off": "Quinque Furnace Test",
       "item.goatowl.noro_boots": "Noro\u0027s Loafers",
+      "item.goatowl.shirt_reaper_kaneki_chestplate": "Black Reaper\u0027s Shirt",
       "item.goatowl.test_amatsu": "Amatsu",
       "key.goatowl.ukaku_key": "Sdfs",
+      "item.goatowl.noro_black_boots": "Noro\u0027s Loafers",
       "item.goatowl.ayato_re_helmet": "Ayato\u0027s Mask",
       "entity.goatowl.aaaaaaaaaaaa": "aaaaaaaaaaaaa",
+      "item.goatowl.vs_arima_kaneki_chestplate": "Black Reaper\u0027s Shirt",
       "item.goatowl.test_bokusatsu": "Bokusatsu No.2",
       "item.goatowl.ayato_re_leggings": "Ayato\u0027s Pants",
       "item.goatowl.default_kaneki_chestplate": "Kaneki\u0027s Shirt",
       "item.goatowl.goat_kaneki_chestplate": "Kaneki\u0027s Coat",
       "item.goatowl.goat_kaneki_boots": "Kaneki\u0027s Loafers",
+      "item.goatowl.shirt_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
       "key.goatowl.kakuja_key": "Aadsa",
       "item.goatowl.ayato_re_boots": "Ayato\u0027s Boots",
+      "item.goatowl.noro_black_leggings": "Noro\u0027s Pants",
       "item.goatowl.noro_chestplate": "Noro\u0027s Cloak",
       "item.goatowl.prisoner_kaneki_leggings": "Kaneki\u0027s Shorts",
+      "item.goatowl.aogiri_robes_boots": "Aogiri Loafers",
+      "item.goatowl.shirt_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
       "block.goatowl.quinque_furnace_test_on": "Quinque Furnace Test",
       "item.goatowl.prisoner_kaneki_helmet": "Kaneki\u0027s Collar",
       "item.goatowl.default_kaneki_helmet": "Kaneki\u0027s Mask",
       "item.goatowl.ayato_s_1_leggings": "Ayato\u0027s Pants",
+      "item.goatowl.aogiri_robes_chestplate": "AogiriCloak",
       "item.goatowl.default_kaneki_leggings": "Kaneki\u0027s Shorts",
       "item.goatowl.noro_helmet": "Noro\u0027s Mask",
-      "item.goatowl.centipede_kaneki_helmet": "Collar",
       "item.goatowl.noro_leggings": "Noro\u0027s Pants",
-      "item.goatowl.alt_kaneki_helmet": "Kaneki\u0027s Collar",
       "item.goatowl.ayato_re_chestplate": "Ayato\u0027s Tank",
       "item.goatowl.quinque_steel_item": "Quinque Steel Ingot",
       "entity.goatowl.hhhhh": "Hhhhh",
@@ -1167,10 +1359,6 @@
                     "children": []
                   },
                   {
-                    "name": "Centipede",
-                    "children": []
-                  },
-                  {
                     "name": "VS Arima",
                     "children": []
                   },
@@ -1184,6 +1372,10 @@
                   },
                   {
                     "name": "Alt",
+                    "children": []
+                  },
+                  {
+                    "name": "BlackReaper",
                     "children": []
                   }
                 ]

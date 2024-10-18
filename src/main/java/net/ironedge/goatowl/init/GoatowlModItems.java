@@ -14,21 +14,24 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
+import net.ironedge.goatowl.item.VsArimaKanekiItem;
 import net.ironedge.goatowl.item.TestJuuzouJasonItem;
 import net.ironedge.goatowl.item.TestDemonYamadaItem;
 import net.ironedge.goatowl.item.TestBokusatsuItem;
 import net.ironedge.goatowl.item.TestAyumiItem;
 import net.ironedge.goatowl.item.TestAusItem;
 import net.ironedge.goatowl.item.TestAmatsuItem;
+import net.ironedge.goatowl.item.ShirtReaperKanekiItem;
 import net.ironedge.goatowl.item.QuinqueSteelItemItem;
 import net.ironedge.goatowl.item.PrisonerKanekiItem;
 import net.ironedge.goatowl.item.NoroItem;
+import net.ironedge.goatowl.item.NoroBlackItem;
 import net.ironedge.goatowl.item.GoatKanekiItem;
 import net.ironedge.goatowl.item.DefaultKanekiItem;
-import net.ironedge.goatowl.item.CentipedeKanekiItem;
+import net.ironedge.goatowl.item.BlackReaperKanekiItem;
 import net.ironedge.goatowl.item.AyatoS1Item;
 import net.ironedge.goatowl.item.AyatoReItem;
-import net.ironedge.goatowl.item.AltKanekiItem;
+import net.ironedge.goatowl.item.AogiriRobesItem;
 import net.ironedge.goatowl.GoatowlMod;
 
 public class GoatowlModItems {
@@ -38,12 +41,6 @@ public class GoatowlModItems {
 	public static final RegistryObject<DefaultKanekiItem> DEFAULT_KANEKI_BOOTS = REGISTRY.register("default_kaneki_boots", () -> new DefaultKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<PrisonerKanekiItem> PRISONER_KANEKI_CHESTPLATE = REGISTRY.register("prisoner_kaneki_chestplate", () -> new PrisonerKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<PrisonerKanekiItem> PRISONER_KANEKI_LEGGINGS = REGISTRY.register("prisoner_kaneki_leggings", () -> new PrisonerKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
-	public static final RegistryObject<CentipedeKanekiItem> CENTIPEDE_KANEKI_CHESTPLATE = REGISTRY.register("centipede_kaneki_chestplate", () -> new CentipedeKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-	public static final RegistryObject<CentipedeKanekiItem> CENTIPEDE_KANEKI_LEGGINGS = REGISTRY.register("centipede_kaneki_leggings", () -> new CentipedeKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
-	public static final RegistryObject<CentipedeKanekiItem> CENTIPEDE_KANEKI_BOOTS = REGISTRY.register("centipede_kaneki_boots", () -> new CentipedeKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
-	public static final RegistryObject<AltKanekiItem> ALT_KANEKI_CHESTPLATE = REGISTRY.register("alt_kaneki_chestplate", () -> new AltKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-	public static final RegistryObject<AltKanekiItem> ALT_KANEKI_LEGGINGS = REGISTRY.register("alt_kaneki_leggings", () -> new AltKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
-	public static final RegistryObject<AltKanekiItem> ALT_KANEKI_BOOTS = REGISTRY.register("alt_kaneki_boots", () -> new AltKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 	public static final RegistryObject<GoatKanekiItem> GOAT_KANEKI_HELMET = REGISTRY.register("goat_kaneki_helmet", () -> new GoatKanekiItem(ArmorItem.Type.HELMET, new Item.Properties()));
 	public static final RegistryObject<GoatKanekiItem> GOAT_KANEKI_CHESTPLATE = REGISTRY.register("goat_kaneki_chestplate", () -> new GoatKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<GoatKanekiItem> GOAT_KANEKI_LEGGINGS = REGISTRY.register("goat_kaneki_leggings", () -> new GoatKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
@@ -71,6 +68,24 @@ public class GoatowlModItems {
 	public static final RegistryObject<Item> TEST_DEMON_YAMADA = REGISTRY.register("test_demon_yamada", () -> new TestDemonYamadaItem());
 	public static final RegistryObject<Item> TEST_JUUZOU_JASON = REGISTRY.register("test_juuzou_jason", () -> new TestJuuzouJasonItem());
 	public static final RegistryObject<Item> AAAAAAAAAAAA_SPAWN_EGG = REGISTRY.register("aaaaaaaaaaaa_spawn_egg", () -> new ForgeSpawnEggItem(GoatowlModEntities.AAAAAAAAAAAA, -1, -1, new Item.Properties()));
+	public static final RegistryObject<NoroBlackItem> NORO_BLACK_HELMET = REGISTRY.register("noro_black_helmet", () -> new NoroBlackItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<NoroBlackItem> NORO_BLACK_CHESTPLATE = REGISTRY.register("noro_black_chestplate", () -> new NoroBlackItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<NoroBlackItem> NORO_BLACK_LEGGINGS = REGISTRY.register("noro_black_leggings", () -> new NoroBlackItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<NoroBlackItem> NORO_BLACK_BOOTS = REGISTRY.register("noro_black_boots", () -> new NoroBlackItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<AogiriRobesItem> AOGIRI_ROBES_CHESTPLATE = REGISTRY.register("aogiri_robes_chestplate", () -> new AogiriRobesItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<AogiriRobesItem> AOGIRI_ROBES_LEGGINGS = REGISTRY.register("aogiri_robes_leggings", () -> new AogiriRobesItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<AogiriRobesItem> AOGIRI_ROBES_BOOTS = REGISTRY.register("aogiri_robes_boots", () -> new AogiriRobesItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<BlackReaperKanekiItem> BLACK_REAPER_KANEKI_HELMET = REGISTRY.register("black_reaper_kaneki_helmet", () -> new BlackReaperKanekiItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<BlackReaperKanekiItem> BLACK_REAPER_KANEKI_CHESTPLATE = REGISTRY.register("black_reaper_kaneki_chestplate", () -> new BlackReaperKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<BlackReaperKanekiItem> BLACK_REAPER_KANEKI_LEGGINGS = REGISTRY.register("black_reaper_kaneki_leggings", () -> new BlackReaperKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<BlackReaperKanekiItem> BLACK_REAPER_KANEKI_BOOTS = REGISTRY.register("black_reaper_kaneki_boots", () -> new BlackReaperKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<VsArimaKanekiItem> VS_ARIMA_KANEKI_CHESTPLATE = REGISTRY.register("vs_arima_kaneki_chestplate", () -> new VsArimaKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<VsArimaKanekiItem> VS_ARIMA_KANEKI_LEGGINGS = REGISTRY.register("vs_arima_kaneki_leggings", () -> new VsArimaKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<VsArimaKanekiItem> VS_ARIMA_KANEKI_BOOTS = REGISTRY.register("vs_arima_kaneki_boots", () -> new VsArimaKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_HELMET = REGISTRY.register("shirt_reaper_kaneki_helmet", () -> new ShirtReaperKanekiItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_CHESTPLATE = REGISTRY.register("shirt_reaper_kaneki_chestplate", () -> new ShirtReaperKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_LEGGINGS = REGISTRY.register("shirt_reaper_kaneki_leggings", () -> new ShirtReaperKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_BOOTS = REGISTRY.register("shirt_reaper_kaneki_boots", () -> new ShirtReaperKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

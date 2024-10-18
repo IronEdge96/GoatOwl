@@ -27,12 +27,6 @@ public class GoatowlModTabs {
 			tabData.accept(GoatowlModItems.DEFAULT_KANEKI_CHESTPLATE.get());
 			tabData.accept(GoatowlModItems.DEFAULT_KANEKI_LEGGINGS.get());
 			tabData.accept(GoatowlModItems.DEFAULT_KANEKI_BOOTS.get());
-			tabData.accept(GoatowlModItems.CENTIPEDE_KANEKI_CHESTPLATE.get());
-			tabData.accept(GoatowlModItems.CENTIPEDE_KANEKI_LEGGINGS.get());
-			tabData.accept(GoatowlModItems.CENTIPEDE_KANEKI_BOOTS.get());
-			tabData.accept(GoatowlModItems.ALT_KANEKI_CHESTPLATE.get());
-			tabData.accept(GoatowlModItems.ALT_KANEKI_LEGGINGS.get());
-			tabData.accept(GoatowlModItems.ALT_KANEKI_BOOTS.get());
 			tabData.accept(GoatowlModItems.GOAT_KANEKI_HELMET.get());
 			tabData.accept(GoatowlModItems.GOAT_KANEKI_CHESTPLATE.get());
 			tabData.accept(GoatowlModItems.GOAT_KANEKI_LEGGINGS.get());
@@ -57,6 +51,24 @@ public class GoatowlModTabs {
 			tabData.accept(GoatowlModItems.TEST_BOKUSATSU.get());
 			tabData.accept(GoatowlModItems.TEST_DEMON_YAMADA.get());
 			tabData.accept(GoatowlModItems.TEST_JUUZOU_JASON.get());
+			tabData.accept(GoatowlModItems.NORO_BLACK_HELMET.get());
+			tabData.accept(GoatowlModItems.NORO_BLACK_CHESTPLATE.get());
+			tabData.accept(GoatowlModItems.NORO_BLACK_LEGGINGS.get());
+			tabData.accept(GoatowlModItems.NORO_BLACK_BOOTS.get());
+			tabData.accept(GoatowlModItems.AOGIRI_ROBES_CHESTPLATE.get());
+			tabData.accept(GoatowlModItems.AOGIRI_ROBES_LEGGINGS.get());
+			tabData.accept(GoatowlModItems.AOGIRI_ROBES_BOOTS.get());
+			tabData.accept(GoatowlModItems.BLACK_REAPER_KANEKI_HELMET.get());
+			tabData.accept(GoatowlModItems.BLACK_REAPER_KANEKI_CHESTPLATE.get());
+			tabData.accept(GoatowlModItems.BLACK_REAPER_KANEKI_LEGGINGS.get());
+			tabData.accept(GoatowlModItems.BLACK_REAPER_KANEKI_BOOTS.get());
+			tabData.accept(GoatowlModItems.VS_ARIMA_KANEKI_CHESTPLATE.get());
+			tabData.accept(GoatowlModItems.VS_ARIMA_KANEKI_LEGGINGS.get());
+			tabData.accept(GoatowlModItems.VS_ARIMA_KANEKI_BOOTS.get());
+			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_HELMET.get());
+			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_CHESTPLATE.get());
+			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_LEGGINGS.get());
+			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(GoatowlModItems.HHHHH_SPAWN_EGG.get());
 			tabData.accept(GoatowlModItems.AAAAAAAAAAAA_SPAWN_EGG.get());
