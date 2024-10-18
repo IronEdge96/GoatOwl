@@ -13,10 +13,8 @@ import net.ironedge.goatowl.item.PrisonerKanekiItem;
 import net.ironedge.goatowl.item.NoroItem;
 import net.ironedge.goatowl.item.GoatKanekiItem;
 import net.ironedge.goatowl.item.DefaultKanekiItem;
-import net.ironedge.goatowl.item.CentipedeKanekiItem;
 import net.ironedge.goatowl.item.AyatoS1Item;
 import net.ironedge.goatowl.item.AyatoReItem;
-import net.ironedge.goatowl.item.AltKanekiItem;
 
 @Mod.EventBusSubscriber
 public class ArmorAnimationFactory {

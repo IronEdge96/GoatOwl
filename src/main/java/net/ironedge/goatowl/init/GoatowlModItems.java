@@ -23,13 +23,10 @@ import net.ironedge.goatowl.item.TestAmatsuItem;
 import net.ironedge.goatowl.item.QuinqueSteelItemItem;
 import net.ironedge.goatowl.item.PrisonerKanekiItem;
 import net.ironedge.goatowl.item.NoroItem;
-import net.ironedge.goatowl.item.InsaneAdvItemItem;
 import net.ironedge.goatowl.item.GoatKanekiItem;
 import net.ironedge.goatowl.item.DefaultKanekiItem;
-import net.ironedge.goatowl.item.CentipedeKanekiItem;
 import net.ironedge.goatowl.item.AyatoS1Item;
 import net.ironedge.goatowl.item.AyatoReItem;
-import net.ironedge.goatowl.item.AltKanekiItem;
 import net.ironedge.goatowl.GoatowlMod;
 
 public class GoatowlModItems {
