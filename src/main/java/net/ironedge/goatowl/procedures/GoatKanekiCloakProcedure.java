@@ -20,6 +20,7 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.ironedge.goatowl.init.GoatowlModItems;
+import net.ironedge.goatowl.client.model.Modelgoatoutfittank;
 import net.ironedge.goatowl.client.model.Modelgoatoutfitcloak;
 
 import javax.annotation.Nullable;
@@ -56,14 +57,34 @@ public class GoatKanekiCloakProcedure {
 			emptyRenderer.clearLayers();
 			emptyRenderer.render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 		}
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == GoatowlModItems.GOAT_KANEKI_CHESTPLATE.get()) {
-			if (entity instanceof Player) {
+		if (entity instanceof Player) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == GoatowlModItems.GOAT_KANEKI_CHESTPLATE.get()) {
 				if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 					ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
 					if (ResourceLocation.tryParse("goatowl:textures/entities/goatoutfitcloak.png") != null) {
 						_texture = new ResourceLocation("goatowl:textures/entities/goatoutfitcloak.png");
 					}
 					Modelgoatoutfitcloak newModel = new Modelgoatoutfitcloak(context.bakeLayer(Modelgoatoutfitcloak.LAYER_LOCATION));
+					newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
+					newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
+					newModel.LeftArm.copyFrom(_pr.getModel().leftArm);
+					newModel.RightArm.copyFrom(_pr.getModel().rightArm);
+					newModel.Body.copyFrom(_pr.getModel().body);
+					newModel.Head.copyFrom(_pr.getModel().head);
+					poseStack.pushPose();
+					poseStack.scale(0.9375F, 0.9375F, 0.9375F);
+					new com.kleiders.kleidersplayerrenderer.KleidersPlayerAnimatedRenderer(context, _texture, newModel).render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(),
+							_evt.getMultiBufferSource(), _evt.getPackedLight());
+					poseStack.popPose();
+				}
+			}
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == GoatowlModItems.GOAT_KANEKI_LEGGINGS.get()) {
+				if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
+					ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
+					if (ResourceLocation.tryParse("goatowl:textures/entities/goatoutfittank.png") != null) {
+						_texture = new ResourceLocation("goatowl:textures/entities/goatoutfittank.png");
+					}
+					Modelgoatoutfittank newModel = new Modelgoatoutfittank(context.bakeLayer(Modelgoatoutfittank.LAYER_LOCATION));
 					newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
 					newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
 					newModel.LeftArm.copyFrom(_pr.getModel().leftArm);

@@ -15,8 +15,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.ironedge.goatowl.network.UkakuKeyMessage;
 import net.ironedge.goatowl.network.RinkakuKeyMessage;
 import net.ironedge.goatowl.network.KakujaKeyMessage;
+import net.ironedge.goatowl.network.DashKeyMessage;
 import net.ironedge.goatowl.GoatowlMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -47,11 +49,39 @@ public class GoatowlModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping UKAKU_KEY = new KeyMapping("key.goatowl.ukaku_key", GLFW.GLFW_KEY_U, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				GoatowlMod.PACKET_HANDLER.sendToServer(new UkakuKeyMessage(0, 0));
+				UkakuKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping DASH_KEY = new KeyMapping("key.goatowl.dash_key", GLFW.GLFW_KEY_LEFT_CONTROL, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				GoatowlMod.PACKET_HANDLER.sendToServer(new DashKeyMessage(0, 0));
+				DashKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(RINKAKU_KEY);
 		event.register(KAKUJA_KEY);
+		event.register(UKAKU_KEY);
+		event.register(DASH_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -61,6 +91,8 @@ public class GoatowlModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				RINKAKU_KEY.consumeClick();
 				KAKUJA_KEY.consumeClick();
+				UKAKU_KEY.consumeClick();
+				DASH_KEY.consumeClick();
 			}
 		}
 	}

@@ -14,6 +14,7 @@ import net.ironedge.goatowl.client.model.Modelnorooutfitcloak;
 import net.ironedge.goatowl.client.model.Modelkanekirinkakutestalt;
 import net.ironedge.goatowl.client.model.Modelkanekioutfitonsie;
 import net.ironedge.goatowl.client.model.Modelkanekioutfitcollar;
+import net.ironedge.goatowl.client.model.Modelgoatoutfittank;
 import net.ironedge.goatowl.client.model.Modelgoatoutfitcloak;
 import net.ironedge.goatowl.client.model.Modelblackreaperoutfitcloak;
 import net.ironedge.goatowl.client.model.Modelayatotestukaku;
@@ -31,6 +32,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelaogirirobescloak.LAYER_LOCATION, Modelaogirirobescloak::createBodyLayer);
 		event.registerLayerDefinition(Modelnorooutfitcloak.LAYER_LOCATION, Modelnorooutfitcloak::createBodyLayer);
 		event.registerLayerDefinition(Modelayatotestukaku.LAYER_LOCATION, Modelayatotestukaku::createBodyLayer);
+		event.registerLayerDefinition(Modelgoatoutfittank.LAYER_LOCATION, Modelgoatoutfittank::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakutestalt.LAYER_LOCATION, Modelkanekirinkakutestalt::createBodyLayer);
 		event.registerLayerDefinition(Modelaogirirobeshood.LAYER_LOCATION, Modelaogirirobeshood::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekioutfitonsie.LAYER_LOCATION, Modelkanekioutfitonsie::createBodyLayer);
