@@ -32,6 +32,11 @@ public class GoatowlModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				GoatowlMod.PACKET_HANDLER.sendToServer(new RinkakuKeyMessage(0, 0));
 				RinkakuKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				RINKAKU_KEY_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - RINKAKU_KEY_LASTPRESS);
+				GoatowlMod.PACKET_HANDLER.sendToServer(new RinkakuKeyMessage(1, dt));
+				RinkakuKeyMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
@@ -75,6 +80,7 @@ public class GoatowlModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	private static long RINKAKU_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {

@@ -26,72 +26,64 @@ public class DashProcedure {
 			}
 		}
 		if (entity instanceof Player) {
-			if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Moving) {
-				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).JustDashed == false) {
+			if (!entity.isInWater()) {
+				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Moving) {
 					if (-2 < entity.getDeltaMovement().x() * 12 && -2 < entity.getDeltaMovement().z() * 12 && 2 > entity.getDeltaMovement().x() * 12 && 2 > entity.getDeltaMovement().z() * 12) {
 						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 12), (-1000), (entity.getDeltaMovement().z() * 12)));
 						GoatowlMod.LOGGER.info(entity.getDeltaMovement().x());
 						GoatowlMod.LOGGER.info(entity.getDeltaMovement().z());
 					}
 				} else {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.no")), SoundSource.NEUTRAL, 100, 100);
+					if (world.isEmptyBlock(BlockPos.containing(x, y, z))) {
+						if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).AirDashCooldown == false) {
+							entity.setDeltaMovement(new Vec3((-(entity.getDeltaMovement().x() + entity.getLookAngle().x * 1.5)), 1.5, (-(entity.getDeltaMovement().z() + entity.getLookAngle().z * 1.5))));
+							{
+								boolean _setval = true;
+								entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.AirDashCooldown = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
+							{
+								boolean _setval = true;
+								entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.JustDashed = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.no")), SoundSource.NEUTRAL, 100, 100, false);
-						}
-					}
-				}
-			} else {
-				if (world.isEmptyBlock(BlockPos.containing(x, y, z))) {
-					if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).AirDashCooldown == false) {
-						entity.setDeltaMovement(new Vec3((-(entity.getDeltaMovement().x() + entity.getLookAngle().x * 1.5)), 1.5, (-(entity.getDeltaMovement().z() + entity.getLookAngle().z * 1.5))));
-						{
-							boolean _setval = true;
-							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.AirDashCooldown = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-						{
-							boolean _setval = true;
-							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.JustDashed = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-					} else {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100, false);
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100, false);
+								}
 							}
 						}
-					}
-				} else {
-					if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).DashCooldown == false) {
-						entity.setDeltaMovement(new Vec3((-(entity.getDeltaMovement().x() + entity.getLookAngle().x * 0.69)), 0.69, (-(entity.getDeltaMovement().z() + entity.getLookAngle().z * 0.69))));
-						{
-							boolean _setval = true;
-							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.DashCooldown = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-						{
-							boolean _setval = true;
-							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.JustDashed = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
 					} else {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100);
-							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100, false);
+						if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).DashCooldown == false) {
+							entity.setDeltaMovement(new Vec3((-(entity.getDeltaMovement().x() + entity.getLookAngle().x * 0.69)), 0.69, (-(entity.getDeltaMovement().z() + entity.getLookAngle().z * 0.69))));
+							{
+								boolean _setval = true;
+								entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.DashCooldown = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
+							{
+								boolean _setval = true;
+								entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.JustDashed = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
+						} else {
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100, false);
+								}
 							}
 						}
 					}

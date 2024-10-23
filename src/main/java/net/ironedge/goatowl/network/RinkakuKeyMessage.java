@@ -11,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.ironedge.goatowl.procedures.RinkakuKeyPressedProcedure;
+import net.ironedge.goatowl.procedures.RinkakuKeyOnKeyReleasedProcedure;
 import net.ironedge.goatowl.GoatowlMod;
 
 import java.util.function.Supplier;
@@ -53,6 +54,10 @@ public class RinkakuKeyMessage {
 		if (type == 0) {
 
 			RinkakuKeyPressedProcedure.execute(world, x, y, z, entity);
+		}
+		if (type == 1) {
+
+			RinkakuKeyOnKeyReleasedProcedure.execute(entity);
 		}
 	}
 

@@ -17,7 +17,7 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.ironedge.goatowl.network.GoatowlModVariables;
-import net.ironedge.goatowl.client.model.Modelkanekirinkakutestalt;
+import net.ironedge.goatowl.client.model.Modelrizerinkaku;
 
 import javax.annotation.Nullable;
 
@@ -56,10 +56,10 @@ public class TestRinkakuProcedure {
 		if (entity instanceof Player && (entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuSpawned) {
 			if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 				ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-				if (ResourceLocation.tryParse("goatowl:textures/entities/kanekirinkakutest.png") != null) {
-					_texture = new ResourceLocation("goatowl:textures/entities/kanekirinkakutest.png");
+				if (ResourceLocation.tryParse("goatowl:textures/entities/rizerinkaku.png") != null) {
+					_texture = new ResourceLocation("goatowl:textures/entities/rizerinkaku.png");
 				}
-				Modelkanekirinkakutestalt newModel = new Modelkanekirinkakutestalt(context.bakeLayer(Modelkanekirinkakutestalt.LAYER_LOCATION));
+				Modelrizerinkaku newModel = new Modelrizerinkaku(context.bakeLayer(Modelrizerinkaku.LAYER_LOCATION));
 				newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
 				newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
 				newModel.LeftArm.copyFrom(_pr.getModel().leftArm);

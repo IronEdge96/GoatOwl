@@ -11,7 +11,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.AnimationState;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
@@ -20,20 +19,6 @@ import net.ironedge.goatowl.init.GoatowlModEntities;
 public class HhhhhEntity extends Monster {
 	public HhhhhEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(GoatowlModEntities.HHHHH.get(), world);
-	}
-
-	private AnimationState idleAnimationState = new AnimationState();
-
-	@Override
-	public void tick() {
-		super.tick();
-		if (this.level().isClientSide()) {
-			setupAnimationStates();
-		}
-	}
-
-	private void setupAnimationStates() {
-		this.idleAnimationState.start(this.tickCount);
 	}
 
 	public HhhhhEntity(EntityType<HhhhhEntity> type, Level world) {

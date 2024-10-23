@@ -523,7 +523,7 @@
       "type": "livingentity",
       "sortid": 64,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "hhhhh",
       "metadata": {
         "files": [
@@ -1107,6 +1107,180 @@
         ]
       },
       "path": "~/Armor/Ghoul/Kaneki/BlackReaper"
+    },
+    {
+      "name": "RizeRinkakuAnimation",
+      "type": "code",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rize_rinkaku_animation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/RizeRinkakuAnimation.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku"
+    },
+    {
+      "name": "AnimationInterface",
+      "type": "code",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "animation_interface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/AnimationInterface.java"
+        ]
+      },
+      "path": "~/Ghouls"
+    },
+    {
+      "name": "ModelAnimations",
+      "type": "mixin",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "model_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/mixins/ModelAnimationsMixin.java"
+        ]
+      },
+      "path": "~/Ghouls"
+    },
+    {
+      "name": "RaceJoinedWorld",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_joined_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RaceJoinedWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Core/Races"
+    },
+    {
+      "name": "TestRCGui",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_rc_gui",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/TestRCGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Core/Core UIs and Overlays"
+    },
+    {
+      "name": "TestMaxRCGui",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_max_rc_gui",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/TestMaxRCGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Core/Core UIs and Overlays"
+    },
+    {
+      "name": "TestRCOverlay",
+      "type": "overlay",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_rc_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/client/screens/TestRCOverlayOverlay.java"
+        ]
+      },
+      "path": "~/General/Systems/Core/Core UIs and Overlays"
+    },
+    {
+      "name": "RCStatSet",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rc_stat_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RCStatSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/General/Systems/Core/Races"
+    },
+    {
+      "name": "RinkakuKeyOnKeyReleased",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rinkaku_key_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RinkakuKeyOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku"
     }
   ],
   "variable_elements": [
@@ -1147,12 +1321,6 @@
       "value": "false"
     },
     {
-      "name": "StrengthTest",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "1.0"
-    },
-    {
       "name": "DashCooldown",
       "type": "logic",
       "scope": "player_persistent",
@@ -1168,6 +1336,36 @@
       "name": "JustDashed",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "JoinedWorld",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RcCells",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "MaxRcCells",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Race",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "RinkakuGUI",
+      "type": "logic",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -1248,6 +1446,7 @@
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.black_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
+      "gui.goatowl.test_rc_overlay.label_empty": "/",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
       "item.goatowl.prisoner_kaneki_boots": "Kaneki\u0027s Leggings",
@@ -1316,7 +1515,12 @@
           },
           {
             "name": "Rinkaku",
-            "children": []
+            "children": [
+              {
+                "name": "RinkakuGUIS",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Bikaku",
@@ -1424,6 +1628,10 @@
                   },
                   {
                     "name": "Races",
+                    "children": []
+                  },
+                  {
+                    "name": "Core UIs and Overlays",
                     "children": []
                   }
                 ]

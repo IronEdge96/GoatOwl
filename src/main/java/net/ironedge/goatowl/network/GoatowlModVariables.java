@@ -76,10 +76,12 @@ public class GoatowlModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.StrengthTest = original.StrengthTest;
 			clone.DashCooldown = original.DashCooldown;
 			clone.AirDashCooldown = original.AirDashCooldown;
 			clone.JustDashed = original.JustDashed;
+			clone.JoinedWorld = original.JoinedWorld;
+			clone.MaxRcCells = original.MaxRcCells;
+			clone.Race = original.Race;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
@@ -87,6 +89,8 @@ public class GoatowlModVariables {
 				clone.ZPos = original.ZPos;
 				clone.Moving = original.Moving;
 				clone.UkakuSpawned = original.UkakuSpawned;
+				clone.RcCells = original.RcCells;
+				clone.RinkakuGUI = original.RinkakuGUI;
 			}
 			if (!event.getEntity().level().isClientSide()) {
 				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
@@ -133,10 +137,14 @@ public class GoatowlModVariables {
 		public double ZPos = 0;
 		public boolean Moving = false;
 		public boolean UkakuSpawned = false;
-		public double StrengthTest = 1.0;
 		public boolean DashCooldown = false;
 		public boolean AirDashCooldown = false;
 		public boolean JustDashed = false;
+		public boolean JoinedWorld = false;
+		public double RcCells = 0;
+		public double MaxRcCells = 0;
+		public String Race = "\"\"";
+		public boolean RinkakuGUI = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -151,10 +159,14 @@ public class GoatowlModVariables {
 			nbt.putDouble("ZPos", ZPos);
 			nbt.putBoolean("Moving", Moving);
 			nbt.putBoolean("UkakuSpawned", UkakuSpawned);
-			nbt.putDouble("StrengthTest", StrengthTest);
 			nbt.putBoolean("DashCooldown", DashCooldown);
 			nbt.putBoolean("AirDashCooldown", AirDashCooldown);
 			nbt.putBoolean("JustDashed", JustDashed);
+			nbt.putBoolean("JoinedWorld", JoinedWorld);
+			nbt.putDouble("RcCells", RcCells);
+			nbt.putDouble("MaxRcCells", MaxRcCells);
+			nbt.putString("Race", Race);
+			nbt.putBoolean("RinkakuGUI", RinkakuGUI);
 			return nbt;
 		}
 
@@ -166,10 +178,14 @@ public class GoatowlModVariables {
 			ZPos = nbt.getDouble("ZPos");
 			Moving = nbt.getBoolean("Moving");
 			UkakuSpawned = nbt.getBoolean("UkakuSpawned");
-			StrengthTest = nbt.getDouble("StrengthTest");
 			DashCooldown = nbt.getBoolean("DashCooldown");
 			AirDashCooldown = nbt.getBoolean("AirDashCooldown");
 			JustDashed = nbt.getBoolean("JustDashed");
+			JoinedWorld = nbt.getBoolean("JoinedWorld");
+			RcCells = nbt.getDouble("RcCells");
+			MaxRcCells = nbt.getDouble("MaxRcCells");
+			Race = nbt.getString("Race");
+			RinkakuGUI = nbt.getBoolean("RinkakuGUI");
 		}
 	}
 
@@ -209,10 +225,14 @@ public class GoatowlModVariables {
 					variables.ZPos = message.data.ZPos;
 					variables.Moving = message.data.Moving;
 					variables.UkakuSpawned = message.data.UkakuSpawned;
-					variables.StrengthTest = message.data.StrengthTest;
 					variables.DashCooldown = message.data.DashCooldown;
 					variables.AirDashCooldown = message.data.AirDashCooldown;
 					variables.JustDashed = message.data.JustDashed;
+					variables.JoinedWorld = message.data.JoinedWorld;
+					variables.RcCells = message.data.RcCells;
+					variables.MaxRcCells = message.data.MaxRcCells;
+					variables.Race = message.data.Race;
+					variables.RinkakuGUI = message.data.RinkakuGUI;
 				}
 			});
 			context.setPacketHandled(true);

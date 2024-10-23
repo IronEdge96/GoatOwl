@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Hhhhh",
     "mobLabel": "",
-    "mobModelName": "Modelkanekirinkakutestalt",
-    "mobModelTexture": "kanekirinkakutest.png",
+    "mobModelName": "Modelrizerinkaku",
+    "mobModelTexture": "rizerinkaku.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
