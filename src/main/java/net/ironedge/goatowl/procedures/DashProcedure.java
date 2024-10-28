@@ -26,7 +26,7 @@ public class DashProcedure {
 			}
 		}
 		if (entity instanceof Player) {
-			if (!entity.isInWater()) {
+			if (!entity.isInWater() && !(entity instanceof Player player && player.getAbilities().flying)) {
 				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Moving) {
 					if (-2 < entity.getDeltaMovement().x() * 12 && -2 < entity.getDeltaMovement().z() * 12 && 2 > entity.getDeltaMovement().x() * 12 && 2 > entity.getDeltaMovement().z() * 12) {
 						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 12), (-1000), (entity.getDeltaMovement().z() * 12)));

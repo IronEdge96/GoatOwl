@@ -18,6 +18,10 @@ import net.ironedge.goatowl.AnimationInterface;
 public abstract class ModelAnimationsMixin extends LivingEntity implements AnimationInterface {
 	@Unique
 	private AnimationState rizeidlefourAnimationState = new AnimationState();
+	@Unique
+	private AnimationState rizeidlethreeAnimationState = new AnimationState();
+	@Unique
+	private AnimationState rizeidlesixAnimationState = new AnimationState();
 
 	protected ModelAnimationsMixin(EntityType<? extends LivingEntity> pEntityType, Level pLevel) {
 		super(pEntityType, pLevel);
@@ -27,6 +31,8 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	public void tick(CallbackInfo ci) {
 		if (this.level().isClientSide) {
 			rizeidlefourAnimationState.startIfStopped(this.tickCount);
+			rizeidlethreeAnimationState.startIfStopped(this.tickCount);
+			rizeidlesixAnimationState.startIfStopped(this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(!this.isFreezing(), this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(this.isFreezing(), this.tickCount); 
 		}
@@ -36,5 +42,17 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	@Unique
 	public AnimationState getRizeIdleFourAnimationState() {
 		return rizeidlefourAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getRizeIdleThreeAnimationState() {
+		return rizeidlethreeAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getRizeIdleSixAnimationState() {
+		return rizeidlesixAnimationState;
 	}
 }

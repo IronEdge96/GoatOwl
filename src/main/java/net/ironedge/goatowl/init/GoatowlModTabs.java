@@ -69,6 +69,10 @@ public class GoatowlModTabs {
 			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_CHESTPLATE.get());
 			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_LEGGINGS.get());
 			tabData.accept(GoatowlModItems.SHIRT_REAPER_KANEKI_BOOTS.get());
+			tabData.accept(GoatowlModItems.RACE_TEST_ITEM.get());
+			tabData.accept(GoatowlModItems.KAKAHOU_TESTER_ITEM.get());
+			tabData.accept(GoatowlModItems.RC_LEVEL_TESTER.get());
+			tabData.accept(GoatowlModItems.TEST_KAKUGAN.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(GoatowlModItems.HHHHH_SPAWN_EGG.get());
 			tabData.accept(GoatowlModItems.AAAAAAAAAAAA_SPAWN_EGG.get());

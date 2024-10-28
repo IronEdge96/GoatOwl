@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
 import net.ironedge.goatowl.item.VsArimaKanekiItem;
+import net.ironedge.goatowl.item.TestKakuganItem;
 import net.ironedge.goatowl.item.TestJuuzouJasonItem;
 import net.ironedge.goatowl.item.TestDemonYamadaItem;
 import net.ironedge.goatowl.item.TestBokusatsuItem;
@@ -22,10 +23,13 @@ import net.ironedge.goatowl.item.TestAyumiItem;
 import net.ironedge.goatowl.item.TestAusItem;
 import net.ironedge.goatowl.item.TestAmatsuItem;
 import net.ironedge.goatowl.item.ShirtReaperKanekiItem;
+import net.ironedge.goatowl.item.RaceTestItemItem;
+import net.ironedge.goatowl.item.RCLevelTesterItem;
 import net.ironedge.goatowl.item.QuinqueSteelItemItem;
 import net.ironedge.goatowl.item.PrisonerKanekiItem;
 import net.ironedge.goatowl.item.NoroItem;
 import net.ironedge.goatowl.item.NoroBlackItem;
+import net.ironedge.goatowl.item.KakahouTesterItemItem;
 import net.ironedge.goatowl.item.GoatKanekiItem;
 import net.ironedge.goatowl.item.DefaultKanekiItem;
 import net.ironedge.goatowl.item.BlackReaperKanekiItem;
@@ -86,6 +90,10 @@ public class GoatowlModItems {
 	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_CHESTPLATE = REGISTRY.register("shirt_reaper_kaneki_chestplate", () -> new ShirtReaperKanekiItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_LEGGINGS = REGISTRY.register("shirt_reaper_kaneki_leggings", () -> new ShirtReaperKanekiItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<ShirtReaperKanekiItem> SHIRT_REAPER_KANEKI_BOOTS = REGISTRY.register("shirt_reaper_kaneki_boots", () -> new ShirtReaperKanekiItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<Item> RACE_TEST_ITEM = REGISTRY.register("race_test_item", () -> new RaceTestItemItem());
+	public static final RegistryObject<Item> KAKAHOU_TESTER_ITEM = REGISTRY.register("kakahou_tester_item", () -> new KakahouTesterItemItem());
+	public static final RegistryObject<Item> RC_LEVEL_TESTER = REGISTRY.register("rc_level_tester", () -> new RCLevelTesterItem());
+	public static final RegistryObject<Item> TEST_KAKUGAN = REGISTRY.register("test_kakugan", () -> new TestKakuganItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

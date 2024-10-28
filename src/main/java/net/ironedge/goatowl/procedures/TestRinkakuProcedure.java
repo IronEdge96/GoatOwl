@@ -10,6 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
@@ -17,6 +18,8 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.ironedge.goatowl.network.GoatowlModVariables;
+import net.ironedge.goatowl.client.model.Modelrizerinkakuthree;
+import net.ironedge.goatowl.client.model.Modelrizerinkakusix;
 import net.ironedge.goatowl.client.model.Modelrizerinkaku;
 
 import javax.annotation.Nullable;
@@ -53,25 +56,95 @@ public class TestRinkakuProcedure {
 			emptyRenderer.clearLayers();
 			emptyRenderer.render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 		}
-		if (entity instanceof Player && (entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuSpawned) {
-			if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
-				ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-				if (ResourceLocation.tryParse("goatowl:textures/entities/rizerinkaku.png") != null) {
-					_texture = new ResourceLocation("goatowl:textures/entities/rizerinkaku.png");
+		if (entity instanceof Player && (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakahou).equals("Rinkaku")
+				|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ChimeraKakhou1).equals("Rinkaku")
+				|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ChimeraKakahou2).equals("Rinkaku")
+				|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ChimeraKakahou3).equals("Rinkaku"))) {
+			if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RcCells > 0 && !entity.isSwimming() && !entity.isUnderWater()) {
+				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuSpawned) {
+					if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Rinkaku).equals("Rize")) {
+						if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Base")) {
+							if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
+								ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
+								if (ResourceLocation.tryParse("goatowl:textures/entities/rizerinkaku.png") != null) {
+									_texture = new ResourceLocation("goatowl:textures/entities/rizerinkaku.png");
+								}
+								Modelrizerinkaku newModel = new Modelrizerinkaku(context.bakeLayer(Modelrizerinkaku.LAYER_LOCATION));
+								newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
+								newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
+								newModel.LeftArm.copyFrom(_pr.getModel().leftArm);
+								newModel.RightArm.copyFrom(_pr.getModel().rightArm);
+								newModel.Body.copyFrom(_pr.getModel().body);
+								newModel.Head.copyFrom(_pr.getModel().head);
+								poseStack.pushPose();
+								poseStack.scale(0.9375F, 0.9375F, 0.9375F);
+								new com.kleiders.kleidersplayerrenderer.KleidersPlayerAnimatedRenderer(context, _texture, newModel).render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(),
+										_evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
+								poseStack.popPose();
+							}
+						} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Three")) {
+							if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
+								ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
+								if (ResourceLocation.tryParse("goatowl:textures/entities/rizerinkaku.png") != null) {
+									_texture = new ResourceLocation("goatowl:textures/entities/rizerinkaku.png");
+								}
+								Modelrizerinkakuthree newModel = new Modelrizerinkakuthree(context.bakeLayer(Modelrizerinkakuthree.LAYER_LOCATION));
+								newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
+								newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
+								newModel.LeftArm.copyFrom(_pr.getModel().leftArm);
+								newModel.RightArm.copyFrom(_pr.getModel().rightArm);
+								newModel.Body.copyFrom(_pr.getModel().body);
+								newModel.Head.copyFrom(_pr.getModel().head);
+								poseStack.pushPose();
+								poseStack.scale(0.9375F, 0.9375F, 0.9375F);
+								new com.kleiders.kleidersplayerrenderer.KleidersPlayerAnimatedRenderer(context, _texture, newModel).render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(),
+										_evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
+								poseStack.popPose();
+							}
+						} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Six")) {
+							if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
+								ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
+								if (ResourceLocation.tryParse("goatowl:textures/entities/rizerinkaku.png") != null) {
+									_texture = new ResourceLocation("goatowl:textures/entities/rizerinkaku.png");
+								}
+								Modelrizerinkakusix newModel = new Modelrizerinkakusix(context.bakeLayer(Modelrizerinkakusix.LAYER_LOCATION));
+								newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
+								newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
+								newModel.LeftArm.copyFrom(_pr.getModel().leftArm);
+								newModel.RightArm.copyFrom(_pr.getModel().rightArm);
+								newModel.Body.copyFrom(_pr.getModel().body);
+								newModel.Head.copyFrom(_pr.getModel().head);
+								poseStack.pushPose();
+								poseStack.scale(0.9375F, 0.9375F, 0.9375F);
+								new com.kleiders.kleidersplayerrenderer.KleidersPlayerAnimatedRenderer(context, _texture, newModel).render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(),
+										_evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
+								poseStack.popPose();
+							}
+						}
+					} else {
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal("Broken"), false);
+					}
 				}
-				Modelrizerinkaku newModel = new Modelrizerinkaku(context.bakeLayer(Modelrizerinkaku.LAYER_LOCATION));
-				newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
-				newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
-				newModel.LeftArm.copyFrom(_pr.getModel().leftArm);
-				newModel.RightArm.copyFrom(_pr.getModel().rightArm);
-				newModel.Body.copyFrom(_pr.getModel().body);
-				newModel.Head.copyFrom(_pr.getModel().head);
-				poseStack.pushPose();
-				poseStack.scale(0.9375F, 0.9375F, 0.9375F);
-				new com.kleiders.kleidersplayerrenderer.KleidersPlayerAnimatedRenderer(context, _texture, newModel).render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(),
-						_evt.getMultiBufferSource(), _evt.getPackedLight());
-				poseStack.popPose();
+			} else {
+				{
+					boolean _setval = false;
+					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.RinkakuSpawned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					double _setval = (entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ActiveKagune - 1;
+					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ActiveKagune = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
+		} else {
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("You don't have a Rinkaku"), false);
 		}
 	}
 }

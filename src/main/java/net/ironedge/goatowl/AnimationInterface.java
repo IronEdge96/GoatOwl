@@ -21,4 +21,8 @@ import net.minecraft.world.entity.AnimationState;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public interface AnimationInterface {
 	AnimationState getRizeIdleFourAnimationState();
+
+	AnimationState getRizeIdleThreeAnimationState();
+
+	AnimationState getRizeIdleSixAnimationState();
 }

@@ -1,0 +1,97 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_random",
+          "text": "Random",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RCStatSet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 186,
+          "y": 166
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_50",
+          "text": "50",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RCTester50"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 197,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_200",
+          "text": "200",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RCTester200"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 194,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_500",
+          "text": "500",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RCTester500"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 194,
+          "y": 109
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_750",
+          "text": "750",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RCTester750"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 194,
+          "y": 138
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

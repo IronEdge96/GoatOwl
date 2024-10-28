@@ -1,0 +1,61 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rizerinkakuform3",
+          "image": "rizerinkakuform3.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Rize3Button"
+          },
+          "x": 150,
+          "y": 134
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rizerinkakuform4",
+          "image": "rizerinkakuform4.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Rize4Button"
+          },
+          "x": 195,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rizerinkakuform6",
+          "image": "rizerinkakuform6.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "Rize6Button"
+          },
+          "x": 249,
+          "y": 134
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
