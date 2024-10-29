@@ -68,8 +68,8 @@ public class KakuganONProcedure {
 					if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Both")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 							}
 							Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -86,8 +86,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 							}
 							Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -105,8 +105,8 @@ public class KakuganONProcedure {
 					} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Left")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 							}
 							Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -124,8 +124,8 @@ public class KakuganONProcedure {
 					} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Right")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 							}
 							Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -148,8 +148,8 @@ public class KakuganONProcedure {
 					if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Both")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 							}
 							Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -166,8 +166,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganface.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganface.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfaceleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfaceleft.png");
 							}
 							Modelkakuganfaceleft newModel = new Modelkakuganfaceleft(context.bakeLayer(Modelkakuganfaceleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -184,8 +184,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 							}
 							Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -202,8 +202,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganface.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganface.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfaceright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfaceright.png");
 							}
 							Modelkakuganfaceright newModel = new Modelkakuganfaceright(context.bakeLayer(Modelkakuganfaceright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -221,8 +221,8 @@ public class KakuganONProcedure {
 					} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Left")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 							}
 							Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -239,8 +239,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganface.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganface.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfaceleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfaceleft.png");
 							}
 							Modelkakuganfaceleft newModel = new Modelkakuganfaceleft(context.bakeLayer(Modelkakuganfaceleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -258,8 +258,8 @@ public class KakuganONProcedure {
 					} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Right")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 							}
 							Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -276,8 +276,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganface.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganface.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfaceright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfaceright.png");
 							}
 							Modelkakuganfaceright newModel = new Modelkakuganfaceright(context.bakeLayer(Modelkakuganfaceright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -298,8 +298,8 @@ public class KakuganONProcedure {
 					if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Both")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 							}
 							Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -316,8 +316,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarleft.png");
 							}
 							Modelkakuganfaceleft newModel = new Modelkakuganfaceleft(context.bakeLayer(Modelkakuganfaceleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -334,8 +334,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 							}
 							Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -352,8 +352,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarright.png");
 							}
 							Modelkakuganfaceright newModel = new Modelkakuganfaceright(context.bakeLayer(Modelkakuganfaceright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -371,8 +371,8 @@ public class KakuganONProcedure {
 					} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Left")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 							}
 							Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -389,8 +389,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarleft.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarleft.png");
 							}
 							Modelkakuganfaceleft newModel = new Modelkakuganfaceleft(context.bakeLayer(Modelkakuganfaceleft.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -408,8 +408,8 @@ public class KakuganONProcedure {
 					} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Right")) {
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 							}
 							Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -426,8 +426,8 @@ public class KakuganONProcedure {
 						}
 						if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 							ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+							if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarright.png") != null) {
+								_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarright.png");
 							}
 							Modelkakuganfaceright newModel = new Modelkakuganfaceright(context.bakeLayer(Modelkakuganfaceright.LAYER_LOCATION));
 							newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -449,8 +449,8 @@ public class KakuganONProcedure {
 				if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Both")) {
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 						}
 						Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -467,8 +467,8 @@ public class KakuganONProcedure {
 					}
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarleft.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarleft.png");
 						}
 						Modelkakuganfaceleft newModel = new Modelkakuganfaceleft(context.bakeLayer(Modelkakuganfaceleft.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -485,8 +485,8 @@ public class KakuganONProcedure {
 					}
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 						}
 						Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -503,8 +503,8 @@ public class KakuganONProcedure {
 					}
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarright.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarright.png");
 						}
 						Modelkakuganfaceright newModel = new Modelkakuganfaceright(context.bakeLayer(Modelkakuganfaceright.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -522,8 +522,8 @@ public class KakuganONProcedure {
 				} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Left")) {
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganleft.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganleft.png");
 						}
 						Modelkakuganleft newModel = new Modelkakuganleft(context.bakeLayer(Modelkakuganleft.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -540,8 +540,8 @@ public class KakuganONProcedure {
 					}
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarleft.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarleft.png");
 						}
 						Modelkakuganfaceleft newModel = new Modelkakuganfaceleft(context.bakeLayer(Modelkakuganfaceleft.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -559,8 +559,8 @@ public class KakuganONProcedure {
 				} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan).equals("Right")) {
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakugan.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakugan.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganright.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganright.png");
 						}
 						Modelkakuganright newModel = new Modelkakuganright(context.bakeLayer(Modelkakuganright.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -577,8 +577,8 @@ public class KakuganONProcedure {
 					}
 					if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 						ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefar.png") != null) {
-							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefar.png");
+						if (ResourceLocation.tryParse("goatowl:textures/entities/kakuganfacefarright.png") != null) {
+							_texture = new ResourceLocation("goatowl:textures/entities/kakuganfacefarright.png");
 						}
 						Modelkakuganfaceright newModel = new Modelkakuganfaceright(context.bakeLayer(Modelkakuganfaceright.LAYER_LOCATION));
 						newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
@@ -593,6 +593,27 @@ public class KakuganONProcedure {
 								_evt.getMultiBufferSource(), _evt.getPackedLight());
 						poseStack.popPose();
 					}
+				}
+				{
+					double _setval = 0;
+					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.ActiveKagune = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.RinkakuSpawned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.UkakuSpawned = _setval;
+						capability.syncPlayerVariables(entity);
+					});
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 1, 1));

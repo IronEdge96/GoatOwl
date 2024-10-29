@@ -29,7 +29,7 @@
         "type": "button",
         "data": {
           "name": "button_50",
-          "text": "580",
+          "text": "850",
           "isUndecorated": false,
           "onClick": {
             "name": "RCTester850"

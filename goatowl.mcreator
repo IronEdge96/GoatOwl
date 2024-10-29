@@ -1807,6 +1807,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2437,6 +2453,12 @@
       "type": "string",
       "scope": "player_lifetime",
       "value": "\"\""
+    },
+    {
+      "name": "Styling",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Default"
     }
   ],
   "sound_elements": [],
@@ -2510,8 +2532,8 @@
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.kakahou_tester_item": "Kakahou Tester Item",
       "item.goatowl.black_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
-      "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
+      "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.test_kakugan": "Test Kakugan Item",
       "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
@@ -2530,9 +2552,9 @@
       "gui.goatowl.ghoul_rc_tester.button_random": "Random",
       "item.goatowl.goat_kaneki_boots": "Kaneki\u0027s Loafers",
       "item.goatowl.shirt_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
-      "gui.goatowl.half_ghoul_rc_tester.button_50": "580",
-      "gui.goatowl.half_human_rc_tester.button_750": "750",
+      "gui.goatowl.half_ghoul_rc_tester.button_50": "850",
       "item.goatowl.ayato_re_boots": "Ayato\u0027s Boots",
+      "gui.goatowl.half_human_rc_tester.button_750": "750",
       "item.goatowl.noro_black_leggings": "Noro\u0027s Pants",
       "item.goatowl.prisoner_kaneki_leggings": "Kaneki\u0027s Shorts",
       "gui.goatowl.chimera_select.button_ukaku": "Ukaku",

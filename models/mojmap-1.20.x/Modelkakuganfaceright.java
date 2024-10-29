@@ -27,10 +27,8 @@ public class Modelkakuganfaceright<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition Head = partdefinition.addOrReplaceChild("Head",
-				CubeListBuilder.create().texOffs(0, 0).mirror()
-						.addBox(-1.5F, -1.0F, -0.5F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.35F)).mirror(false),
-				PartPose.offset(-2.5F, -3.0F, -3.16F));
+		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create().texOffs(0, 0).addBox(
+				-4.0F, -4.0F, -3.66F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.35F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition Body = partdefinition.addOrReplaceChild("Body", CubeListBuilder.create(),
 				PartPose.offset(0.0F, 0.0F, 0.0F));
