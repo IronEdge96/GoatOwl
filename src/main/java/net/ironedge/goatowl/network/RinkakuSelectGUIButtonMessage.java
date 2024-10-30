@@ -13,6 +13,8 @@ import net.minecraft.core.BlockPos;
 
 import net.ironedge.goatowl.world.inventory.RinkakuSelectGUIMenu;
 import net.ironedge.goatowl.procedures.RizeButtonPressProcedure;
+import net.ironedge.goatowl.procedures.KuroShiroButtonPressProcedure;
+import net.ironedge.goatowl.procedures.KanekiButtonPressProcedure;
 import net.ironedge.goatowl.GoatowlMod;
 
 import java.util.function.Supplier;
@@ -65,6 +67,14 @@ public class RinkakuSelectGUIButtonMessage {
 		if (buttonID == 0) {
 
 			RizeButtonPressProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			KanekiButtonPressProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			KuroShiroButtonPressProcedure.execute(entity);
 		}
 	}
 

@@ -24,6 +24,36 @@
           "x": 135,
           "y": 48
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kaneki",
+          "text": "Kaneki",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KanekiButtonPress"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 235,
+          "y": 48
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kuroshiro",
+          "text": "Kuro/Shiro",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KuroShiroButtonPress"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 135,
+          "y": 81
+        }
       }
     ],
     "gridSettings": {

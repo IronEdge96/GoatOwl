@@ -22,9 +22,9 @@ public class RizeFormSelectGUIScreen extends AbstractContainerScreen<RizeFormSel
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_rizerinkakuform3;
 	ImageButton imagebutton_rizerinkakuform4;
 	ImageButton imagebutton_rizerinkakuform6;
+	ImageButton imagebutton_kagunestyling;
 
 	public RizeFormSelectGUIScreen(RizeFormSelectGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -73,29 +73,29 @@ public class RizeFormSelectGUIScreen extends AbstractContainerScreen<RizeFormSel
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_rizerinkakuform3 = new ImageButton(this.leftPos + 24, this.topPos + 97, 32, 32, 0, 0, 32, new ResourceLocation("goatowl:textures/screens/atlas/imagebutton_rizerinkakuform3.png"), 32, 64, e -> {
+		imagebutton_rizerinkakuform4 = new ImageButton(this.leftPos + 69, this.topPos + 16, 32, 32, 0, 0, 32, new ResourceLocation("goatowl:textures/screens/atlas/imagebutton_rizerinkakuform4.png"), 32, 64, e -> {
 			if (true) {
 				GoatowlMod.PACKET_HANDLER.sendToServer(new RizeFormSelectGUIButtonMessage(0, x, y, z));
 				RizeFormSelectGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_rizerinkakuform3", imagebutton_rizerinkakuform3);
-		this.addRenderableWidget(imagebutton_rizerinkakuform3);
-		imagebutton_rizerinkakuform4 = new ImageButton(this.leftPos + 69, this.topPos + 16, 32, 32, 0, 0, 32, new ResourceLocation("goatowl:textures/screens/atlas/imagebutton_rizerinkakuform4.png"), 32, 64, e -> {
+		guistate.put("button:imagebutton_rizerinkakuform4", imagebutton_rizerinkakuform4);
+		this.addRenderableWidget(imagebutton_rizerinkakuform4);
+		imagebutton_rizerinkakuform6 = new ImageButton(this.leftPos + 69, this.topPos + 115, 32, 32, 0, 0, 32, new ResourceLocation("goatowl:textures/screens/atlas/imagebutton_rizerinkakuform6.png"), 32, 64, e -> {
 			if (true) {
 				GoatowlMod.PACKET_HANDLER.sendToServer(new RizeFormSelectGUIButtonMessage(1, x, y, z));
 				RizeFormSelectGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_rizerinkakuform4", imagebutton_rizerinkakuform4);
-		this.addRenderableWidget(imagebutton_rizerinkakuform4);
-		imagebutton_rizerinkakuform6 = new ImageButton(this.leftPos + 123, this.topPos + 97, 32, 32, 0, 0, 32, new ResourceLocation("goatowl:textures/screens/atlas/imagebutton_rizerinkakuform6.png"), 32, 64, e -> {
+		guistate.put("button:imagebutton_rizerinkakuform6", imagebutton_rizerinkakuform6);
+		this.addRenderableWidget(imagebutton_rizerinkakuform6);
+		imagebutton_kagunestyling = new ImageButton(this.leftPos + 231, this.topPos + 133, 64, 64, 0, 0, 64, new ResourceLocation("goatowl:textures/screens/atlas/imagebutton_kagunestyling.png"), 64, 128, e -> {
 			if (true) {
 				GoatowlMod.PACKET_HANDLER.sendToServer(new RizeFormSelectGUIButtonMessage(2, x, y, z));
 				RizeFormSelectGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		});
-		guistate.put("button:imagebutton_rizerinkakuform6", imagebutton_rizerinkakuform6);
-		this.addRenderableWidget(imagebutton_rizerinkakuform6);
+		guistate.put("button:imagebutton_kagunestyling", imagebutton_kagunestyling);
+		this.addRenderableWidget(imagebutton_kagunestyling);
 	}
 }

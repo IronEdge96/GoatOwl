@@ -92,7 +92,7 @@ public class GoatowlModVariables {
 			clone.ChimeraKakahou2 = original.ChimeraKakahou2;
 			clone.ChimeraKakahou3 = original.ChimeraKakahou3;
 			clone.Kakugan = original.Kakugan;
-			clone.Styling = original.Styling;
+			clone.KaguneStyling = original.KaguneStyling;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
@@ -169,8 +169,8 @@ public class GoatowlModVariables {
 		public String ChimeraKakahou3 = "\"\"";
 		public String Kakugan = "\"\"";
 		public double ActiveKagune = 0;
-		public String RinkakuForm = "\"\"";
-		public String Styling = "Default";
+		public String RinkakuForm = "Base";
+		public String KaguneStyling = "Classic";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -205,7 +205,7 @@ public class GoatowlModVariables {
 			nbt.putString("Kakugan", Kakugan);
 			nbt.putDouble("ActiveKagune", ActiveKagune);
 			nbt.putString("RinkakuForm", RinkakuForm);
-			nbt.putString("Styling", Styling);
+			nbt.putString("KaguneStyling", KaguneStyling);
 			return nbt;
 		}
 
@@ -237,7 +237,7 @@ public class GoatowlModVariables {
 			Kakugan = nbt.getString("Kakugan");
 			ActiveKagune = nbt.getDouble("ActiveKagune");
 			RinkakuForm = nbt.getString("RinkakuForm");
-			Styling = nbt.getString("Styling");
+			KaguneStyling = nbt.getString("KaguneStyling");
 		}
 	}
 
@@ -297,7 +297,7 @@ public class GoatowlModVariables {
 					variables.Kakugan = message.data.Kakugan;
 					variables.ActiveKagune = message.data.ActiveKagune;
 					variables.RinkakuForm = message.data.RinkakuForm;
-					variables.Styling = message.data.Styling;
+					variables.KaguneStyling = message.data.KaguneStyling;
 				}
 			});
 			context.setPacketHandled(true);

@@ -5,7 +5,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.ironedge.goatowl.network.GoatowlModVariables;
 
-public class Rize3ButtonProcedure {
+public class Kaneki3ButtonProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;

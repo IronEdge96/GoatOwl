@@ -534,26 +534,6 @@
       }
     },
     {
-      "name": "TestRinkaku",
-      "type": "procedure",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_rinkaku",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/TestRinkakuProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Ghouls/Rinkaku"
-    },
-    {
       "name": "DefaultKanekiCollar",
       "type": "procedure",
       "sortid": 66,
@@ -1120,7 +1100,7 @@
           "src/main/java/net/ironedge/goatowl/RizeRinkakuAnimation.java"
         ]
       },
-      "path": "~/Ghouls/Rinkaku/Base"
+      "path": "~/Ghouls/Rinkaku/Rize/Base"
     },
     {
       "name": "AnimationInterface",
@@ -2143,20 +2123,6 @@
       "path": "~/Ghouls/Kakugan"
     },
     {
-      "name": "RizeRinkakuThreeAnimation",
-      "type": "code",
-      "sortid": 154,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "rize_rinkaku_three_animation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/RizeRinkakuThreeAnimation.java"
-        ]
-      },
-      "path": "~/Ghouls/Rinkaku/Three"
-    },
-    {
       "name": "RizeFormSelectGUI",
       "type": "gui",
       "sortid": 155,
@@ -2168,26 +2134,6 @@
           "src/main/java/net/ironedge/goatowl/world/inventory/RizeFormSelectGUIMenu.java",
           "src/main/java/net/ironedge/goatowl/network/RizeFormSelectGUIButtonMessage.java",
           "src/main/java/net/ironedge/goatowl/client/gui/RizeFormSelectGUIScreen.java"
-        ]
-      },
-      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
-    },
-    {
-      "name": "Rize3Button",
-      "type": "procedure",
-      "sortid": 156,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rize_3_button",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/Rize3ButtonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
@@ -2244,7 +2190,7 @@
           "src/main/java/net/ironedge/goatowl/RizeRinkakuSixAnimations.java"
         ]
       },
-      "path": "~/Ghouls/Rinkaku/Six"
+      "path": "~/Ghouls/Rinkaku/Rize/Six"
     },
     {
       "name": "FormKeyOnKeyPressed",
@@ -2292,6 +2238,430 @@
       "metadata": {
         "files": [
           "src/main/java/net/ironedge/goatowl/network/FormKeyMessage.java"
+        ]
+      },
+      "path": "~/Ghouls"
+    },
+    {
+      "name": "RizeRinkaku",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rize_rinkaku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/RizeRinkakuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Rize"
+    },
+    {
+      "name": "KanekiRinkaku",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_rinkaku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiRinkakuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki"
+    },
+    {
+      "name": "KanekiRinkakuAnimations",
+      "type": "code",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kaneki_rinkaku_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KanekiRinkakuAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki/Base"
+    },
+    {
+      "name": "KanekiRinkakuThreeAnimations",
+      "type": "code",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kaneki_rinkaku_three_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KanekiRinkakuThreeAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki/Three"
+    },
+    {
+      "name": "KanekiRinkakuSixAnimations",
+      "type": "code",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kaneki_rinkaku_six_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KanekiRinkakuSixAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki/Six"
+    },
+    {
+      "name": "KanekiRinkakuEightAnimations",
+      "type": "code",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kaneki_rinkaku_eight_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KanekiRinkakuEightAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki/Eight"
+    },
+    {
+      "name": "KanekiFormSelectGUI",
+      "type": "gui",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_form_select_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/network/KanekiFormSelectGUIButtonMessage.java",
+          "src/main/java/net/ironedge/goatowl/client/gui/KanekiFormSelectGUIScreen.java",
+          "src/main/java/net/ironedge/goatowl/world/inventory/KanekiFormSelectGUIMenu.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "Kaneki4Button",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_4_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kaneki4ButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "Kaneki3Button",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_3_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kaneki3ButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "Kaneki6Button",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_6_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kaneki6ButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "Kaneki8Button",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_8_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kaneki8ButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "KanekiButtonPress",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_button_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiButtonPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Tests"
+    },
+    {
+      "name": "KanekiRinkakuClawAnimations",
+      "type": "code",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kaneki_rinkaku_claw_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KanekiRinkakuClawAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki/Claw"
+    },
+    {
+      "name": "KanekiRinkakuBladeAnimations",
+      "type": "code",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kaneki_rinkaku_blade_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KanekiRinkakuBladeAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/Kaneki/Blade"
+    },
+    {
+      "name": "KanekiBladeButton",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_blade_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiBladeButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "KanekiClawButton",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_claw_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiClawButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "KuroShiroRinkaku",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro_shiro_rinkaku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KuroShiroRinkakuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/KuroShiro"
+    },
+    {
+      "name": "KuroRinkakuAnimations",
+      "type": "code",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "kuro_rinkaku_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/KuroRinkakuAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/KuroShiro/Kuro"
+    },
+    {
+      "name": "ShiroRinkakuAnimations",
+      "type": "code",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shiro_rinkaku_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/ShiroRinkakuAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/KuroShiro/Shiro"
+    },
+    {
+      "name": "KuroButton",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KuroButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "ShiroButton",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shiro_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/ShiroButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "KuroShiroFormSelectGUI",
+      "type": "gui",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro_shiro_form_select_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/network/KuroShiroFormSelectGUIButtonMessage.java",
+          "src/main/java/net/ironedge/goatowl/world/inventory/KuroShiroFormSelectGUIMenu.java",
+          "src/main/java/net/ironedge/goatowl/client/gui/KuroShiroFormSelectGUIScreen.java"
+        ]
+      },
+      "path": "~/Ghouls/Rinkaku/RinkakuGUIS"
+    },
+    {
+      "name": "KuroShiroButtonPress",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro_shiro_button_press",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KuroShiroButtonPressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Tests"
+    },
+    {
+      "name": "KaguneStylingPressed",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kagune_styling_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KaguneStylingPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       },
       "path": "~/Ghouls"
@@ -2452,13 +2822,13 @@
       "name": "RinkakuForm",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"\""
+      "value": "Base"
     },
     {
-      "name": "Styling",
+      "name": "KaguneStyling",
       "type": "string",
       "scope": "player_persistent",
-      "value": "Default"
+      "value": "Classic"
     }
   ],
   "sound_elements": [],
@@ -2579,6 +2949,7 @@
       "gui.goatowl.ghoul_rc_tester.button_500": "8000",
       "gui.goatowl.human_rc_tester.button_50": "50",
       "gui.goatowl.chimera_select.button_koukaku": "Koukaku",
+      "gui.goatowl.rinkaku_select_gui.button_kaneki": "Kaneki",
       "item.goatowl.noro_black_chestplate": "Noro\u0027s Cloak",
       "item.goatowl.shirt_reaper_kaneki_helmet": "Black Reaper\u0027s Glasses",
       "item.goatowl.test_ayumi": "Ayumi Hogi\u0027s Sword",
@@ -2587,6 +2958,7 @@
       "item.goatowl.ayato_s_1_chestplate": "Ayato\u0027s Jacket",
       "gui.goatowl.test_rc_overlay.label_empty": "/",
       "item.goatowl.race_test_item": "Race Tester",
+      "gui.goatowl.rinkaku_select_gui.button_kuroshiro": "Kuro/Shiro",
       "item.goatowl.prisoner_kaneki_boots": "Kaneki\u0027s Leggings",
       "item.goatowl.test_aus": "Aus",
       "item.goatowl.goat_kaneki_leggings": "Kaneki\u0027s Pants",
@@ -2655,16 +3027,59 @@
                 "children": []
               },
               {
-                "name": "Base",
-                "children": []
+                "name": "Rize",
+                "children": [
+                  {
+                    "name": "Six",
+                    "children": []
+                  },
+                  {
+                    "name": "Base",
+                    "children": []
+                  }
+                ]
               },
               {
-                "name": "Three",
-                "children": []
+                "name": "Kaneki",
+                "children": [
+                  {
+                    "name": "Base",
+                    "children": []
+                  },
+                  {
+                    "name": "Three",
+                    "children": []
+                  },
+                  {
+                    "name": "Six",
+                    "children": []
+                  },
+                  {
+                    "name": "Eight",
+                    "children": []
+                  },
+                  {
+                    "name": "Claw",
+                    "children": []
+                  },
+                  {
+                    "name": "Blade",
+                    "children": []
+                  }
+                ]
               },
               {
-                "name": "Six",
-                "children": []
+                "name": "KuroShiro",
+                "children": [
+                  {
+                    "name": "Kuro",
+                    "children": []
+                  },
+                  {
+                    "name": "Shiro",
+                    "children": []
+                  }
+                ]
               }
             ]
           },

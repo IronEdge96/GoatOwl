@@ -17,6 +17,13 @@ public class AyatoButtonPressProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			String _setval = "Classic";
+			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.KaguneStyling = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("Ayato Ukaku"), false);
 		if (entity instanceof Player _player)

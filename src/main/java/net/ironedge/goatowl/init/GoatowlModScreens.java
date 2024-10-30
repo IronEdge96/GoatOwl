@@ -15,6 +15,8 @@ import net.ironedge.goatowl.client.gui.UkakuSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.RizeFormSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.RinkakuSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.QuinqueFurnaceGUITestScreen;
+import net.ironedge.goatowl.client.gui.KuroShiroFormSelectGUIScreen;
+import net.ironedge.goatowl.client.gui.KanekiFormSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.KakakhouSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.HumanRCTesterScreen;
 import net.ironedge.goatowl.client.gui.HalfHumanRCTesterScreen;
@@ -37,6 +39,8 @@ public class GoatowlModScreens {
 			MenuScreens.register(GoatowlModMenus.HALF_HUMAN_RC_TESTER.get(), HalfHumanRCTesterScreen::new);
 			MenuScreens.register(GoatowlModMenus.HALF_GHOUL_RC_TESTER.get(), HalfGhoulRCTesterScreen::new);
 			MenuScreens.register(GoatowlModMenus.RIZE_FORM_SELECT_GUI.get(), RizeFormSelectGUIScreen::new);
+			MenuScreens.register(GoatowlModMenus.KANEKI_FORM_SELECT_GUI.get(), KanekiFormSelectGUIScreen::new);
+			MenuScreens.register(GoatowlModMenus.KURO_SHIRO_FORM_SELECT_GUI.get(), KuroShiroFormSelectGUIScreen::new);
 		});
 	}
 }

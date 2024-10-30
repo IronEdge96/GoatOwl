@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.ironedge.goatowl.world.inventory.RizeFormSelectGUIMenu;
 import net.ironedge.goatowl.procedures.Rize6ButtonProcedure;
 import net.ironedge.goatowl.procedures.Rize4ButtonProcedure;
-import net.ironedge.goatowl.procedures.Rize3ButtonProcedure;
+import net.ironedge.goatowl.procedures.KaguneStylingPressedProcedure;
 import net.ironedge.goatowl.GoatowlMod;
 
 import java.util.function.Supplier;
@@ -66,15 +66,15 @@ public class RizeFormSelectGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			Rize3ButtonProcedure.execute(entity);
+			Rize4ButtonProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			Rize4ButtonProcedure.execute(entity);
+			Rize6ButtonProcedure.execute(entity);
 		}
 		if (buttonID == 2) {
 
-			Rize6ButtonProcedure.execute(entity);
+			KaguneStylingPressedProcedure.execute(entity);
 		}
 	}
 

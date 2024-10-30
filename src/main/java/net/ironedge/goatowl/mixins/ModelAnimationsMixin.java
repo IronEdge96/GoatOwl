@@ -19,9 +19,23 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	@Unique
 	private AnimationState rizeidlefourAnimationState = new AnimationState();
 	@Unique
-	private AnimationState rizeidlethreeAnimationState = new AnimationState();
-	@Unique
 	private AnimationState rizeidlesixAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kanekiidlefourAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kanekiidlethreeAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kanekiidlesixAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kanekiidleeightAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kanekiidlebladeAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kanekiidleclawAnimationState = new AnimationState();
+	@Unique
+	private AnimationState kurorinkakuidleAnimationState = new AnimationState();
+	@Unique
+	private AnimationState shirorinkakuidleAnimationState = new AnimationState();
 
 	protected ModelAnimationsMixin(EntityType<? extends LivingEntity> pEntityType, Level pLevel) {
 		super(pEntityType, pLevel);
@@ -31,8 +45,15 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	public void tick(CallbackInfo ci) {
 		if (this.level().isClientSide) {
 			rizeidlefourAnimationState.startIfStopped(this.tickCount);
-			rizeidlethreeAnimationState.startIfStopped(this.tickCount);
 			rizeidlesixAnimationState.startIfStopped(this.tickCount);
+			kanekiidlefourAnimationState.startIfStopped(this.tickCount);
+			kanekiidlethreeAnimationState.startIfStopped(this.tickCount);
+			kanekiidlesixAnimationState.startIfStopped(this.tickCount);
+			kanekiidleeightAnimationState.startIfStopped(this.tickCount);
+			kanekiidlebladeAnimationState.startIfStopped(this.tickCount);
+			kanekiidleclawAnimationState.startIfStopped(this.tickCount);
+			kurorinkakuidleAnimationState.startIfStopped(this.tickCount);
+			shirorinkakuidleAnimationState.startIfStopped(this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(!this.isFreezing(), this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(this.isFreezing(), this.tickCount); 
 		}
@@ -46,13 +67,55 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 
 	@Override
 	@Unique
-	public AnimationState getRizeIdleThreeAnimationState() {
-		return rizeidlethreeAnimationState;
+	public AnimationState getRizeIdleSixAnimationState() {
+		return rizeidlesixAnimationState;
 	}
 
 	@Override
 	@Unique
-	public AnimationState getRizeIdleSixAnimationState() {
-		return rizeidlesixAnimationState;
+	public AnimationState getKanekiIdleFourAnimationState() {
+		return kanekiidlefourAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getKanekiIdleThreeAnimationState() {
+		return kanekiidlethreeAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getKanekiIdleSixAnimationState() {
+		return kanekiidlesixAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getKanekiIdleEightAnimationState() {
+		return kanekiidleeightAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getKanekiIdleBladeAnimationState() {
+		return kanekiidlebladeAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getKanekiIdleClawAnimationState() {
+		return kanekiidleclawAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getKuroRinkakuIdleAnimationState() {
+		return kurorinkakuidleAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getShiroRinkakuIdleAnimationState() {
+		return shirorinkakuidleAnimationState;
 	}
 }

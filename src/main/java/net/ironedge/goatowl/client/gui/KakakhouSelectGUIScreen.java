@@ -75,7 +75,7 @@ public class KakakhouSelectGUIScreen extends AbstractContainerScreen<KakakhouSel
 	public void init() {
 		super.init();
 		button_koukaku = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_koukaku"), e -> {
-		}).bounds(this.leftPos + 52, this.topPos + 16, 67, 20).build();
+		}).bounds(this.leftPos + 52, this.topPos + 42, 67, 20).build();
 		guistate.put("button:button_koukaku", button_koukaku);
 		this.addRenderableWidget(button_koukaku);
 		button_ukaku = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_ukaku"), e -> {
@@ -83,7 +83,7 @@ public class KakakhouSelectGUIScreen extends AbstractContainerScreen<KakakhouSel
 				GoatowlMod.PACKET_HANDLER.sendToServer(new KakakhouSelectGUIButtonMessage(1, x, y, z));
 				KakakhouSelectGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 61, this.topPos + 43, 51, 20).build();
+		}).bounds(this.leftPos + 60, this.topPos + 15, 51, 20).build();
 		guistate.put("button:button_ukaku", button_ukaku);
 		this.addRenderableWidget(button_ukaku);
 		button_rinkaku = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_rinkaku"), e -> {

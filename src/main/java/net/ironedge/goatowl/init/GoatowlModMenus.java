@@ -15,6 +15,8 @@ import net.ironedge.goatowl.world.inventory.UkakuSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.RizeFormSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.RinkakuSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.QuinqueFurnaceGUITestMenu;
+import net.ironedge.goatowl.world.inventory.KuroShiroFormSelectGUIMenu;
+import net.ironedge.goatowl.world.inventory.KanekiFormSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.KakakhouSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.HumanRCTesterMenu;
 import net.ironedge.goatowl.world.inventory.HalfHumanRCTesterMenu;
@@ -35,4 +37,6 @@ public class GoatowlModMenus {
 	public static final RegistryObject<MenuType<HalfHumanRCTesterMenu>> HALF_HUMAN_RC_TESTER = REGISTRY.register("half_human_rc_tester", () -> IForgeMenuType.create(HalfHumanRCTesterMenu::new));
 	public static final RegistryObject<MenuType<HalfGhoulRCTesterMenu>> HALF_GHOUL_RC_TESTER = REGISTRY.register("half_ghoul_rc_tester", () -> IForgeMenuType.create(HalfGhoulRCTesterMenu::new));
 	public static final RegistryObject<MenuType<RizeFormSelectGUIMenu>> RIZE_FORM_SELECT_GUI = REGISTRY.register("rize_form_select_gui", () -> IForgeMenuType.create(RizeFormSelectGUIMenu::new));
+	public static final RegistryObject<MenuType<KanekiFormSelectGUIMenu>> KANEKI_FORM_SELECT_GUI = REGISTRY.register("kaneki_form_select_gui", () -> IForgeMenuType.create(KanekiFormSelectGUIMenu::new));
+	public static final RegistryObject<MenuType<KuroShiroFormSelectGUIMenu>> KURO_SHIRO_FORM_SELECT_GUI = REGISTRY.register("kuro_shiro_form_select_gui", () -> IForgeMenuType.create(KuroShiroFormSelectGUIMenu::new));
 }

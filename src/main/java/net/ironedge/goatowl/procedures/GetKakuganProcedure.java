@@ -37,6 +37,14 @@ public class GetKakuganProcedure {
 				}
 			}
 		}
+		{
+			String _setval = "Classic";
+			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.KaguneStyling = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		GoatowlMod.LOGGER.info((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakugan);
+		GoatowlMod.LOGGER.info((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KaguneStyling);
 	}
 }

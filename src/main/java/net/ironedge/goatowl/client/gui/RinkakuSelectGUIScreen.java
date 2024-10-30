@@ -23,6 +23,8 @@ public class RinkakuSelectGUIScreen extends AbstractContainerScreen<RinkakuSelec
 	private final int x, y, z;
 	private final Player entity;
 	Button button_rize;
+	Button button_kaneki;
+	Button button_kuroshiro;
 
 	public RinkakuSelectGUIScreen(RinkakuSelectGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -82,5 +84,21 @@ public class RinkakuSelectGUIScreen extends AbstractContainerScreen<RinkakuSelec
 		}).bounds(this.leftPos + 9, this.topPos + 11, 46, 20).build();
 		guistate.put("button:button_rize", button_rize);
 		this.addRenderableWidget(button_rize);
+		button_kaneki = Button.builder(Component.translatable("gui.goatowl.rinkaku_select_gui.button_kaneki"), e -> {
+			if (true) {
+				GoatowlMod.PACKET_HANDLER.sendToServer(new RinkakuSelectGUIButtonMessage(1, x, y, z));
+				RinkakuSelectGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}).bounds(this.leftPos + 109, this.topPos + 11, 56, 20).build();
+		guistate.put("button:button_kaneki", button_kaneki);
+		this.addRenderableWidget(button_kaneki);
+		button_kuroshiro = Button.builder(Component.translatable("gui.goatowl.rinkaku_select_gui.button_kuroshiro"), e -> {
+			if (true) {
+				GoatowlMod.PACKET_HANDLER.sendToServer(new RinkakuSelectGUIButtonMessage(2, x, y, z));
+				RinkakuSelectGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}).bounds(this.leftPos + 9, this.topPos + 44, 77, 20).build();
+		guistate.put("button:button_kuroshiro", button_kuroshiro);
+		this.addRenderableWidget(button_kuroshiro);
 	}
 }

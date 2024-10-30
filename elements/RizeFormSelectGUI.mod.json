@@ -13,22 +13,9 @@
       {
         "type": "imagebutton",
         "data": {
-          "name": "imagebutton_rizerinkakuform3",
-          "image": "rizerinkakuform3.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "Rize3Button"
-          },
-          "x": 150,
-          "y": 134
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
           "name": "imagebutton_rizerinkakuform4",
-          "image": "rizerinkakuform4.png",
-          "hoveredImage": "",
+          "image": "rizerinkaku4.png",
+          "hoveredImage": "rizerinkaku4re.png",
           "onClick": {
             "name": "Rize4Button"
           },
@@ -40,13 +27,26 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_rizerinkakuform6",
-          "image": "rizerinkakuform6.png",
-          "hoveredImage": "",
+          "image": "rizerinkaku6.png",
+          "hoveredImage": "rizerinkaku6re.png",
           "onClick": {
             "name": "Rize6Button"
           },
-          "x": 249,
-          "y": 134
+          "x": 195,
+          "y": 152
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kagunestyling",
+          "image": "kagunestyling.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KaguneStylingPressed"
+          },
+          "x": 357,
+          "y": 170
         }
       }
     ],
