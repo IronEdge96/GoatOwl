@@ -38,6 +38,20 @@ public class GetKakuganProcedure {
 			}
 		}
 		{
+			boolean _setval = false;
+			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.KakujaUnlocked = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			boolean _setval = false;
+			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.CompletedKakuja = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
 			String _setval = "Classic";
 			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.KaguneStyling = _setval;

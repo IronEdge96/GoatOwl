@@ -16,10 +16,13 @@ import net.ironedge.goatowl.AnimationInterface;
 
 @Mixin(Player.class)
 public abstract class ModelAnimationsMixin extends LivingEntity implements AnimationInterface {
+	//Rinkaku Animations
+	//Rize
 	@Unique
 	private AnimationState rizeidlefourAnimationState = new AnimationState();
 	@Unique
 	private AnimationState rizeidlesixAnimationState = new AnimationState();
+	//Kaneki
 	@Unique
 	private AnimationState kanekiidlefourAnimationState = new AnimationState();
 	@Unique
@@ -32,10 +35,15 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	private AnimationState kanekiidlebladeAnimationState = new AnimationState();
 	@Unique
 	private AnimationState kanekiidleclawAnimationState = new AnimationState();
+	//Kuro and Shiro
 	@Unique
 	private AnimationState kurorinkakuidleAnimationState = new AnimationState();
 	@Unique
 	private AnimationState shirorinkakuidleAnimationState = new AnimationState();
+	//Kakuja
+	//Kaneki
+	@Unique
+	private AnimationState reaperkakujaidleAnimationState = new AnimationState();
 
 	protected ModelAnimationsMixin(EntityType<? extends LivingEntity> pEntityType, Level pLevel) {
 		super(pEntityType, pLevel);
@@ -54,11 +62,14 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 			kanekiidleclawAnimationState.startIfStopped(this.tickCount);
 			kurorinkakuidleAnimationState.startIfStopped(this.tickCount);
 			shirorinkakuidleAnimationState.startIfStopped(this.tickCount);
+			reaperkakujaidleAnimationState.startIfStopped(this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(!this.isFreezing(), this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(this.isFreezing(), this.tickCount); 
 		}
 	}
 
+	//Rinkaku
+	//Rize
 	@Override
 	@Unique
 	public AnimationState getRizeIdleFourAnimationState() {
@@ -71,6 +82,7 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 		return rizeidlesixAnimationState;
 	}
 
+	//Kaneki
 	@Override
 	@Unique
 	public AnimationState getKanekiIdleFourAnimationState() {
@@ -107,6 +119,7 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 		return kanekiidleclawAnimationState;
 	}
 
+	//Kuro and Shiro
 	@Override
 	@Unique
 	public AnimationState getKuroRinkakuIdleAnimationState() {
@@ -117,5 +130,13 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	@Unique
 	public AnimationState getShiroRinkakuIdleAnimationState() {
 		return shirorinkakuidleAnimationState;
+	}
+
+	//Kakuja
+	//Kaneki
+	@Override
+	@Unique
+	public AnimationState getReaperKakujaIdleAnimationState() {
+		return reaperkakujaidleAnimationState;
 	}
 }

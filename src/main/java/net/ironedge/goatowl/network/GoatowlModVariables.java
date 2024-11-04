@@ -93,6 +93,9 @@ public class GoatowlModVariables {
 			clone.ChimeraKakahou3 = original.ChimeraKakahou3;
 			clone.Kakugan = original.Kakugan;
 			clone.KaguneStyling = original.KaguneStyling;
+			clone.KakujaUnlocked = original.KakujaUnlocked;
+			clone.KakujaStage = original.KakujaStage;
+			clone.CompletedKakuja = original.CompletedKakuja;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
@@ -171,6 +174,9 @@ public class GoatowlModVariables {
 		public double ActiveKagune = 0;
 		public String RinkakuForm = "Base";
 		public String KaguneStyling = "Classic";
+		public boolean KakujaUnlocked = false;
+		public double KakujaStage = 0;
+		public boolean CompletedKakuja = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -206,6 +212,9 @@ public class GoatowlModVariables {
 			nbt.putDouble("ActiveKagune", ActiveKagune);
 			nbt.putString("RinkakuForm", RinkakuForm);
 			nbt.putString("KaguneStyling", KaguneStyling);
+			nbt.putBoolean("KakujaUnlocked", KakujaUnlocked);
+			nbt.putDouble("KakujaStage", KakujaStage);
+			nbt.putBoolean("CompletedKakuja", CompletedKakuja);
 			return nbt;
 		}
 
@@ -238,6 +247,9 @@ public class GoatowlModVariables {
 			ActiveKagune = nbt.getDouble("ActiveKagune");
 			RinkakuForm = nbt.getString("RinkakuForm");
 			KaguneStyling = nbt.getString("KaguneStyling");
+			KakujaUnlocked = nbt.getBoolean("KakujaUnlocked");
+			KakujaStage = nbt.getDouble("KakujaStage");
+			CompletedKakuja = nbt.getBoolean("CompletedKakuja");
 		}
 	}
 
@@ -298,6 +310,9 @@ public class GoatowlModVariables {
 					variables.ActiveKagune = message.data.ActiveKagune;
 					variables.RinkakuForm = message.data.RinkakuForm;
 					variables.KaguneStyling = message.data.KaguneStyling;
+					variables.KakujaUnlocked = message.data.KakujaUnlocked;
+					variables.KakujaStage = message.data.KakujaStage;
+					variables.CompletedKakuja = message.data.CompletedKakuja;
 				}
 			});
 			context.setPacketHandled(true);

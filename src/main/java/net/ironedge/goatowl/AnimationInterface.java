@@ -42,4 +42,8 @@ public interface AnimationInterface {
 	AnimationState getKuroRinkakuIdleAnimationState();
 
 	AnimationState getShiroRinkakuIdleAnimationState();
+
+	//Kakuja Animations
+	//Kaneki
+	AnimationState getReaperKakujaIdleAnimationState();
 }

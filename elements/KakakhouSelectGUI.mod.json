@@ -78,6 +78,36 @@
           "x": 241,
           "y": 183
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_complete",
+          "text": "Complete",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CompleteButtonPress"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 304,
+          "y": 183
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_incomplete",
+          "text": "Incomplete",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IncompleteButtonPress"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 304,
+          "y": 202
+        }
       }
     ],
     "gridSettings": {
