@@ -64,6 +64,26 @@ public class RinkakuKeyHitProcedure {
 						});
 					}
 				}
+			} else {
+				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).CompletedKakuja) {
+					{
+						boolean _setval = false;
+						entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.KakujaSpawned = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				} else {
+					if (Math.random() == 1) {
+						{
+							boolean _setval = false;
+							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.KakujaSpawned = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
+					}
+				}
 			}
 		}
 	}

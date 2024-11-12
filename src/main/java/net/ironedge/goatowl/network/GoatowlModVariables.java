@@ -96,6 +96,9 @@ public class GoatowlModVariables {
 			clone.KakujaUnlocked = original.KakujaUnlocked;
 			clone.KakujaStage = original.KakujaStage;
 			clone.CompletedKakuja = original.CompletedKakuja;
+			clone.Kakuja = original.Kakuja;
+			clone.InsaneEye = original.InsaneEye;
+			clone.Sanity = original.Sanity;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
@@ -177,6 +180,9 @@ public class GoatowlModVariables {
 		public boolean KakujaUnlocked = false;
 		public double KakujaStage = 0;
 		public boolean CompletedKakuja = false;
+		public String Kakuja = "\"\"";
+		public String InsaneEye = "None";
+		public String Sanity = "Sane";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -215,6 +221,9 @@ public class GoatowlModVariables {
 			nbt.putBoolean("KakujaUnlocked", KakujaUnlocked);
 			nbt.putDouble("KakujaStage", KakujaStage);
 			nbt.putBoolean("CompletedKakuja", CompletedKakuja);
+			nbt.putString("Kakuja", Kakuja);
+			nbt.putString("InsaneEye", InsaneEye);
+			nbt.putString("Sanity", Sanity);
 			return nbt;
 		}
 
@@ -250,6 +259,9 @@ public class GoatowlModVariables {
 			KakujaUnlocked = nbt.getBoolean("KakujaUnlocked");
 			KakujaStage = nbt.getDouble("KakujaStage");
 			CompletedKakuja = nbt.getBoolean("CompletedKakuja");
+			Kakuja = nbt.getString("Kakuja");
+			InsaneEye = nbt.getString("InsaneEye");
+			Sanity = nbt.getString("Sanity");
 		}
 	}
 
@@ -313,6 +325,9 @@ public class GoatowlModVariables {
 					variables.KakujaUnlocked = message.data.KakujaUnlocked;
 					variables.KakujaStage = message.data.KakujaStage;
 					variables.CompletedKakuja = message.data.CompletedKakuja;
+					variables.Kakuja = message.data.Kakuja;
+					variables.InsaneEye = message.data.InsaneEye;
+					variables.Sanity = message.data.Sanity;
 				}
 			});
 			context.setPacketHandled(true);

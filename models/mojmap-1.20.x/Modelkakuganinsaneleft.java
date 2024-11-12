@@ -2,11 +2,11 @@
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelkakuganleft<T extends Entity> extends EntityModel<T> {
+public class Modelkakuganinsaneleft<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "kakuganleft"), "main");
+			new ResourceLocation("modid", "kakuganinsaneleft"), "main");
 	private final ModelPart Head;
 	private final ModelPart Body;
 	private final ModelPart RightArm;
@@ -14,7 +14,7 @@ public class Modelkakuganleft<T extends Entity> extends EntityModel<T> {
 	private final ModelPart RightLeg;
 	private final ModelPart LeftLeg;
 
-	public Modelkakuganleft(ModelPart root) {
+	public Modelkakuganinsaneleft(ModelPart root) {
 		this.Head = root.getChild("Head");
 		this.Body = root.getChild("Body");
 		this.RightArm = root.getChild("RightArm");
@@ -27,8 +27,9 @@ public class Modelkakuganleft<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create().texOffs(0, 0).addBox(
-				1.0F, -4.0F, -3.925F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition Head = partdefinition.addOrReplaceChild("Head", CubeListBuilder.create().texOffs(0, 0)
+				.addBox(1.0F, -4.0F, -3.775F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.275F)),
+				PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition Body = partdefinition.addOrReplaceChild("Body", CubeListBuilder.create(),
 				PartPose.offset(0.0F, 0.0F, 0.0F));

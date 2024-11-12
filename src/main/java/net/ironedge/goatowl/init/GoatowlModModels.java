@@ -26,6 +26,8 @@ import net.ironedge.goatowl.client.model.Modelkanekioutfitonsie;
 import net.ironedge.goatowl.client.model.Modelkanekioutfitcollar;
 import net.ironedge.goatowl.client.model.Modelkakuganright;
 import net.ironedge.goatowl.client.model.Modelkakuganleft;
+import net.ironedge.goatowl.client.model.Modelkakuganinsaneright;
+import net.ironedge.goatowl.client.model.Modelkakuganinsaneleft;
 import net.ironedge.goatowl.client.model.Modelkakuganfaceright;
 import net.ironedge.goatowl.client.model.Modelkakuganfaceleft;
 import net.ironedge.goatowl.client.model.Modelgoatoutfittank;
@@ -40,6 +42,7 @@ public class GoatowlModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelgoatoutfitcloak.LAYER_LOCATION, Modelgoatoutfitcloak::createBodyLayer);
+		event.registerLayerDefinition(Modelkakuganinsaneright.LAYER_LOCATION, Modelkakuganinsaneright::createBodyLayer);
 		event.registerLayerDefinition(Modelrizerinkaku.LAYER_LOCATION, Modelrizerinkaku::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganfaceright.LAYER_LOCATION, Modelkakuganfaceright::createBodyLayer);
 		event.registerLayerDefinition(Modelgoatoutfittank.LAYER_LOCATION, Modelgoatoutfittank::createBodyLayer);
@@ -48,6 +51,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelkanekirinkakueight.LAYER_LOCATION, Modelkanekirinkakueight::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakusix.LAYER_LOCATION, Modelkanekirinkakusix::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekioutfitcollar.LAYER_LOCATION, Modelkanekioutfitcollar::createBodyLayer);
+		event.registerLayerDefinition(Modelkakuganinsaneleft.LAYER_LOCATION, Modelkakuganinsaneleft::createBodyLayer);
 		event.registerLayerDefinition(Modelaogirirobeshood.LAYER_LOCATION, Modelaogirirobeshood::createBodyLayer);
 		event.registerLayerDefinition(Modelvsarimaonsie.LAYER_LOCATION, Modelvsarimaonsie::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakuclaw.LAYER_LOCATION, Modelkanekirinkakuclaw::createBodyLayer);

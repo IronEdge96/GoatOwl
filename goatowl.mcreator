@@ -2751,6 +2751,26 @@
         ]
       },
       "path": "~/Ghouls/Tests"
+    },
+    {
+      "name": "GetKakuja",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_kakuja",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/GetKakujaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja"
     }
   ],
   "variable_elements": [
@@ -2933,6 +2953,24 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "Kakuja",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "InsaneEye",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "None"
+    },
+    {
+      "name": "Sanity",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "Sane"
     }
   ],
   "sound_elements": [],
@@ -3007,8 +3045,8 @@
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.kakahou_tester_item": "Kakahou Tester Item",
       "item.goatowl.black_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
-      "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
       "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
+      "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.test_kakugan": "Test Kakugan Item",
       "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
@@ -3044,7 +3082,7 @@
       "item.goatowl.noro_leggings": "Noro\u0027s Pants",
       "item.goatowl.quinque_steel_item": "Quinque Steel Ingot",
       "item.goatowl.test_juuzou_jason": "Juuzou\u0027s Jason",
-      "key.goatowl.rinkaku_key": "Sdfs",
+      "key.goatowl.rinkaku_key": "Rinkaku",
       "item.goatowl.ayato_s_1_boots": "Ayato\u0027s Boots",
       "item.goatowl.hhhhh_spawn_egg": "Hhhhh Spawn Egg",
       "gui.goatowl.chimera_select.button_bikaku": "Bikaku",
@@ -3292,7 +3330,12 @@
             "children": [
               {
                 "name": "Sanity",
-                "children": []
+                "children": [
+                  {
+                    "name": "Torture",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Mannerisms",
