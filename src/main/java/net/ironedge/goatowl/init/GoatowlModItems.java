@@ -35,6 +35,7 @@ import net.ironedge.goatowl.item.DefaultKanekiItem;
 import net.ironedge.goatowl.item.BlackReaperKanekiItem;
 import net.ironedge.goatowl.item.AyatoS1Item;
 import net.ironedge.goatowl.item.AyatoReItem;
+import net.ironedge.goatowl.item.ArimaREItem;
 import net.ironedge.goatowl.item.AogiriRobesItem;
 import net.ironedge.goatowl.GoatowlMod;
 
@@ -94,6 +95,10 @@ public class GoatowlModItems {
 	public static final RegistryObject<Item> KAKAHOU_TESTER_ITEM = REGISTRY.register("kakahou_tester_item", () -> new KakahouTesterItemItem());
 	public static final RegistryObject<Item> RC_LEVEL_TESTER = REGISTRY.register("rc_level_tester", () -> new RCLevelTesterItem());
 	public static final RegistryObject<Item> TEST_KAKUGAN = REGISTRY.register("test_kakugan", () -> new TestKakuganItem());
+	public static final RegistryObject<ArimaREItem> ARIMA_RE_HELMET = REGISTRY.register("arima_re_helmet", () -> new ArimaREItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<ArimaREItem> ARIMA_RE_CHESTPLATE = REGISTRY.register("arima_re_chestplate", () -> new ArimaREItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<ArimaREItem> ARIMA_RE_LEGGINGS = REGISTRY.register("arima_re_leggings", () -> new ArimaREItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<ArimaREItem> ARIMA_RE_BOOTS = REGISTRY.register("arima_re_boots", () -> new ArimaREItem(ArmorItem.Type.BOOTS, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

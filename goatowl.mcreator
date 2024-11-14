@@ -2771,6 +2771,46 @@
         ]
       },
       "path": "~/Ghouls/Kakuja"
+    },
+    {
+      "name": "ArimaRE",
+      "type": "animatedarmor",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arima_re",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/client/renderer/ArimaREArmorRenderer.java",
+          "src/main/resources/assets/goatowl/models/item/arima_re_boots.json",
+          "src/main/java/net/ironedge/goatowl/item/ArimaREItem.java",
+          "src/main/resources/assets/goatowl/models/item/arima_re_chestplate.json",
+          "src/main/java/net/ironedge/goatowl/item/model/ArimaREModel.java",
+          "src/main/resources/assets/goatowl/models/item/arima_re_leggings.json",
+          "src/main/resources/assets/goatowl/models/item/arima_re_helmet.json"
+        ]
+      },
+      "path": "~/Armor/CCG/Arima/RE"
+    },
+    {
+      "name": "ArimaRECloak",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arima_re_cloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/ArimaRECloakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Armor/CCG/Arima/RE"
     }
   ],
   "variable_elements": [
@@ -3039,22 +3079,25 @@
   "language_map": {
     "en_us": {
       "item.goatowl.vs_arima_kaneki_helmet": "Kaneki\u0027s Mask",
+      "item.goatowl.arima_re_chestplate": "CCG Reaper\u0027s Coat",
       "gui.goatowl.kakakhou_select_gui.button_rinkaku": "Rinkaku",
       "gui.goatowl.kakakhou_select_gui.button_complete": "Complete",
       "gui.goatowl.half_ghoul_rc_tester.button_750": "10000",
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.kakahou_tester_item": "Kakahou Tester Item",
       "item.goatowl.black_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
-      "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
+      "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.test_kakugan": "Test Kakugan Item",
       "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
       "key.goatowl.dash_key": "Dash",
       "gui.goatowl.kakakhou_select_gui.button_ukaku": "Ukaku",
+      "item.goatowl.arima_re_helmet": "CCG Reaper\u0027s Glasses",
       "item.goatowl.prisoner_kaneki_chestplate": "Kaneki\u0027s Shirt",
       "item.goatowl.ayato_s_1_helmet": "Ayato\u0027s Mask",
       "item.goatowl.noro_black_helmet": "Noro\u0027s Mask",
+      "item.goatowl.arima_re_boots": "CCG Reaper\u0027s Loafers",
       "gui.goatowl.rinkaku_select_gui.button_rize": "Rize",
       "gui.goatowl.half_ghoul_rc_tester.button_500": "8000",
       "gui.goatowl.half_human_rc_tester.button_500": "500",
@@ -3122,6 +3165,7 @@
       "item.goatowl.ayato_re_helmet": "Ayato\u0027s Mask",
       "entity.goatowl.aaaaaaaaaaaa": "aaaaaaaaaaaaa",
       "item.goatowl.vs_arima_kaneki_chestplate": "Black Reaper\u0027s Shirt",
+      "item.goatowl.arima_re_leggings": "CCG Reaper\u0027s Pants",
       "item.goatowl.test_bokusatsu": "Bokusatsu No.2",
       "item.goatowl.ayato_re_leggings": "Ayato\u0027s Pants",
       "gui.goatowl.kakakhou_select_gui.button_incomplete": "Incomplete",
@@ -3314,6 +3358,20 @@
                   },
                   {
                     "name": "BlackReaper",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "CCG",
+            "children": [
+              {
+                "name": "Arima",
+                "children": [
+                  {
+                    "name": "RE",
                     "children": []
                   }
                 ]
