@@ -17,7 +17,6 @@ import net.minecraft.client.KeyMapping;
 
 import net.ironedge.goatowl.network.UkakuKeyMessage;
 import net.ironedge.goatowl.network.RinkakuKeyMessage;
-import net.ironedge.goatowl.network.KakujaKeyMessage;
 import net.ironedge.goatowl.network.DashKeyMessage;
 import net.ironedge.goatowl.GoatowlMod;
 

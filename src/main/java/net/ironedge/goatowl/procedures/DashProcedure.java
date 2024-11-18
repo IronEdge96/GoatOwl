@@ -26,7 +26,7 @@ public class DashProcedure {
 			}
 		}
 		if (entity instanceof Player) {
-			if (!entity.isInWater()) {
+			if (!entity.isInWater() && !(entity instanceof Player player && player.getAbilities().flying)) {
 				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Moving) {
 					if (-2 < entity.getDeltaMovement().x() * 12 && -2 < entity.getDeltaMovement().z() * 12 && 2 > entity.getDeltaMovement().x() * 12 && 2 > entity.getDeltaMovement().z() * 12) {
 						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 12), (-1000), (entity.getDeltaMovement().z() * 12)));
@@ -61,30 +61,20 @@ public class DashProcedure {
 							}
 						}
 					} else {
-						if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).DashCooldown == false) {
-							entity.setDeltaMovement(new Vec3((-(entity.getDeltaMovement().x() + entity.getLookAngle().x * 0.69)), 0.69, (-(entity.getDeltaMovement().z() + entity.getLookAngle().z * 0.69))));
-							{
-								boolean _setval = true;
-								entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.DashCooldown = _setval;
-									capability.syncPlayerVariables(entity);
-								});
-							}
-							{
-								boolean _setval = true;
-								entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-									capability.JustDashed = _setval;
-									capability.syncPlayerVariables(entity);
-								});
-							}
-						} else {
-							if (world instanceof Level _level) {
-								if (!_level.isClientSide()) {
-									_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100);
-								} else {
-									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 100, 100, false);
-								}
-							}
+						entity.setDeltaMovement(new Vec3((-(entity.getDeltaMovement().x() + entity.getLookAngle().x * 0.69)), 0.69, (-(entity.getDeltaMovement().z() + entity.getLookAngle().z * 0.69))));
+						{
+							boolean _setval = true;
+							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.DashCooldown = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
+						{
+							boolean _setval = true;
+							entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.JustDashed = _setval;
+								capability.syncPlayerVariables(entity);
+							});
 						}
 					}
 				}

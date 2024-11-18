@@ -1,0 +1,113 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rizerinkakuform4",
+          "image": "kanekirinkaku4.png",
+          "hoveredImage": "kanekirinkaku4re.png",
+          "onClick": {
+            "name": "Kaneki4Button"
+          },
+          "x": 195,
+          "y": 35
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rizerinkakuform6",
+          "image": "kanekirinkaku6.png",
+          "hoveredImage": "kanekirinkaku6re.png",
+          "onClick": {
+            "name": "Kaneki6Button"
+          },
+          "x": 195,
+          "y": 170
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kanekirinkaku3",
+          "image": "kanekirinkaku3.png",
+          "hoveredImage": "kanekirinkaku3re.png",
+          "onClick": {
+            "name": "Kaneki3Button"
+          },
+          "x": 267,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kanekirinkaku8",
+          "image": "kanekirinkaku8.png",
+          "hoveredImage": "kanekirinkaku8re.png",
+          "onClick": {
+            "name": "Kaneki8Button"
+          },
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kanekirinkakuclaw",
+          "image": "kanekirinkakuclaw.png",
+          "hoveredImage": "kanekirinkakuclawre.png",
+          "onClick": {
+            "name": "KanekiClawButton"
+          },
+          "x": 267,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kanekirinkakublade",
+          "image": "kanekirinkakublade.png",
+          "hoveredImage": "kanekirinkakubladere.png",
+          "onClick": {
+            "name": "KanekiBladeButton"
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_kagunestyling",
+          "image": "kagunestyling.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "KaguneStylingPressed"
+          },
+          "x": 357,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

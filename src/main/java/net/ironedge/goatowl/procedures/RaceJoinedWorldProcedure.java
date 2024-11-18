@@ -119,5 +119,6 @@ public class RaceJoinedWorldProcedure {
 				_player.displayClientMessage(Component.literal("Born a HALF-GHOUL, your Rc cell count makes you stronger and faster than even some ghouls; your health is decreased."), false);
 		}
 		RCStatSetProcedure.execute(entity);
+		BecomeGhoulProcedure.execute(entity);
 	}
 }

@@ -20,5 +20,30 @@ import net.minecraft.world.entity.AnimationState;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public interface AnimationInterface {
+	//Rize Animations
 	AnimationState getRizeIdleFourAnimationState();
+
+	AnimationState getRizeIdleSixAnimationState();
+
+	//Kaneki Animations
+	AnimationState getKanekiIdleFourAnimationState();
+
+	AnimationState getKanekiIdleThreeAnimationState();
+
+	AnimationState getKanekiIdleSixAnimationState();
+
+	AnimationState getKanekiIdleEightAnimationState();
+
+	AnimationState getKanekiIdleBladeAnimationState();
+
+	AnimationState getKanekiIdleClawAnimationState();
+
+	//Kuro/Shiro Animations
+	AnimationState getKuroRinkakuIdleAnimationState();
+
+	AnimationState getShiroRinkakuIdleAnimationState();
+
+	//Kakuja Animations
+	//Kaneki
+	AnimationState getReaperKakujaIdleAnimationState();
 }

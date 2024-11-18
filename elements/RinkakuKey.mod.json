@@ -3,7 +3,7 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "R",
-    "keyBindingName": "Sdfs",
+    "keyBindingName": "Rinkaku",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "RinkakuKeyPressed"

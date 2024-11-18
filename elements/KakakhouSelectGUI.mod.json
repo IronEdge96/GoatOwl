@@ -1,0 +1,121 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_koukaku",
+          "text": "Koukaku",
+          "isUndecorated": false,
+          "width": 67,
+          "height": 20,
+          "x": 178,
+          "y": 79
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ukaku",
+          "text": "Ukaku",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "UkakuGUIChange"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 186,
+          "y": 52
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_rinkaku",
+          "text": "Rinkaku",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RinkakuGUIChange"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 181,
+          "y": 106
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_bikaku",
+          "text": "Bikaku",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 184,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_chimera",
+          "text": "Chimera",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ChimeraOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 241,
+          "y": 183
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_complete",
+          "text": "Complete",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CompleteButtonPress"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 304,
+          "y": 183
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_incomplete",
+          "text": "Incomplete",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "IncompleteButtonPress"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 304,
+          "y": 202
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
