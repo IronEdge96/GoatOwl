@@ -1,0 +1,6 @@
+{
+  "parent": "goatowl:displaysettings/silverskull.item",
+  "textures": {
+    "layer0": "goatowl:item/silverskull"
+  }
+}

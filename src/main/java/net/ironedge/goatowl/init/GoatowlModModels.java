@@ -35,6 +35,8 @@ import net.ironedge.goatowl.client.model.Modelgoatoutfitcloak;
 import net.ironedge.goatowl.client.model.Modelblackreaperoutfitcloak;
 import net.ironedge.goatowl.client.model.Modelayatotestukaku;
 import net.ironedge.goatowl.client.model.Modelarimaoutfitrecloak;
+import net.ironedge.goatowl.client.model.Modelarimaoekoutfitonsie;
+import net.ironedge.goatowl.client.model.Modelarimaoekoutfitcloak;
 import net.ironedge.goatowl.client.model.Modelaogirirobeshood;
 import net.ironedge.goatowl.client.model.Modelaogirirobescloak;
 
@@ -45,6 +47,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelgoatoutfitcloak.LAYER_LOCATION, Modelgoatoutfitcloak::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganinsaneright.LAYER_LOCATION, Modelkakuganinsaneright::createBodyLayer);
 		event.registerLayerDefinition(Modelrizerinkaku.LAYER_LOCATION, Modelrizerinkaku::createBodyLayer);
+		event.registerLayerDefinition(Modelarimaoekoutfitonsie.LAYER_LOCATION, Modelarimaoekoutfitonsie::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganfaceright.LAYER_LOCATION, Modelkakuganfaceright::createBodyLayer);
 		event.registerLayerDefinition(Modelgoatoutfittank.LAYER_LOCATION, Modelgoatoutfittank::createBodyLayer);
 		event.registerLayerDefinition(Modelrizerinkakusix.LAYER_LOCATION, Modelrizerinkakusix::createBodyLayer);
@@ -58,6 +61,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelvsarimaonsie.LAYER_LOCATION, Modelvsarimaonsie::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakuclaw.LAYER_LOCATION, Modelkanekirinkakuclaw::createBodyLayer);
 		event.registerLayerDefinition(Modelkurorinkaku.LAYER_LOCATION, Modelkurorinkaku::createBodyLayer);
+		event.registerLayerDefinition(Modelarimaoekoutfitcloak.LAYER_LOCATION, Modelarimaoekoutfitcloak::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganleft.LAYER_LOCATION, Modelkakuganleft::createBodyLayer);
 		event.registerLayerDefinition(Modelshirorinkaku.LAYER_LOCATION, Modelshirorinkaku::createBodyLayer);
 		event.registerLayerDefinition(Modelreaperkakuja.LAYER_LOCATION, Modelreaperkakuja::createBodyLayer);

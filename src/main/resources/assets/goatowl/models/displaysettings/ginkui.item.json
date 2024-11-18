@@ -1,0 +1,104 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    64,
+    64
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        -2.75,
+        7.5,
+        0
+      ],
+      "translation": [
+        0,
+        -2,
+        0
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        -2.75,
+        7.5,
+        0
+      ],
+      "translation": [
+        0,
+        -2,
+        0
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -22.5,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        2
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -22.5,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        2
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "translation": [
+        0,
+        -1.75,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        90,
+        45,
+        -90
+      ]
+    },
+    "head": {
+      "scale": [
+        0,
+        0,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -180,
+        90,
+        0
+      ],
+      "translation": [
+        0,
+        -10.5,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    }
+  },
+  "textures": {
+    "particle": "item/ginkui"
+  }
+}

@@ -77,6 +77,13 @@ public class GoatowlModTabs {
 			tabData.accept(GoatowlModItems.ARIMA_RE_CHESTPLATE.get());
 			tabData.accept(GoatowlModItems.ARIMA_RE_LEGGINGS.get());
 			tabData.accept(GoatowlModItems.ARIMA_RE_BOOTS.get());
+			tabData.accept(GoatowlModItems.ARIMA_OEK_OUTFIT_HELMET.get());
+			tabData.accept(GoatowlModItems.ARIMA_OEK_OUTFIT_CHESTPLATE.get());
+			tabData.accept(GoatowlModItems.ARIMA_OEK_OUTFIT_LEGGINGS.get());
+			tabData.accept(GoatowlModItems.ARIMA_OEK_OUTFIT_BOOTS.get());
+			tabData.accept(GoatowlModItems.TEST_GINKUI.get());
+			tabData.accept(GoatowlModItems.TEST_GRAVE_ROBBER.get());
+			tabData.accept(GoatowlModItems.TEST_SILVER_SKULL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(GoatowlModItems.HHHHH_SPAWN_EGG.get());
 			tabData.accept(GoatowlModItems.AAAAAAAAAAAA_SPAWN_EGG.get());

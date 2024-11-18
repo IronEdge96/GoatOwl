@@ -15,8 +15,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ArmorItem;
 
 import net.ironedge.goatowl.item.VsArimaKanekiItem;
+import net.ironedge.goatowl.item.TestSilverSkullItem;
 import net.ironedge.goatowl.item.TestKakuganItem;
 import net.ironedge.goatowl.item.TestJuuzouJasonItem;
+import net.ironedge.goatowl.item.TestGraveRobberItem;
+import net.ironedge.goatowl.item.TestGinkuiItem;
 import net.ironedge.goatowl.item.TestDemonYamadaItem;
 import net.ironedge.goatowl.item.TestBokusatsuItem;
 import net.ironedge.goatowl.item.TestAyumiItem;
@@ -36,6 +39,7 @@ import net.ironedge.goatowl.item.BlackReaperKanekiItem;
 import net.ironedge.goatowl.item.AyatoS1Item;
 import net.ironedge.goatowl.item.AyatoReItem;
 import net.ironedge.goatowl.item.ArimaREItem;
+import net.ironedge.goatowl.item.ArimaOEKOutfitItem;
 import net.ironedge.goatowl.item.AogiriRobesItem;
 import net.ironedge.goatowl.GoatowlMod;
 
@@ -99,6 +103,13 @@ public class GoatowlModItems {
 	public static final RegistryObject<ArimaREItem> ARIMA_RE_CHESTPLATE = REGISTRY.register("arima_re_chestplate", () -> new ArimaREItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<ArimaREItem> ARIMA_RE_LEGGINGS = REGISTRY.register("arima_re_leggings", () -> new ArimaREItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 	public static final RegistryObject<ArimaREItem> ARIMA_RE_BOOTS = REGISTRY.register("arima_re_boots", () -> new ArimaREItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<ArimaOEKOutfitItem> ARIMA_OEK_OUTFIT_HELMET = REGISTRY.register("arima_oek_outfit_helmet", () -> new ArimaOEKOutfitItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<ArimaOEKOutfitItem> ARIMA_OEK_OUTFIT_CHESTPLATE = REGISTRY.register("arima_oek_outfit_chestplate", () -> new ArimaOEKOutfitItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<ArimaOEKOutfitItem> ARIMA_OEK_OUTFIT_LEGGINGS = REGISTRY.register("arima_oek_outfit_leggings", () -> new ArimaOEKOutfitItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<ArimaOEKOutfitItem> ARIMA_OEK_OUTFIT_BOOTS = REGISTRY.register("arima_oek_outfit_boots", () -> new ArimaOEKOutfitItem(ArmorItem.Type.BOOTS, new Item.Properties()));
+	public static final RegistryObject<Item> TEST_GINKUI = REGISTRY.register("test_ginkui", () -> new TestGinkuiItem());
+	public static final RegistryObject<Item> TEST_GRAVE_ROBBER = REGISTRY.register("test_grave_robber", () -> new TestGraveRobberItem());
+	public static final RegistryObject<Item> TEST_SILVER_SKULL = REGISTRY.register("test_silver_skull", () -> new TestSilverSkullItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

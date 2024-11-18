@@ -1,0 +1,6 @@
+{
+  "parent": "goatowl:displaysettings/ginkui.item",
+  "textures": {
+    "layer0": "goatowl:item/ginkui"
+  }
+}
