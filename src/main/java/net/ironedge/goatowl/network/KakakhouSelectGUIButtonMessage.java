@@ -14,8 +14,6 @@ import net.minecraft.core.BlockPos;
 import net.ironedge.goatowl.world.inventory.KakakhouSelectGUIMenu;
 import net.ironedge.goatowl.procedures.UkakuGUIChangeProcedure;
 import net.ironedge.goatowl.procedures.RinkakuGUIChangeProcedure;
-import net.ironedge.goatowl.procedures.IncompleteButtonPressProcedure;
-import net.ironedge.goatowl.procedures.CompleteButtonPressProcedure;
 import net.ironedge.goatowl.procedures.ChimeraOpenProcedure;
 import net.ironedge.goatowl.GoatowlMod;
 
@@ -77,14 +75,6 @@ public class KakakhouSelectGUIButtonMessage {
 		if (buttonID == 4) {
 
 			ChimeraOpenProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 5) {
-
-			CompleteButtonPressProcedure.execute(entity);
-		}
-		if (buttonID == 6) {
-
-			IncompleteButtonPressProcedure.execute(entity);
 		}
 	}
 

@@ -1,26 +1,22 @@
 package net.ironedge.goatowl.procedures;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.ironedge.goatowl.network.GoatowlModVariables;
 
-public class IncompleteButtonPressProcedure {
+public class KanekiKakujaGetProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		{
-			boolean _setval = true;
+			String _setval = "Kaneki";
 			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.KakujaUnlocked = _setval;
+				capability.Kakuja = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		{
-			boolean _setval = false;
-			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.CompletedKakuja = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
+		if (entity instanceof Player _player)
+			_player.closeContainer();
 	}
 }

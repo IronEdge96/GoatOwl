@@ -13,7 +13,6 @@ public class RinkakuKeyPressedProcedure {
 			return;
 		if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Race).equals("Ghoul")
 				|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Race).equals("Half-Ghoul")) {
-			KakujaActivateProcedure.execute(world, x, y, z, entity);
 			RinkakuKeyHitProcedure.execute(world, x, y, z, entity);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

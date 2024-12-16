@@ -14,6 +14,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.ironedge.goatowl.world.inventory.ChimeraSelectMenu;
+import net.ironedge.goatowl.network.GoatowlModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -36,6 +37,13 @@ public class ChimeraOpenProcedure {
 					return new ChimeraSelectMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
+		}
+		{
+			double _setval = 10;
+			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.CK1Level = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 	}
 }

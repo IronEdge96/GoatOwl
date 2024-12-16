@@ -10,6 +10,9 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.ironedge.goatowl.client.model.Modelvsarimaonsie;
+import net.ironedge.goatowl.client.model.Modelvsarimakakujarinkaku;
+import net.ironedge.goatowl.client.model.Modelvsarimakakujaclaw;
+import net.ironedge.goatowl.client.model.Modelvsarimakakuja;
 import net.ironedge.goatowl.client.model.Modelshirorinkaku;
 import net.ironedge.goatowl.client.model.Modelrizerinkakusix;
 import net.ironedge.goatowl.client.model.Modelrizerinkaku;
@@ -48,6 +51,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelkakuganinsaneright.LAYER_LOCATION, Modelkakuganinsaneright::createBodyLayer);
 		event.registerLayerDefinition(Modelrizerinkaku.LAYER_LOCATION, Modelrizerinkaku::createBodyLayer);
 		event.registerLayerDefinition(Modelarimaoekoutfitonsie.LAYER_LOCATION, Modelarimaoekoutfitonsie::createBodyLayer);
+		event.registerLayerDefinition(Modelvsarimakakujarinkaku.LAYER_LOCATION, Modelvsarimakakujarinkaku::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganfaceright.LAYER_LOCATION, Modelkakuganfaceright::createBodyLayer);
 		event.registerLayerDefinition(Modelgoatoutfittank.LAYER_LOCATION, Modelgoatoutfittank::createBodyLayer);
 		event.registerLayerDefinition(Modelrizerinkakusix.LAYER_LOCATION, Modelrizerinkakusix::createBodyLayer);
@@ -60,6 +64,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelaogirirobeshood.LAYER_LOCATION, Modelaogirirobeshood::createBodyLayer);
 		event.registerLayerDefinition(Modelvsarimaonsie.LAYER_LOCATION, Modelvsarimaonsie::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakuclaw.LAYER_LOCATION, Modelkanekirinkakuclaw::createBodyLayer);
+		event.registerLayerDefinition(Modelvsarimakakuja.LAYER_LOCATION, Modelvsarimakakuja::createBodyLayer);
 		event.registerLayerDefinition(Modelkurorinkaku.LAYER_LOCATION, Modelkurorinkaku::createBodyLayer);
 		event.registerLayerDefinition(Modelarimaoekoutfitcloak.LAYER_LOCATION, Modelarimaoekoutfitcloak::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganleft.LAYER_LOCATION, Modelkakuganleft::createBodyLayer);
@@ -72,6 +77,7 @@ public class GoatowlModModels {
 		event.registerLayerDefinition(Modelkanekirinkakuthree.LAYER_LOCATION, Modelkanekirinkakuthree::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekioutfitonsie.LAYER_LOCATION, Modelkanekioutfitonsie::createBodyLayer);
 		event.registerLayerDefinition(Modelkanekirinkakublade.LAYER_LOCATION, Modelkanekirinkakublade::createBodyLayer);
+		event.registerLayerDefinition(Modelvsarimakakujaclaw.LAYER_LOCATION, Modelvsarimakakujaclaw::createBodyLayer);
 		event.registerLayerDefinition(Modelkakuganright.LAYER_LOCATION, Modelkakuganright::createBodyLayer);
 		event.registerLayerDefinition(Modelayatotestukaku.LAYER_LOCATION, Modelayatotestukaku::createBodyLayer);
 	}

@@ -46,4 +46,8 @@ public interface AnimationInterface {
 	//Kakuja Animations
 	//Kaneki
 	AnimationState getReaperKakujaIdleAnimationState();
+
+	AnimationState VSArimaKakujaRinkakuIdleAnimationState();
+	AnimationState VSArimaKakujaClawIdleAnimationState();
+
 }
