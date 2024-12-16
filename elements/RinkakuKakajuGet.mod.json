@@ -1,0 +1,127 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kaneki",
+          "text": "Kaneki",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KanekiKakujaGet"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 129,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1",
+          "text": "1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Kakuja1Pressed"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 269,
+          "y": 97
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_2",
+          "text": "2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Kakuja2Pressed"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 269,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_3",
+          "text": "3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Kakuja3Pressed"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 269,
+          "y": 135
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_4",
+          "text": "4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Kakuja4Pressed"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 269,
+          "y": 155
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_5",
+          "text": "5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Kakuja5Pressed"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 269,
+          "y": 174
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_all",
+          "text": "ALL",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KakujaAllPressed"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 301,
+          "y": 181
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -19,8 +19,8 @@
           "onClick": {
             "name": "Kaneki4Button"
           },
-          "x": 195,
-          "y": 35
+          "x": 267,
+          "y": 107
         }
       },
       {
@@ -32,7 +32,7 @@
           "onClick": {
             "name": "Kaneki6Button"
           },
-          "x": 195,
+          "x": 267,
           "y": 170
         }
       },
@@ -45,8 +45,8 @@
           "onClick": {
             "name": "Kaneki3Button"
           },
-          "x": 267,
-          "y": 107
+          "x": 195,
+          "y": 35
         }
       },
       {
@@ -58,8 +58,8 @@
           "onClick": {
             "name": "Kaneki8Button"
           },
-          "x": 132,
-          "y": 107
+          "x": 195,
+          "y": 170
         }
       },
       {
@@ -71,8 +71,8 @@
           "onClick": {
             "name": "KanekiClawButton"
           },
-          "x": 267,
-          "y": 44
+          "x": 123,
+          "y": 107
         }
       },
       {
@@ -84,8 +84,8 @@
           "onClick": {
             "name": "KanekiBladeButton"
           },
-          "x": 132,
-          "y": 44
+          "x": 123,
+          "y": 170
         }
       },
       {
@@ -99,6 +99,21 @@
           },
           "x": 357,
           "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kakuja",
+          "text": "Kakuja",
+          "isUndecorated": false,
+          "displayCondition": {
+            "name": "KanekiSelectDisplay"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 186,
+          "y": 116
         }
       }
     ],

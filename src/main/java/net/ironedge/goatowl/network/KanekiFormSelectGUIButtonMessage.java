@@ -68,31 +68,31 @@ public class KanekiFormSelectGUIButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
+		if (buttonID == 1) {
 
 			Kaneki4ButtonProcedure.execute(entity);
 		}
-		if (buttonID == 1) {
+		if (buttonID == 2) {
 
 			Kaneki6ButtonProcedure.execute(entity);
 		}
-		if (buttonID == 2) {
+		if (buttonID == 3) {
 
 			Kaneki3ButtonProcedure.execute(entity);
 		}
-		if (buttonID == 3) {
+		if (buttonID == 4) {
 
 			Kaneki8ButtonProcedure.execute(entity);
 		}
-		if (buttonID == 4) {
+		if (buttonID == 5) {
 
 			KanekiClawButtonProcedure.execute(entity);
 		}
-		if (buttonID == 5) {
+		if (buttonID == 6) {
 
 			KanekiBladeButtonProcedure.execute(entity);
 		}
-		if (buttonID == 6) {
+		if (buttonID == 7) {
 
 			KaguneStylingPressedProcedure.execute(entity);
 		}

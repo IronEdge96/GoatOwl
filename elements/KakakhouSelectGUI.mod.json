@@ -82,31 +82,13 @@
       {
         "type": "button",
         "data": {
-          "name": "button_complete",
-          "text": "Complete",
+          "name": "button_kakuja",
+          "text": "Kakuja",
           "isUndecorated": false,
-          "onClick": {
-            "name": "CompleteButtonPress"
-          },
-          "width": 67,
+          "width": 56,
           "height": 20,
-          "x": 304,
-          "y": 183
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_incomplete",
-          "text": "Incomplete",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "IncompleteButtonPress"
-          },
-          "width": 77,
-          "height": 20,
-          "x": 304,
-          "y": 202
+          "x": 241,
+          "y": 163
         }
       }
     ],

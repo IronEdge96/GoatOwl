@@ -2233,6 +2233,9 @@
       "locked_code": false,
       "registry_name": "kaneki_rinkaku",
       "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiRinkakuProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -2638,7 +2641,7 @@
           "src/main/java/net/ironedge/goatowl/ReaperKakujaAnimations.java"
         ]
       },
-      "path": "~/Ghouls/Kakuja/Kaneki/Reaper"
+      "path": "~/Ghouls/Kakuja/Rinkaku/Kaneki/Reaper"
     },
     {
       "name": "RinkakuKeyHit",
@@ -2675,102 +2678,6 @@
         ]
       },
       "path": "~/Ghouls/Rinkaku"
-    },
-    {
-      "name": "KakujaActivate",
-      "type": "procedure",
-      "sortid": 188,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kakuja_activate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/KakujaActivateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Ghouls/Kakuja"
-    },
-    {
-      "name": "IncompleteButtonPress",
-      "type": "procedure",
-      "sortid": 189,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "incomplete_button_press",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/IncompleteButtonPressProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Ghouls/Tests"
-    },
-    {
-      "name": "CompleteButtonPress",
-      "type": "procedure",
-      "sortid": 190,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "complete_button_press",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/CompleteButtonPressProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Ghouls/Tests"
-    },
-    {
-      "name": "GetKakuja",
-      "type": "procedure",
-      "sortid": 193,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_kakuja",
-      "metadata": {
-        "files": [
-          "src/main/java/net/ironedge/goatowl/procedures/GetKakujaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Ghouls/Kakuja"
     },
     {
       "name": "ArimaRE",
@@ -2902,6 +2809,451 @@
         ]
       },
       "path": "~/CCG/Quinque/QuinqueItems/TestQuinques"
+    },
+    {
+      "name": "VSArimaKakujaAnimations",
+      "type": "code",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vs_arima_kakuja_animations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/VSArimaKakujaAnimations.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/Rinkaku/Kaneki/Reawakened"
+    },
+    {
+      "name": "RinkakuKakajuGet",
+      "type": "gui",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rinkaku_kakaju_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/client/gui/RinkakuKakajuGetScreen.java",
+          "src/main/java/net/ironedge/goatowl/network/RinkakuKakajuGetButtonMessage.java",
+          "src/main/java/net/ironedge/goatowl/world/inventory/RinkakuKakajuGetMenu.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "UkakuKakajuGet",
+      "type": "gui",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ukaku_kakaju_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/client/gui/UkakuKakajuGetScreen.java",
+          "src/main/java/net/ironedge/goatowl/world/inventory/UkakuKakajuGetMenu.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "KoukakuKakujaGet",
+      "type": "gui",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koukaku_kakuja_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/world/inventory/KoukakuKakujaGetMenu.java",
+          "src/main/java/net/ironedge/goatowl/client/gui/KoukakuKakujaGetScreen.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "BikakuKakujaGet",
+      "type": "gui",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bikaku_kakuja_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/world/inventory/BikakuKakujaGetMenu.java",
+          "src/main/java/net/ironedge/goatowl/client/gui/BikakuKakujaGetScreen.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "KakujaGet",
+      "type": "procedure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KakujaGetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "Kakuja1Pressed",
+      "type": "procedure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_1_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kakuja1PressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "Kakuja2Pressed",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_2_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kakuja2PressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "Kakuja3Pressed",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_3_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kakuja3PressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "Kakuja4Pressed",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_4_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kakuja4PressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "Kakuja5Pressed",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_5_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/Kakuja5PressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "KakujaAllPressed",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_all_pressed",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KakujaAllPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "KanekiKakujaGet",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_kakuja_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiKakujaGetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS/Debug"
+    },
+    {
+      "name": "KanekiKakuja",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_kakuja",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiKakujaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/Rinkaku/Kaneki"
+    },
+    {
+      "name": "KanekiSelectAll",
+      "type": "gui",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_select_all",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/world/inventory/KanekiSelectAllMenu.java",
+          "src/main/java/net/ironedge/goatowl/network/KanekiSelectAllButtonMessage.java",
+          "src/main/java/net/ironedge/goatowl/client/gui/KanekiSelectAllScreen.java"
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "CentipedeClicked",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "centipede_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/CentipedeClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "ReaperClicked",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reaper_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/ReaperClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "ReawakenedClicked",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reawakened_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/ReawakenedClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "OEKClicked",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oek_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/OEKClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "DragonClicked",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/DragonClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "KanekiSelectDisplay",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kaneki_select_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KanekiSelectDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja/GUIS"
+    },
+    {
+      "name": "KakujaKeyHit",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kakuja_key_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/ironedge/goatowl/procedures/KakujaKeyHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ghouls/Kakuja"
     }
   ],
   "variable_elements": [
@@ -3074,10 +3426,10 @@
       "value": "false"
     },
     {
-      "name": "KakujaStage",
-      "type": "number",
+      "name": "KakujaForm",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "0"
+      "value": ""
     },
     {
       "name": "CompletedKakuja",
@@ -3102,6 +3454,42 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "Sane"
+    },
+    {
+      "name": "KakahouLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "CK1Level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "CK2Level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "CK3Level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "KakujaLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "KakujaExtra",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -3185,6 +3573,7 @@
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.test_kakugan": "Test Kakugan Item",
       "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
+      "gui.goatowl.kakakhou_select_gui.button_kakuja": "Kakuja",
       "key.goatowl.dash_key": "Dash",
       "gui.goatowl.kakakhou_select_gui.button_ukaku": "Ukaku",
       "item.goatowl.arima_re_helmet": "CCG Reaper\u0027s Glasses",
@@ -3193,12 +3582,15 @@
       "item.goatowl.noro_black_helmet": "Noro\u0027s Mask",
       "item.goatowl.arima_re_boots": "CCG Reaper\u0027s Loafers",
       "gui.goatowl.rinkaku_select_gui.button_rize": "Rize",
+      "gui.goatowl.koukaku_kakuja_get.label_na": "NA",
       "gui.goatowl.half_ghoul_rc_tester.button_500": "8000",
       "gui.goatowl.half_human_rc_tester.button_500": "500",
+      "gui.goatowl.bikaku_kakuja_get.label_na": "NA",
       "item.goatowl.test_grave_robber": "Grave Robber\u0027s Sword",
       "item.goatowl.shirt_reaper_kaneki_chestplate": "Black Reaper\u0027s Shirt",
       "gui.goatowl.ghoul_rc_tester.button_50": "850",
       "item.goatowl.test_amatsu": "Amatsu",
+      "gui.goatowl.kaneki_select_all.button_centipede": "Centipede",
       "gui.goatowl.ghoul_rc_tester.button_200": "1000",
       "gui.goatowl.ghoul_rc_tester.button_random": "Random",
       "item.goatowl.goat_kaneki_boots": "Kaneki\u0027s Loafers",
@@ -3218,9 +3610,11 @@
       "item.goatowl.default_kaneki_leggings": "Kaneki\u0027s Shorts",
       "item.goatowl.noro_helmet": "Noro\u0027s Mask",
       "gui.goatowl.half_human_rc_tester.button_random": "Random",
+      "gui.goatowl.rinkaku_kakaju_get.button_kaneki": "Kaneki",
       "item.goatowl.noro_leggings": "Noro\u0027s Pants",
       "item.goatowl.test_silver_skull": "Silver Skull",
       "item.goatowl.quinque_steel_item": "Quinque Steel Ingot",
+      "gui.goatowl.kaneki_select_all.button_oek": "OEK",
       "item.goatowl.test_juuzou_jason": "Juuzou\u0027s Jason",
       "key.goatowl.rinkaku_key": "Rinkaku",
       "item.goatowl.ayato_s_1_boots": "Ayato\u0027s Boots",
@@ -3242,8 +3636,10 @@
       "gui.goatowl.test_rc_overlay.label_empty": "/",
       "item.goatowl.race_test_item": "Race Tester",
       "gui.goatowl.rinkaku_select_gui.button_kuroshiro": "Kuro/Shiro",
+      "gui.goatowl.rinkaku_kakaju_get.button_all": "ALL",
       "item.goatowl.prisoner_kaneki_boots": "Kaneki\u0027s Leggings",
       "item.goatowl.test_aus": "Aus",
+      "gui.goatowl.ukaku_kakaju_get.label_na": "NA",
       "item.goatowl.goat_kaneki_leggings": "Kaneki\u0027s Pants",
       "item.goatowl.aogiri_robes_helmet": "Noro\u0027s Mask",
       "item.goatowl.arima_oek_outfit_chestplate": "One Eyed King\u0027s Coat",
@@ -3254,17 +3650,23 @@
       "item.goatowl.arima_oek_outfit_leggings": "One Eyed King\u0027s Pants",
       "item.goatowl.black_reaper_kaneki_helmet": "Black Reaper\u0027s Glasses",
       "item.goatowl.aogiri_robes_leggings": "Aogiri Pants",
+      "gui.goatowl.kaneki_select_all.button_dragpm": "Dragon",
       "block.goatowl.quinque_furnace_test_off": "Quinque Furnace Test",
       "gui.goatowl.human_rc_tester.button_200": "200",
       "gui.goatowl.chimera_select.button_rinkaku": "Rinkaku",
       "gui.goatowl.ukaku_select_gui.button_ayato": "Ayato",
       "item.goatowl.noro_boots": "Noro\u0027s Loafers",
+      "gui.goatowl.rinkaku_kakaju_get.button_1": "1",
+      "gui.goatowl.rinkaku_kakaju_get.button_2": "2",
+      "gui.goatowl.rinkaku_kakaju_get.button_3": "3",
+      "gui.goatowl.rinkaku_kakaju_get.button_4": "4",
       "key.goatowl.ukaku_key": "Sdfs",
       "item.goatowl.noro_black_boots": "Noro\u0027s Loafers",
       "item.goatowl.ayato_re_helmet": "Ayato\u0027s Mask",
       "entity.goatowl.aaaaaaaaaaaa": "aaaaaaaaaaaaa",
       "item.goatowl.vs_arima_kaneki_chestplate": "Black Reaper\u0027s Shirt",
       "item.goatowl.arima_re_leggings": "CCG Reaper\u0027s Pants",
+      "gui.goatowl.rinkaku_kakaju_get.button_5": "5",
       "item.goatowl.test_bokusatsu": "Bokusatsu No.2",
       "item.goatowl.ayato_re_leggings": "Ayato\u0027s Pants",
       "gui.goatowl.kakakhou_select_gui.button_incomplete": "Incomplete",
@@ -3277,6 +3679,8 @@
       "item.goatowl.ayato_s_1_leggings": "Ayato\u0027s Pants",
       "gui.goatowl.half_ghoul_rc_tester.button_200": "1000",
       "item.goatowl.ayato_re_chestplate": "Ayato\u0027s Tank",
+      "gui.goatowl.kaneki_form_select_gui.button_kakuja": "Kakuja",
+      "gui.goatowl.ukaku_kakaju_get.button_kaneki": "Kaneki",
       "entity.goatowl.hhhhh": "Hhhhh",
       "gui.goatowl.half_human_rc_tester.button_200": "200",
       "item.goatowl.rc_level_tester": "RC Level Tester",
@@ -3307,26 +3711,40 @@
             "name": "Kakuja",
             "children": [
               {
-                "name": "Kaneki",
+                "name": "Rinkaku",
                 "children": [
                   {
-                    "name": "Centipede",
-                    "children": []
-                  },
+                    "name": "Kaneki",
+                    "children": [
+                      {
+                        "name": "Centipede",
+                        "children": []
+                      },
+                      {
+                        "name": "Reaper",
+                        "children": []
+                      },
+                      {
+                        "name": "Reawakened",
+                        "children": []
+                      },
+                      {
+                        "name": "OEK",
+                        "children": []
+                      },
+                      {
+                        "name": "Dragon",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "GUIS",
+                "children": [
                   {
-                    "name": "Reaper",
-                    "children": []
-                  },
-                  {
-                    "name": "Reawakened",
-                    "children": []
-                  },
-                  {
-                    "name": "OEK",
-                    "children": []
-                  },
-                  {
-                    "name": "Dragon",
+                    "name": "Debug",
                     "children": []
                   }
                 ]

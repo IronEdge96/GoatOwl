@@ -26,8 +26,7 @@ public class KakakhouSelectGUIScreen extends AbstractContainerScreen<KakakhouSel
 	Button button_rinkaku;
 	Button button_bikaku;
 	Button button_chimera;
-	Button button_complete;
-	Button button_incomplete;
+	Button button_kakuja;
 
 	public KakakhouSelectGUIScreen(KakakhouSelectGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -108,21 +107,9 @@ public class KakakhouSelectGUIScreen extends AbstractContainerScreen<KakakhouSel
 		}).bounds(this.leftPos + 115, this.topPos + 146, 61, 20).build();
 		guistate.put("button:button_chimera", button_chimera);
 		this.addRenderableWidget(button_chimera);
-		button_complete = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_complete"), e -> {
-			if (true) {
-				GoatowlMod.PACKET_HANDLER.sendToServer(new KakakhouSelectGUIButtonMessage(5, x, y, z));
-				KakakhouSelectGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
-			}
-		}).bounds(this.leftPos + 178, this.topPos + 146, 67, 20).build();
-		guistate.put("button:button_complete", button_complete);
-		this.addRenderableWidget(button_complete);
-		button_incomplete = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_incomplete"), e -> {
-			if (true) {
-				GoatowlMod.PACKET_HANDLER.sendToServer(new KakakhouSelectGUIButtonMessage(6, x, y, z));
-				KakakhouSelectGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
-			}
-		}).bounds(this.leftPos + 178, this.topPos + 165, 77, 20).build();
-		guistate.put("button:button_incomplete", button_incomplete);
-		this.addRenderableWidget(button_incomplete);
+		button_kakuja = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_kakuja"), e -> {
+		}).bounds(this.leftPos + 115, this.topPos + 126, 56, 20).build();
+		guistate.put("button:button_kakuja", button_kakuja);
+		this.addRenderableWidget(button_kakuja);
 	}
 }
