@@ -82,6 +82,23 @@ public class GoatowlModVariables {
 			clone.JoinedWorld = original.JoinedWorld;
 			clone.MaxRcCells = original.MaxRcCells;
 			clone.Race = original.Race;
+			clone.Kakahou = original.Kakahou;
+			clone.Koukaku = original.Koukaku;
+			clone.Ukaku = original.Ukaku;
+			clone.Rinkaku = original.Rinkaku;
+			clone.Bikaku = original.Bikaku;
+			clone.Chimera = original.Chimera;
+			clone.ChimeraKakhou1 = original.ChimeraKakhou1;
+			clone.ChimeraKakahou2 = original.ChimeraKakahou2;
+			clone.ChimeraKakahou3 = original.ChimeraKakahou3;
+			clone.Kakugan = original.Kakugan;
+			clone.KaguneStyling = original.KaguneStyling;
+			clone.KakujaUnlocked = original.KakujaUnlocked;
+			clone.KakujaStage = original.KakujaStage;
+			clone.CompletedKakuja = original.CompletedKakuja;
+			clone.Kakuja = original.Kakuja;
+			clone.InsaneEye = original.InsaneEye;
+			clone.Sanity = original.Sanity;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
@@ -91,6 +108,8 @@ public class GoatowlModVariables {
 				clone.UkakuSpawned = original.UkakuSpawned;
 				clone.RcCells = original.RcCells;
 				clone.RinkakuGUI = original.RinkakuGUI;
+				clone.ActiveKagune = original.ActiveKagune;
+				clone.RinkakuForm = original.RinkakuForm;
 			}
 			if (!event.getEntity().level().isClientSide()) {
 				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
@@ -145,6 +164,25 @@ public class GoatowlModVariables {
 		public double MaxRcCells = 0;
 		public String Race = "\"\"";
 		public boolean RinkakuGUI = false;
+		public String Kakahou = "\"\"";
+		public String Koukaku = "\"\"";
+		public String Ukaku = "\"\"";
+		public String Rinkaku = "\"\"";
+		public String Bikaku = "\"\"";
+		public boolean Chimera = false;
+		public String ChimeraKakhou1 = "\"\"";
+		public String ChimeraKakahou2 = "\"\"";
+		public String ChimeraKakahou3 = "\"\"";
+		public String Kakugan = "\"\"";
+		public double ActiveKagune = 0;
+		public String RinkakuForm = "Base";
+		public String KaguneStyling = "Classic";
+		public boolean KakujaUnlocked = false;
+		public double KakujaStage = 0;
+		public boolean CompletedKakuja = false;
+		public String Kakuja = "\"\"";
+		public String InsaneEye = "None";
+		public String Sanity = "Sane";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -167,6 +205,25 @@ public class GoatowlModVariables {
 			nbt.putDouble("MaxRcCells", MaxRcCells);
 			nbt.putString("Race", Race);
 			nbt.putBoolean("RinkakuGUI", RinkakuGUI);
+			nbt.putString("Kakahou", Kakahou);
+			nbt.putString("Koukaku", Koukaku);
+			nbt.putString("Ukaku", Ukaku);
+			nbt.putString("Rinkaku", Rinkaku);
+			nbt.putString("Bikaku", Bikaku);
+			nbt.putBoolean("Chimera", Chimera);
+			nbt.putString("ChimeraKakhou1", ChimeraKakhou1);
+			nbt.putString("ChimeraKakahou2", ChimeraKakahou2);
+			nbt.putString("ChimeraKakahou3", ChimeraKakahou3);
+			nbt.putString("Kakugan", Kakugan);
+			nbt.putDouble("ActiveKagune", ActiveKagune);
+			nbt.putString("RinkakuForm", RinkakuForm);
+			nbt.putString("KaguneStyling", KaguneStyling);
+			nbt.putBoolean("KakujaUnlocked", KakujaUnlocked);
+			nbt.putDouble("KakujaStage", KakujaStage);
+			nbt.putBoolean("CompletedKakuja", CompletedKakuja);
+			nbt.putString("Kakuja", Kakuja);
+			nbt.putString("InsaneEye", InsaneEye);
+			nbt.putString("Sanity", Sanity);
 			return nbt;
 		}
 
@@ -186,6 +243,25 @@ public class GoatowlModVariables {
 			MaxRcCells = nbt.getDouble("MaxRcCells");
 			Race = nbt.getString("Race");
 			RinkakuGUI = nbt.getBoolean("RinkakuGUI");
+			Kakahou = nbt.getString("Kakahou");
+			Koukaku = nbt.getString("Koukaku");
+			Ukaku = nbt.getString("Ukaku");
+			Rinkaku = nbt.getString("Rinkaku");
+			Bikaku = nbt.getString("Bikaku");
+			Chimera = nbt.getBoolean("Chimera");
+			ChimeraKakhou1 = nbt.getString("ChimeraKakhou1");
+			ChimeraKakahou2 = nbt.getString("ChimeraKakahou2");
+			ChimeraKakahou3 = nbt.getString("ChimeraKakahou3");
+			Kakugan = nbt.getString("Kakugan");
+			ActiveKagune = nbt.getDouble("ActiveKagune");
+			RinkakuForm = nbt.getString("RinkakuForm");
+			KaguneStyling = nbt.getString("KaguneStyling");
+			KakujaUnlocked = nbt.getBoolean("KakujaUnlocked");
+			KakujaStage = nbt.getDouble("KakujaStage");
+			CompletedKakuja = nbt.getBoolean("CompletedKakuja");
+			Kakuja = nbt.getString("Kakuja");
+			InsaneEye = nbt.getString("InsaneEye");
+			Sanity = nbt.getString("Sanity");
 		}
 	}
 
@@ -233,6 +309,25 @@ public class GoatowlModVariables {
 					variables.MaxRcCells = message.data.MaxRcCells;
 					variables.Race = message.data.Race;
 					variables.RinkakuGUI = message.data.RinkakuGUI;
+					variables.Kakahou = message.data.Kakahou;
+					variables.Koukaku = message.data.Koukaku;
+					variables.Ukaku = message.data.Ukaku;
+					variables.Rinkaku = message.data.Rinkaku;
+					variables.Bikaku = message.data.Bikaku;
+					variables.Chimera = message.data.Chimera;
+					variables.ChimeraKakhou1 = message.data.ChimeraKakhou1;
+					variables.ChimeraKakahou2 = message.data.ChimeraKakahou2;
+					variables.ChimeraKakahou3 = message.data.ChimeraKakahou3;
+					variables.Kakugan = message.data.Kakugan;
+					variables.ActiveKagune = message.data.ActiveKagune;
+					variables.RinkakuForm = message.data.RinkakuForm;
+					variables.KaguneStyling = message.data.KaguneStyling;
+					variables.KakujaUnlocked = message.data.KakujaUnlocked;
+					variables.KakujaStage = message.data.KakujaStage;
+					variables.CompletedKakuja = message.data.CompletedKakuja;
+					variables.Kakuja = message.data.Kakuja;
+					variables.InsaneEye = message.data.InsaneEye;
+					variables.Sanity = message.data.Sanity;
 				}
 			});
 			context.setPacketHandled(true);

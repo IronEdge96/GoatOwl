@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "goatowl:test_ayumi"
+    "goatowl:test_ayumi",
+    "goatowl:test_ginkui",
+    "goatowl:test_grave_robber",
+    "goatowl:test_silver_skull"
   ]
 }
