@@ -1524,7 +1524,7 @@
       "name": "KakahouTesterItemRightclicked",
       "type": "procedure",
       "sortid": 125,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakahou_tester_item_rightclicked",
       "metadata": {
@@ -1663,7 +1663,7 @@
       "name": "ChimeraOpen",
       "type": "procedure",
       "sortid": 132,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "chimera_open",
       "metadata": {
@@ -2828,7 +2828,7 @@
       "name": "RinkakuKakajuGet",
       "type": "gui",
       "sortid": 202,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "rinkaku_kakaju_get",
       "metadata": {
@@ -2844,7 +2844,7 @@
       "name": "UkakuKakajuGet",
       "type": "gui",
       "sortid": 203,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ukaku_kakaju_get",
       "metadata": {
@@ -2859,7 +2859,7 @@
       "name": "KoukakuKakujaGet",
       "type": "gui",
       "sortid": 204,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "koukaku_kakuja_get",
       "metadata": {
@@ -2874,7 +2874,7 @@
       "name": "BikakuKakujaGet",
       "type": "gui",
       "sortid": 205,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "bikaku_kakuja_get",
       "metadata": {
@@ -2925,7 +2925,7 @@
       "name": "Kakuja1Pressed",
       "type": "procedure",
       "sortid": 207,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakuja_1_pressed",
       "metadata": {
@@ -2945,7 +2945,7 @@
       "name": "Kakuja2Pressed",
       "type": "procedure",
       "sortid": 208,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakuja_2_pressed",
       "metadata": {
@@ -2965,7 +2965,7 @@
       "name": "Kakuja3Pressed",
       "type": "procedure",
       "sortid": 209,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakuja_3_pressed",
       "metadata": {
@@ -2985,7 +2985,7 @@
       "name": "Kakuja4Pressed",
       "type": "procedure",
       "sortid": 210,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakuja_4_pressed",
       "metadata": {
@@ -3005,7 +3005,7 @@
       "name": "Kakuja5Pressed",
       "type": "procedure",
       "sortid": 211,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakuja_5_pressed",
       "metadata": {
@@ -3025,7 +3025,7 @@
       "name": "KakujaAllPressed",
       "type": "procedure",
       "sortid": 212,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kakuja_all_pressed",
       "metadata": {
@@ -3086,7 +3086,7 @@
       "name": "KanekiSelectAll",
       "type": "gui",
       "sortid": 215,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kaneki_select_all",
       "metadata": {
@@ -3102,7 +3102,7 @@
       "name": "CentipedeClicked",
       "type": "procedure",
       "sortid": 216,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "centipede_clicked",
       "metadata": {
@@ -3122,7 +3122,7 @@
       "name": "ReaperClicked",
       "type": "procedure",
       "sortid": 217,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "reaper_clicked",
       "metadata": {
@@ -3142,7 +3142,7 @@
       "name": "ReawakenedClicked",
       "type": "procedure",
       "sortid": 218,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "reawakened_clicked",
       "metadata": {
@@ -3162,7 +3162,7 @@
       "name": "OEKClicked",
       "type": "procedure",
       "sortid": 219,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "oek_clicked",
       "metadata": {
@@ -3182,7 +3182,7 @@
       "name": "DragonClicked",
       "type": "procedure",
       "sortid": 220,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "dragon_clicked",
       "metadata": {
@@ -3568,8 +3568,8 @@
       "item.goatowl.test_demon_yamada": "Demon Yamada",
       "item.goatowl.kakahou_tester_item": "Kakahou Tester Item",
       "item.goatowl.black_reaper_kaneki_leggings": "Black Reaper\u0027s Pants",
-      "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
       "block.goatowl.quinque_steel_block": "Block of Quinque Steel",
+      "gui.goatowl.kakakhou_select_gui.button_chimera": "Chimera",
       "item.goatowl.goat_kaneki_helmet": "Kaneki\u0027s Eyepatch",
       "item.goatowl.test_kakugan": "Test Kakugan Item",
       "item.goatowl.black_reaper_kaneki_boots": "Black Reaper\u0027s Loafers",
@@ -3582,8 +3582,8 @@
       "item.goatowl.noro_black_helmet": "Noro\u0027s Mask",
       "item.goatowl.arima_re_boots": "CCG Reaper\u0027s Loafers",
       "gui.goatowl.rinkaku_select_gui.button_rize": "Rize",
-      "gui.goatowl.koukaku_kakuja_get.label_na": "NA",
       "gui.goatowl.half_ghoul_rc_tester.button_500": "8000",
+      "gui.goatowl.koukaku_kakuja_get.label_na": "NA",
       "gui.goatowl.half_human_rc_tester.button_500": "500",
       "gui.goatowl.bikaku_kakuja_get.label_na": "NA",
       "item.goatowl.test_grave_robber": "Grave Robber\u0027s Sword",

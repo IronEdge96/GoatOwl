@@ -94,11 +94,17 @@ public class GoatowlModVariables {
 			clone.Kakugan = original.Kakugan;
 			clone.KaguneStyling = original.KaguneStyling;
 			clone.KakujaUnlocked = original.KakujaUnlocked;
-			clone.KakujaStage = original.KakujaStage;
+			clone.KakujaForm = original.KakujaForm;
 			clone.CompletedKakuja = original.CompletedKakuja;
 			clone.Kakuja = original.Kakuja;
 			clone.InsaneEye = original.InsaneEye;
 			clone.Sanity = original.Sanity;
+			clone.KakahouLevel = original.KakahouLevel;
+			clone.CK1Level = original.CK1Level;
+			clone.CK2Level = original.CK2Level;
+			clone.CK3Level = original.CK3Level;
+			clone.KakujaLevel = original.KakujaLevel;
+			clone.KakujaExtra = original.KakujaExtra;
 			if (!event.isWasDeath()) {
 				clone.RinkakuSpawned = original.RinkakuSpawned;
 				clone.KakujaSpawned = original.KakujaSpawned;
@@ -178,11 +184,17 @@ public class GoatowlModVariables {
 		public String RinkakuForm = "Base";
 		public String KaguneStyling = "Classic";
 		public boolean KakujaUnlocked = false;
-		public double KakujaStage = 0;
+		public String KakujaForm = "";
 		public boolean CompletedKakuja = false;
 		public String Kakuja = "\"\"";
 		public String InsaneEye = "None";
 		public String Sanity = "Sane";
+		public double KakahouLevel = 0;
+		public double CK1Level = 0;
+		public double CK2Level = 0;
+		public double CK3Level = 0;
+		public double KakujaLevel = 0;
+		public String KakujaExtra = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -219,11 +231,17 @@ public class GoatowlModVariables {
 			nbt.putString("RinkakuForm", RinkakuForm);
 			nbt.putString("KaguneStyling", KaguneStyling);
 			nbt.putBoolean("KakujaUnlocked", KakujaUnlocked);
-			nbt.putDouble("KakujaStage", KakujaStage);
+			nbt.putString("KakujaForm", KakujaForm);
 			nbt.putBoolean("CompletedKakuja", CompletedKakuja);
 			nbt.putString("Kakuja", Kakuja);
 			nbt.putString("InsaneEye", InsaneEye);
 			nbt.putString("Sanity", Sanity);
+			nbt.putDouble("KakahouLevel", KakahouLevel);
+			nbt.putDouble("CK1Level", CK1Level);
+			nbt.putDouble("CK2Level", CK2Level);
+			nbt.putDouble("CK3Level", CK3Level);
+			nbt.putDouble("KakujaLevel", KakujaLevel);
+			nbt.putString("KakujaExtra", KakujaExtra);
 			return nbt;
 		}
 
@@ -257,11 +275,17 @@ public class GoatowlModVariables {
 			RinkakuForm = nbt.getString("RinkakuForm");
 			KaguneStyling = nbt.getString("KaguneStyling");
 			KakujaUnlocked = nbt.getBoolean("KakujaUnlocked");
-			KakujaStage = nbt.getDouble("KakujaStage");
+			KakujaForm = nbt.getString("KakujaForm");
 			CompletedKakuja = nbt.getBoolean("CompletedKakuja");
 			Kakuja = nbt.getString("Kakuja");
 			InsaneEye = nbt.getString("InsaneEye");
 			Sanity = nbt.getString("Sanity");
+			KakahouLevel = nbt.getDouble("KakahouLevel");
+			CK1Level = nbt.getDouble("CK1Level");
+			CK2Level = nbt.getDouble("CK2Level");
+			CK3Level = nbt.getDouble("CK3Level");
+			KakujaLevel = nbt.getDouble("KakujaLevel");
+			KakujaExtra = nbt.getString("KakujaExtra");
 		}
 	}
 
@@ -323,11 +347,17 @@ public class GoatowlModVariables {
 					variables.RinkakuForm = message.data.RinkakuForm;
 					variables.KaguneStyling = message.data.KaguneStyling;
 					variables.KakujaUnlocked = message.data.KakujaUnlocked;
-					variables.KakujaStage = message.data.KakujaStage;
+					variables.KakujaForm = message.data.KakujaForm;
 					variables.CompletedKakuja = message.data.CompletedKakuja;
 					variables.Kakuja = message.data.Kakuja;
 					variables.InsaneEye = message.data.InsaneEye;
 					variables.Sanity = message.data.Sanity;
+					variables.KakahouLevel = message.data.KakahouLevel;
+					variables.CK1Level = message.data.CK1Level;
+					variables.CK2Level = message.data.CK2Level;
+					variables.CK3Level = message.data.CK3Level;
+					variables.KakujaLevel = message.data.KakujaLevel;
+					variables.KakujaExtra = message.data.KakujaExtra;
 				}
 			});
 			context.setPacketHandled(true);

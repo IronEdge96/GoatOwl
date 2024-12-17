@@ -12,10 +12,14 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.ironedge.goatowl.client.gui.UkakuSelectGUIScreen;
+import net.ironedge.goatowl.client.gui.UkakuKakajuGetScreen;
 import net.ironedge.goatowl.client.gui.RizeFormSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.RinkakuSelectGUIScreen;
+import net.ironedge.goatowl.client.gui.RinkakuKakajuGetScreen;
 import net.ironedge.goatowl.client.gui.QuinqueFurnaceGUITestScreen;
 import net.ironedge.goatowl.client.gui.KuroShiroFormSelectGUIScreen;
+import net.ironedge.goatowl.client.gui.KoukakuKakujaGetScreen;
+import net.ironedge.goatowl.client.gui.KanekiSelectAllScreen;
 import net.ironedge.goatowl.client.gui.KanekiFormSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.KakakhouSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.HumanRCTesterScreen;
@@ -23,6 +27,7 @@ import net.ironedge.goatowl.client.gui.HalfHumanRCTesterScreen;
 import net.ironedge.goatowl.client.gui.HalfGhoulRCTesterScreen;
 import net.ironedge.goatowl.client.gui.GhoulRCTesterScreen;
 import net.ironedge.goatowl.client.gui.ChimeraSelectScreen;
+import net.ironedge.goatowl.client.gui.BikakuKakujaGetScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class GoatowlModScreens {
@@ -41,6 +46,11 @@ public class GoatowlModScreens {
 			MenuScreens.register(GoatowlModMenus.RIZE_FORM_SELECT_GUI.get(), RizeFormSelectGUIScreen::new);
 			MenuScreens.register(GoatowlModMenus.KANEKI_FORM_SELECT_GUI.get(), KanekiFormSelectGUIScreen::new);
 			MenuScreens.register(GoatowlModMenus.KURO_SHIRO_FORM_SELECT_GUI.get(), KuroShiroFormSelectGUIScreen::new);
+			MenuScreens.register(GoatowlModMenus.RINKAKU_KAKAJU_GET.get(), RinkakuKakajuGetScreen::new);
+			MenuScreens.register(GoatowlModMenus.UKAKU_KAKAJU_GET.get(), UkakuKakajuGetScreen::new);
+			MenuScreens.register(GoatowlModMenus.KOUKAKU_KAKUJA_GET.get(), KoukakuKakujaGetScreen::new);
+			MenuScreens.register(GoatowlModMenus.BIKAKU_KAKUJA_GET.get(), BikakuKakujaGetScreen::new);
+			MenuScreens.register(GoatowlModMenus.KANEKI_SELECT_ALL.get(), KanekiSelectAllScreen::new);
 		});
 	}
 }
