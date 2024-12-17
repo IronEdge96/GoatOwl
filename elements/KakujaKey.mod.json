@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "G",
+    "keyBindingName": "Kakuja",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "KakujaKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "KakujaKeyOnKeyReleased"
+    }
+  }
+}

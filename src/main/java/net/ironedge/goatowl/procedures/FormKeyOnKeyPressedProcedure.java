@@ -14,7 +14,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.ironedge.goatowl.world.inventory.RizeFormSelectGUIMenu;
+import net.ironedge.goatowl.world.inventory.ReawakenedGUIMenu;
 import net.ironedge.goatowl.world.inventory.KuroShiroFormSelectGUIMenu;
+import net.ironedge.goatowl.world.inventory.KanekiSelectAllMenu;
 import net.ironedge.goatowl.world.inventory.KanekiFormSelectGUIMenu;
 import net.ironedge.goatowl.network.GoatowlModVariables;
 
@@ -69,6 +71,43 @@ public class FormKeyOnKeyPressedProcedure {
 							return new KuroShiroFormSelectGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
+				}
+			}
+		}
+		if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaSpawned) {
+			if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakuja).equals("Kaneki")) {
+				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).PerfectKakuja) {
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("KanekiSelectAll");
+							}
+
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new KanekiSelectAllMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				} else {
+					if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaLevel == 3) {
+						if (entity instanceof ServerPlayer _ent) {
+							BlockPos _bpos = BlockPos.containing(x, y, z);
+							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.literal("ReawakenedGUI");
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									return new ReawakenedGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								}
+							}, _bpos);
+						}
+					}
 				}
 			}
 		}

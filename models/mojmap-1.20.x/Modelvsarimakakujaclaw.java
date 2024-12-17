@@ -11,7 +11,7 @@ import net.minecraft.client.model.geom.builders.CubeDeformation;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.HierarchicalModel;
 
 import net.ironedge.goatowl.VSArimaKakujaAnimations;
 import net.ironedge.goatowl.AnimationInterface;
@@ -22,7 +22,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 // Made with Blockbench 4.11.2
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
-public class Modelvsarimakakujaclaw<T extends Entity> extends EntityModel<T> {
+public class Modelvsarimakakujaclaw<T extends Entity> extends HierarchicalModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "vsarimakakujaclaw"), "main");
@@ -110,7 +110,7 @@ public class Modelvsarimakakujaclaw<T extends Entity> extends EntityModel<T> {
 	public void setupAnim(T pEntity, float pLimbSwing, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		if (pEntity instanceof AnimationInterface animationInterface) {
-			this.animate(animationInterface.VSArimaKakujaClawIdleAnimationState(), VSArimaKakujaAnimations.VSArimaKakujaClawIdle, pAgeInTicks);
+			this.animate(animationInterface.getVSArimaKakujaClawIdleAnimationState(), VSArimaKakujaAnimations.VSArimaKakujaClawIdle, pAgeInTicks);
 		}
 	}
 

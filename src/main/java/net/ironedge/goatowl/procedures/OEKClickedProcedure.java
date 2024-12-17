@@ -10,9 +10,9 @@ public class OEKClickedProcedure {
 		if (entity == null)
 			return;
 		{
-			String _setval = "OEK";
+			double _setval = 4;
 			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.KakujaForm = _setval;
+				capability.KakujaLevel = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

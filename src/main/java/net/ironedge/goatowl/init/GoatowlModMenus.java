@@ -16,6 +16,7 @@ import net.ironedge.goatowl.world.inventory.UkakuKakajuGetMenu;
 import net.ironedge.goatowl.world.inventory.RizeFormSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.RinkakuSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.RinkakuKakajuGetMenu;
+import net.ironedge.goatowl.world.inventory.ReawakenedGUIMenu;
 import net.ironedge.goatowl.world.inventory.QuinqueFurnaceGUITestMenu;
 import net.ironedge.goatowl.world.inventory.KuroShiroFormSelectGUIMenu;
 import net.ironedge.goatowl.world.inventory.KoukakuKakujaGetMenu;
@@ -49,4 +50,5 @@ public class GoatowlModMenus {
 	public static final RegistryObject<MenuType<KoukakuKakujaGetMenu>> KOUKAKU_KAKUJA_GET = REGISTRY.register("koukaku_kakuja_get", () -> IForgeMenuType.create(KoukakuKakujaGetMenu::new));
 	public static final RegistryObject<MenuType<BikakuKakujaGetMenu>> BIKAKU_KAKUJA_GET = REGISTRY.register("bikaku_kakuja_get", () -> IForgeMenuType.create(BikakuKakujaGetMenu::new));
 	public static final RegistryObject<MenuType<KanekiSelectAllMenu>> KANEKI_SELECT_ALL = REGISTRY.register("kaneki_select_all", () -> IForgeMenuType.create(KanekiSelectAllMenu::new));
+	public static final RegistryObject<MenuType<ReawakenedGUIMenu>> REAWAKENED_GUI = REGISTRY.register("reawakened_gui", () -> IForgeMenuType.create(ReawakenedGUIMenu::new));
 }

@@ -116,6 +116,9 @@ public class GoatowlModVariables {
 				clone.RinkakuGUI = original.RinkakuGUI;
 				clone.ActiveKagune = original.ActiveKagune;
 				clone.RinkakuForm = original.RinkakuForm;
+				clone.KakujaGUI = original.KakujaGUI;
+				clone.KakujaCombo = original.KakujaCombo;
+				clone.PerfectKakuja = original.PerfectKakuja;
 			}
 			if (!event.getEntity().level().isClientSide()) {
 				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
@@ -193,8 +196,11 @@ public class GoatowlModVariables {
 		public double CK1Level = 0;
 		public double CK2Level = 0;
 		public double CK3Level = 0;
-		public double KakujaLevel = 0;
+		public double KakujaLevel = 0.0;
 		public String KakujaExtra = "\"\"";
+		public boolean KakujaGUI = false;
+		public boolean KakujaCombo = false;
+		public boolean PerfectKakuja = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -242,6 +248,9 @@ public class GoatowlModVariables {
 			nbt.putDouble("CK3Level", CK3Level);
 			nbt.putDouble("KakujaLevel", KakujaLevel);
 			nbt.putString("KakujaExtra", KakujaExtra);
+			nbt.putBoolean("KakujaGUI", KakujaGUI);
+			nbt.putBoolean("KakujaCombo", KakujaCombo);
+			nbt.putBoolean("PerfectKakuja", PerfectKakuja);
 			return nbt;
 		}
 
@@ -286,6 +295,9 @@ public class GoatowlModVariables {
 			CK3Level = nbt.getDouble("CK3Level");
 			KakujaLevel = nbt.getDouble("KakujaLevel");
 			KakujaExtra = nbt.getString("KakujaExtra");
+			KakujaGUI = nbt.getBoolean("KakujaGUI");
+			KakujaCombo = nbt.getBoolean("KakujaCombo");
+			PerfectKakuja = nbt.getBoolean("PerfectKakuja");
 		}
 	}
 
@@ -358,6 +370,9 @@ public class GoatowlModVariables {
 					variables.CK3Level = message.data.CK3Level;
 					variables.KakujaLevel = message.data.KakujaLevel;
 					variables.KakujaExtra = message.data.KakujaExtra;
+					variables.KakujaGUI = message.data.KakujaGUI;
+					variables.KakujaCombo = message.data.KakujaCombo;
+					variables.PerfectKakuja = message.data.PerfectKakuja;
 				}
 			});
 			context.setPacketHandled(true);

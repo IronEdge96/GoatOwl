@@ -1,0 +1,74 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_vsarimakakujaclawclick",
+          "image": "vsarimakakujaclawclick.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ReawakenedClawClicked"
+          },
+          "x": 125,
+          "y": 104
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_vsarimakakujaclick",
+          "image": "vsarimakakujaclick.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ReawakenedResetClicked"
+          },
+          "x": 197,
+          "y": 105
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_vsarimakakujarinkakuclick",
+          "image": "vsarimakakujarinkakuclick.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ReawakedBaseClicked"
+          },
+          "x": 196,
+          "y": 36
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_vsarimakanekikakujarinkakuclick",
+          "image": "vsarimakanekikakujarinkakuclick.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ReawakedClassicClicked"
+          },
+          "x": 197,
+          "y": 172
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

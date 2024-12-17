@@ -17,6 +17,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.ironedge.goatowl.network.UkakuKeyMessage;
 import net.ironedge.goatowl.network.RinkakuKeyMessage;
+import net.ironedge.goatowl.network.KakujaKeyMessage;
 import net.ironedge.goatowl.network.FormKeyMessage;
 import net.ironedge.goatowl.network.DashKeyMessage;
 import net.ironedge.goatowl.GoatowlMod;
@@ -80,7 +81,26 @@ public class GoatowlModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping KAKUJA_KEY = new KeyMapping("key.goatowl.kakuja_key", GLFW.GLFW_KEY_G, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				GoatowlMod.PACKET_HANDLER.sendToServer(new KakujaKeyMessage(0, 0));
+				KakujaKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				KAKUJA_KEY_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - KAKUJA_KEY_LASTPRESS);
+				GoatowlMod.PACKET_HANDLER.sendToServer(new KakujaKeyMessage(1, dt));
+				KakujaKeyMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long RINKAKU_KEY_LASTPRESS = 0;
+	private static long KAKUJA_KEY_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -88,6 +108,7 @@ public class GoatowlModKeyMappings {
 		event.register(UKAKU_KEY);
 		event.register(DASH_KEY);
 		event.register(FORM_KEY);
+		event.register(KAKUJA_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -99,6 +120,7 @@ public class GoatowlModKeyMappings {
 				UKAKU_KEY.consumeClick();
 				DASH_KEY.consumeClick();
 				FORM_KEY.consumeClick();
+				KAKUJA_KEY.consumeClick();
 			}
 		}
 	}

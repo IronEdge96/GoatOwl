@@ -10,9 +10,9 @@ public class DragonClickedProcedure {
 		if (entity == null)
 			return;
 		{
-			String _setval = "Dragon";
+			double _setval = 5;
 			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.KakujaForm = _setval;
+				capability.KakujaLevel = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

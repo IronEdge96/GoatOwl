@@ -10,9 +10,9 @@ public class ReaperClickedProcedure {
 		if (entity == null)
 			return;
 		{
-			String _setval = "Reaper";
+			double _setval = 3;
 			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.KakujaForm = _setval;
+				capability.KakujaLevel = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

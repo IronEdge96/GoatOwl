@@ -84,7 +84,7 @@ public class KanekiSelectAllButtonMessage {
 		}
 		if (buttonID == 4) {
 
-			ReawakenedClickedProcedure.execute(entity);
+			ReawakenedClickedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

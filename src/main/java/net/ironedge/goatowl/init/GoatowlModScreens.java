@@ -16,6 +16,7 @@ import net.ironedge.goatowl.client.gui.UkakuKakajuGetScreen;
 import net.ironedge.goatowl.client.gui.RizeFormSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.RinkakuSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.RinkakuKakajuGetScreen;
+import net.ironedge.goatowl.client.gui.ReawakenedGUIScreen;
 import net.ironedge.goatowl.client.gui.QuinqueFurnaceGUITestScreen;
 import net.ironedge.goatowl.client.gui.KuroShiroFormSelectGUIScreen;
 import net.ironedge.goatowl.client.gui.KoukakuKakujaGetScreen;
@@ -51,6 +52,7 @@ public class GoatowlModScreens {
 			MenuScreens.register(GoatowlModMenus.KOUKAKU_KAKUJA_GET.get(), KoukakuKakujaGetScreen::new);
 			MenuScreens.register(GoatowlModMenus.BIKAKU_KAKUJA_GET.get(), BikakuKakujaGetScreen::new);
 			MenuScreens.register(GoatowlModMenus.KANEKI_SELECT_ALL.get(), KanekiSelectAllScreen::new);
+			MenuScreens.register(GoatowlModMenus.REAWAKENED_GUI.get(), ReawakenedGUIScreen::new);
 		});
 	}
 }
