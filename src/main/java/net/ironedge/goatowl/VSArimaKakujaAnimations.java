@@ -262,7 +262,6 @@ public class VSArimaKakujaAnimations {
 							new Keyframe(2.0F, KeyframeAnimations.degreeVec(-5.6225F, 22.2541F, -181.8545F), AnimationChannel.Interpolations.CATMULLROM)))
 			.build();
 	//CLAW
-
 	public static final AnimationDefinition VSArimaKakujaClawIdle = AnimationDefinition.Builder.withLength(2.0F).looping()
 			.addAnimation("Thumb", new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(-15.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM),
 					new Keyframe(1.0F, KeyframeAnimations.degreeVec(-27.5F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM), new Keyframe(2.0F, KeyframeAnimations.degreeVec(-15.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.CATMULLROM)))

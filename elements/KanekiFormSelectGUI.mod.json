@@ -100,21 +100,6 @@
           "x": 357,
           "y": 170
         }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_kakuja",
-          "text": "Kakuja",
-          "isUndecorated": false,
-          "displayCondition": {
-            "name": "KanekiSelectDisplay"
-          },
-          "width": 56,
-          "height": 20,
-          "x": 186,
-          "y": 116
-        }
       }
     ],
     "gridSettings": {

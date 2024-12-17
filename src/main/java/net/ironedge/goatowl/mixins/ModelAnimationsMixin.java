@@ -45,8 +45,10 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 	@Unique
 	private AnimationState reaperkakujaidleAnimationState = new AnimationState();
 	@Unique
+	private AnimationState reaperkakujarinkakuidleAnimationState = new AnimationState();
+	@Unique
 	private AnimationState vsarimakakujarinkakuidleAnimationState = new AnimationState();
-	@Unique
+	@Unique
 	private AnimationState vsarimakakujaclawidleAnimationState = new AnimationState();
 
 	protected ModelAnimationsMixin(EntityType<? extends LivingEntity> pEntityType, Level pLevel) {
@@ -67,6 +69,7 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 			kurorinkakuidleAnimationState.startIfStopped(this.tickCount);
 			shirorinkakuidleAnimationState.startIfStopped(this.tickCount);
 			reaperkakujaidleAnimationState.startIfStopped(this.tickCount);
+			reaperkakujarinkakuidleAnimationState.startIfStopped(this.tickCount);
 			vsarimakakujarinkakuidleAnimationState.startIfStopped(this.tickCount);
 			vsarimakakujaclawidleAnimationState.startIfStopped(this.tickCount);
 			//rizeidlefourAnimationStat.animateWhen(!this.isFreezing(), this.tickCount);
@@ -148,13 +151,19 @@ public abstract class ModelAnimationsMixin extends LivingEntity implements Anima
 
 	@Override
 	@Unique
-	public AnimationState VSArimaKakujaRinkakuIdleAnimationState() {
-		return vsarimakakujarinkakuidleAnimationState;
-	}
-		@Override
-	@Unique
-	public AnimationState VSArimaKakujaClawIdleAnimationState() {
-		return vsarimakakujaclawidleAnimationState;
+	public AnimationState getReaperKakujaRinkakuIdleAnimationState() {
+		return reaperkakujarinkakuidleAnimationState;
 	}
 
+	@Override
+	@Unique
+	public AnimationState getVSArimaKakujaRinkakuIdleAnimationState() {
+		return vsarimakakujarinkakuidleAnimationState;
+	}
+
+	@Override
+	@Unique
+	public AnimationState getVSArimaKakujaClawIdleAnimationState() {
+		return vsarimakakujaclawidleAnimationState;
+	}
 }

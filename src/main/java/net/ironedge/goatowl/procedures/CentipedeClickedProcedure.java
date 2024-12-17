@@ -10,9 +10,9 @@ public class CentipedeClickedProcedure {
 		if (entity == null)
 			return;
 		{
-			String _setval = "Centipede";
+			double _setval = 1;
 			entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.KakujaForm = _setval;
+				capability.KakujaLevel = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

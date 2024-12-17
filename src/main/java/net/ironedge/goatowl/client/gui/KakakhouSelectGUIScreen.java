@@ -108,6 +108,10 @@ public class KakakhouSelectGUIScreen extends AbstractContainerScreen<KakakhouSel
 		guistate.put("button:button_chimera", button_chimera);
 		this.addRenderableWidget(button_chimera);
 		button_kakuja = Button.builder(Component.translatable("gui.goatowl.kakakhou_select_gui.button_kakuja"), e -> {
+			if (true) {
+				GoatowlMod.PACKET_HANDLER.sendToServer(new KakakhouSelectGUIButtonMessage(5, x, y, z));
+				KakakhouSelectGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
 		}).bounds(this.leftPos + 115, this.topPos + 126, 56, 20).build();
 		guistate.put("button:button_kakuja", button_kakuja);
 		this.addRenderableWidget(button_kakuja);

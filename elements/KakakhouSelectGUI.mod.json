@@ -85,6 +85,9 @@
           "name": "button_kakuja",
           "text": "Kakuja",
           "isUndecorated": false,
+          "onClick": {
+            "name": "KakujaGet"
+          },
           "width": 56,
           "height": 20,
           "x": 241,

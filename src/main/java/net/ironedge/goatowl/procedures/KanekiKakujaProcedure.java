@@ -18,7 +18,7 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.ironedge.goatowl.network.GoatowlModVariables;
-import net.ironedge.goatowl.client.model.Modelvsarimakakujarinkaku;
+import net.ironedge.goatowl.client.model.Modelvsarimakakuja;
 import net.ironedge.goatowl.client.model.Modelreaperkakuja;
 
 import javax.annotation.Nullable;
@@ -56,18 +56,14 @@ public class KanekiKakujaProcedure {
 			emptyRenderer.render((AbstractClientPlayer) _evt.getEntity(), _evt.getEntity().getYRot(), _evt.getPartialTick(), _evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 		}
 		if (entity instanceof Player && ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakuja).equals("Kaneki")
-				&& (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakahou).equals("Rinkaku")
-						|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ChimeraKakhou1).equals("Rinkaku")
-						|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ChimeraKakahou2).equals("Rinkaku")
-						|| ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ChimeraKakahou3).equals("Rinkaku"))) {
+				&& ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakahou).equals("Rinkaku")) {
 			if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RcCells > 0 && !entity.isSwimming() && !entity.isUnderWater()) {
-				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuSpawned
-						&& (entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaSpawned) {
+				if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaSpawned) {
 					if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).Kakuja).equals("Kaneki")) {
-						if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Centipede")) {
+						if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaLevel == 1) {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal("NA"), false);
-						} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Reaper")) {
+						} else if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaLevel == 2) {
 							if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 								ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
 								if (ResourceLocation.tryParse("goatowl:textures/entities/reaperkakuja.png") != null) {
@@ -86,13 +82,13 @@ public class KanekiKakujaProcedure {
 										_evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 								poseStack.popPose();
 							}
-						} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Reawakened")) {
+						} else if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaLevel == 3) {
 							if (_evt.getRenderer() instanceof PlayerRenderer && !(_evt.getRenderer() instanceof com.kleiders.kleidersplayerrenderer.KleidersIgnoreCancel)) {
 								ResourceLocation _texture = new ResourceLocation("kleiders_custom_renderer:textures/entities/default.png");
-								if (ResourceLocation.tryParse("goatowl:textures/entities/vsarimakakujarinkaku.png") != null) {
-									_texture = new ResourceLocation("goatowl:textures/entities/vsarimakakujarinkaku.png");
+								if (ResourceLocation.tryParse("goatowl:textures/entities/vsarimakakuja.png") != null) {
+									_texture = new ResourceLocation("goatowl:textures/entities/vsarimakakuja.png");
 								}
-								Modelvsarimakakujarinkaku newModel = new Modelvsarimakakujarinkaku(context.bakeLayer(Modelvsarimakakujarinkaku.LAYER_LOCATION));
+								Modelvsarimakakuja newModel = new Modelvsarimakakuja(context.bakeLayer(Modelvsarimakakuja.LAYER_LOCATION));
 								newModel.LeftLeg.copyFrom(_pr.getModel().leftLeg);
 								newModel.RightLeg.copyFrom(_pr.getModel().rightLeg);
 								newModel.LeftArm.copyFrom(_pr.getModel().leftArm);
@@ -105,10 +101,10 @@ public class KanekiKakujaProcedure {
 										_evt.getPoseStack(), _evt.getMultiBufferSource(), _evt.getPackedLight());
 								poseStack.popPose();
 							}
-						} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("OEK")) {
+						} else if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaLevel == 4) {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal("NA"), false);
-						} else if (((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).RinkakuForm).equals("Dragon")) {
+						} else if ((entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).KakujaLevel == 5) {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
 								_player.displayClientMessage(Component.literal("NA"), false);
 						}
@@ -121,12 +117,12 @@ public class KanekiKakujaProcedure {
 				{
 					boolean _setval = false;
 					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.RinkakuSpawned = _setval;
+						capability.KakujaSpawned = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 				{
-					double _setval = (entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ActiveKagune - 1;
+					double _setval = (entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new GoatowlModVariables.PlayerVariables())).ActiveKagune - 5;
 					entity.getCapability(GoatowlModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.ActiveKagune = _setval;
 						capability.syncPlayerVariables(entity);
